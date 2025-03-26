@@ -1,0 +1,365 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\customerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\customerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89170FA7-3392-4A6B-B298-29C6CF303BDF}|Docker{89170FA7-3392-4A6B-B298-29C6CF303BDF}|C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService.Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{89170FA7-3392-4A6B-B298-29C6CF303BDF}|Docker{89170FA7-3392-4A6B-B298-29C6CF303BDF}|solutionrelative:CustomerService.Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Docker\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\messagebroker\\eventhandlers\\paymentprocessedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\eventhandlers\\paymentprocessedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\messagebroker\\eventhandlers\\appointmentbookedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\eventhandlers\\appointmentbookedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\messagebroker\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\servicediscovery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\servicediscovery\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\84967\\downloads\\git clone http\\soa_final\\salonmanagementsystem\\apigateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Startup.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Startup.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Startup.cs",
+              "RelativeToolTip": "CustomerService\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:02:14.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:55.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:42.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "CustomerService\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:13.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Repositories\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
+              "RelativeToolTip": "CustomerService\\Repositories\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:00:56.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Models\\Customer.cs",
+              "RelativeToolTip": "CustomerService\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:00:11.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerContext.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Data\\CustomerContext.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
+              "RelativeToolTip": "CustomerService\\Data\\CustomerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:59:42.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerService",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\CustomerService.csproj",
+              "RelativeDocumentMoniker": "CustomerService\\CustomerService.csproj",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\CustomerService.csproj",
+              "RelativeToolTip": "CustomerService\\CustomerService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T12:52:07.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "CustomerService\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:51:50.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CustomerService.Dockerfile",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService.Dockerfile",
+              "RelativeDocumentMoniker": "CustomerService.Dockerfile",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService.Dockerfile",
+              "RelativeToolTip": "CustomerService.Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-26T12:39:46.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml",
+              "RelativeDocumentMoniker": "Docker\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml",
+              "RelativeToolTip": "Docker\\docker-compose.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-03-26T12:10:18.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PaymentProcessedHandler.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
+              "RelativeDocumentMoniker": "MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
+              "RelativeToolTip": "MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:34:27.68Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppointmentBookedHandler.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
+              "RelativeDocumentMoniker": "MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
+              "RelativeToolTip": "MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:34:17.689Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MessageBroker.csproj",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
+              "RelativeDocumentMoniker": "MessageBroker\\MessageBroker.csproj",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
+              "RelativeToolTip": "MessageBroker\\MessageBroker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T10:34:06.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ConsulConfig.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
+              "RelativeDocumentMoniker": "ServiceDiscovery\\ConsulConfig.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
+              "RelativeToolTip": "ServiceDiscovery\\ConsulConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:33:16.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RabbitMQConfig.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
+              "RelativeDocumentMoniker": "MessageBroker\\RabbitMQConfig.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
+              "RelativeToolTip": "MessageBroker\\RabbitMQConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:31:17.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\Startup.cs",
+              "RelativeDocumentMoniker": "ServiceDiscovery\\Startup.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\Startup.cs",
+              "RelativeToolTip": "ServiceDiscovery\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:31:05.301Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "APIGateway.csproj",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\APIGateway\\APIGateway.csproj",
+              "RelativeDocumentMoniker": "APIGateway\\APIGateway.csproj",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\APIGateway\\APIGateway.csproj",
+              "RelativeToolTip": "APIGateway\\APIGateway.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T10:27:46.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\APIGateway\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "APIGateway\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\APIGateway\\Properties\\launchSettings.json",
+              "RelativeToolTip": "APIGateway\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-26T10:27:42.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Startup.cs",
+              "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
+              "RelativeToolTip": "APIGateway\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:27:09.924Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 171,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

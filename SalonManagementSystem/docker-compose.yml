@@ -1,0 +1,73 @@
+version: '3.8'
+services:
+  customerservice:
+    build:
+      context: ../Backend/Microservices/CustomerService
+      dockerfile: ../../Docker/CustomerService/Dockerfile
+    ports:
+      - "5001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  staffservice:
+    build:
+      context: ../Backend/Microservices/StaffService
+      dockerfile: ../../Docker/StaffService/Dockerfile
+    ports:
+      - "5002:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  serviceservice:
+    build:
+      context: ../Backend/Microservices/ServiceService
+      dockerfile: ../../Docker/ServiceService/Dockerfile
+    ports:
+      - "5003:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  appointmentservice:
+    build:
+      context: ../Backend/Microservices/AppointmentService
+      dockerfile: ../../Docker/AppointmentService/Dockerfile
+    ports:
+      - "5004:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  paymentservice:
+    build:
+      context: ../Backend/Microservices/PaymentService
+      dockerfile: ../../Docker/PaymentService/Dockerfile
+    ports:
+      - "5005:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  feedbackservice:
+    build:
+      context: ../Backend/Microservices/FeedbackService
+      dockerfile: ../../Docker/FeedbackService/Dockerfile
+    ports:
+      - "5006:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  apigateway:
+    build:
+      context: ../Backend/APIGateway
+      dockerfile: ../../Docker/APIGateway/Dockerfile
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+
+  webapp:
+    build:
+      context: ../Frontend/WebApp
+      dockerfile: ../../Docker/WebApp/Dockerfile
+    ports:
+      - "5007:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
