@@ -150,8 +150,7 @@
               "RelativeToolTip": "AppointmentService\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T10:00:16.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:00:16.08Z"
             },
             {
               "$type": "Document",
@@ -163,8 +162,7 @@
               "RelativeToolTip": "CustomerService\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T09:10:48.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:10:48.423Z"
             },
             {
               "$type": "Document",
@@ -176,8 +174,7 @@
               "RelativeToolTip": "AppointmentService\\Controllers\\AppointmentController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAwwAgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:49:08.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:49:08.024Z"
             },
             {
               "$type": "Document",
@@ -189,8 +186,7 @@
               "RelativeToolTip": "AppointmentService\\Startup.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAYwBUAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:53:20.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:53:20.576Z"
             },
             {
               "$type": "Document",
@@ -202,8 +198,7 @@
               "RelativeToolTip": "AppointmentService\\Models\\Appointment.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAywAwAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:50:30.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:50:30.57Z"
             },
             {
               "$type": "Document",
@@ -215,8 +210,7 @@
               "RelativeToolTip": "AppointmentService\\Repositories\\AppointmentRepository.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAswDAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:52:14.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:52:14.506Z"
             },
             {
               "$type": "Document",
@@ -226,7 +220,7 @@
               "RelativeDocumentMoniker": "CustomerService\\Repositories\\CustomerRepository.cs",
               "ToolTip": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
               "RelativeToolTip": "CustomerService\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAqwCsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAuwCsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T13:01:13.706Z",
               "EditorCaption": ""
@@ -241,8 +235,7 @@
               "RelativeToolTip": "CustomerService\\Controllers\\CustomerController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T12:51:50.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T12:51:50.344Z"
             },
             {
               "$type": "Document",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "AppointmentService\\Services\\AppointmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:52:57.119Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:52:57.119Z"
             },
             {
               "$type": "Document",
@@ -267,8 +259,7 @@
               "RelativeToolTip": "AppointmentService\\Services\\IAppointmentService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA5wA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:52:47.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:52:47.77Z"
             },
             {
               "$type": "Document",
@@ -280,8 +271,7 @@
               "RelativeToolTip": "AppointmentService\\Repositories\\IAppointmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:52:05.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:52:05.032Z"
             },
             {
               "$type": "Document",
@@ -293,8 +283,7 @@
               "RelativeToolTip": "AppointmentService\\Data\\AppointmentContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T09:51:46.058Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T09:51:46.058Z"
             },
             {
               "$type": "Document",
@@ -306,8 +295,7 @@
               "RelativeToolTip": "AppointmentService\\AppointmentService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-27T08:53:32.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T08:53:32.769Z"
             },
             {
               "$type": "Document",
@@ -319,8 +307,7 @@
               "RelativeToolTip": "CustomerService\\Startup.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBUAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:02:14.705Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T13:02:14.705Z"
             },
             {
               "$type": "Document",
