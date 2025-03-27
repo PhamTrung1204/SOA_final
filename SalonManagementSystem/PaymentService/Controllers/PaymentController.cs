@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PaymentService.Models;
 using PaymentService.Services;
+using SalonManagementSystem.Shared.Models;
 using System.Threading.Tasks;
 
 namespace PaymentService.Controllers
