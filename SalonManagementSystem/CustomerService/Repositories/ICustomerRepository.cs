@@ -1,6 +1,14 @@
-﻿namespace CustomerService.Repositories
+﻿using CustomerService.Models;
+
+namespace CustomerService.Repositories
 {
-    public class ICustomerRepository
+    public interface ICustomerRepository
     {
+        Task<IEnumerable<Customer>> GetAllAsync();
+        Task<Customer> GetByIdAsync(int id);
+        Task AddAsync(Customer customer);
+        Task UpdateAsync(Customer customer);
+        Task DeleteAsync(int id);
+        Task SaveChangesAsync();
     }
 }
