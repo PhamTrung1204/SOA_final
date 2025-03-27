@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using FeedbackService.Data;
-using FeedbackService.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using SalonManagementSystem.Shared.Models;
 
 namespace FeedbackService.Repositories
 {

@@ -3,8 +3,128 @@
   "WorkspaceRootPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\serviceservice\\serviceservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|solutionrelative:serviceservice\\serviceservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\services\\appointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\repositories\\iappointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\repositories\\appointmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\data\\appointmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\data\\appointmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\feedbackservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\feedbackservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\data\\feedbackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\data\\feedbackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\services\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\services\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -19,68 +139,12 @@
       "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\services\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\repositories\\ipaymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\models\\payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\services\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\services\\ifeedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\data\\feedbackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\data\\feedbackcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\services\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\repositories\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\repositories\\feedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\feedbackservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -93,34 +157,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\customerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\customerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{89170FA7-3392-4A6B-B298-29C6CF303BDF}|Docker{89170FA7-3392-4A6B-B298-29C6CF303BDF}|C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService.Dockerfile||{3B902123-F8A7-4915-9F01-361F908088D0}",
@@ -189,32 +225,397 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServiceService",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
+              "RelativeDocumentMoniker": "ServiceService\\ServiceService.csproj",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
+              "RelativeToolTip": "ServiceService\\ServiceService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-27T13:30:42.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Appointment.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Appointment.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:04:07.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:25:57.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
-              "RelativeDocumentMoniker": "FeedbackService\\appsettings.json",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
-              "RelativeToolTip": "FeedbackService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T08:40:42.605Z",
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Feedback.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Feedback.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:05:34.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Payment.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Payment.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Payment.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Payment.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Payment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:20:58.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "AppointmentService\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAEwBkAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:30:13.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Services\\IAppointmentService.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Services\\IAppointmentService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Services\\IAppointmentService.cs",
+              "RelativeToolTip": "AppointmentService\\Services\\IAppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:29:58.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Services\\AppointmentService.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Services\\AppointmentService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Services\\AppointmentService.cs",
+              "RelativeToolTip": "AppointmentService\\Services\\AppointmentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:29:46.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Repositories\\IAppointmentRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Repositories\\IAppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Repositories\\IAppointmentRepository.cs",
+              "RelativeToolTip": "AppointmentService\\Repositories\\IAppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:29:32.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "RelativeToolTip": "AppointmentService\\Repositories\\AppointmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:29:15.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppointmentContext.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Data\\AppointmentContext.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Data\\AppointmentContext.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Data\\AppointmentContext.cs",
+              "RelativeToolTip": "AppointmentService\\Data\\AppointmentContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:28:43.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "CustomerService\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:13.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\CustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:55.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\ICustomerService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:42.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "CustomerService\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAkwCcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:51:50.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Repositories\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
+              "RelativeToolTip": "CustomerService\\Repositories\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:00:56.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerContext.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Data\\CustomerContext.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
+              "RelativeToolTip": "CustomerService\\Data\\CustomerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:59:42.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PaymentContext.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Data\\PaymentContext.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Data\\PaymentContext.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Data\\PaymentContext.cs",
+              "RelativeToolTip": "PaymentService\\Data\\PaymentContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:25:48.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\PaymentService.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Services\\PaymentService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\PaymentService.cs",
+              "RelativeToolTip": "PaymentService\\Services\\PaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:27:51.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IPaymentService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\IPaymentService.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Services\\IPaymentService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\IPaymentService.cs",
+              "RelativeToolTip": "PaymentService\\Services\\IPaymentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:27:22.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IPaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\IPaymentRepository.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Repositories\\IPaymentRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\IPaymentRepository.cs",
+              "RelativeToolTip": "PaymentService\\Repositories\\IPaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:26:29.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Repositories\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\PaymentRepository.cs",
+              "RelativeToolTip": "PaymentService\\Repositories\\PaymentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:26:49.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Program.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Program.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Program.cs",
               "RelativeToolTip": "FeedbackService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:15:09.596Z"
+              "WhenOpened": "2025-03-27T08:15:09.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 23,
+              "Title": "FeedbackService.http",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\FeedbackService.http",
+              "RelativeDocumentMoniker": "FeedbackService\\FeedbackService.http",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\FeedbackService.http",
+              "RelativeToolTip": "FeedbackService\\FeedbackService.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-27T12:50:42.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\FeedbackRepository.cs",
+              "RelativeDocumentMoniker": "FeedbackService\\Repositories\\FeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\FeedbackRepository.cs",
+              "RelativeToolTip": "FeedbackService\\Repositories\\FeedbackRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAiwCIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:10:29.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "FeedbackService\\Controllers\\FeedbackController.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "FeedbackService\\Controllers\\FeedbackController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:12:36.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FeedbackContext.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Data\\FeedbackContext.cs",
+              "RelativeDocumentMoniker": "FeedbackService\\Data\\FeedbackContext.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Data\\FeedbackContext.cs",
+              "RelativeToolTip": "FeedbackService\\Data\\FeedbackContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:06:03.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FeedbackService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\FeedbackService.cs",
+              "RelativeDocumentMoniker": "FeedbackService\\Services\\FeedbackService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\FeedbackService.cs",
+              "RelativeToolTip": "FeedbackService\\Services\\FeedbackService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:12:01.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "IFeedbackService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\IFeedbackService.cs",
+              "RelativeDocumentMoniker": "FeedbackService\\Services\\IFeedbackService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\IFeedbackService.cs",
+              "RelativeToolTip": "FeedbackService\\Services\\IFeedbackService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:11:40.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IFeedbackRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\IFeedbackRepository.cs",
+              "RelativeDocumentMoniker": "FeedbackService\\Repositories\\IFeedbackRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\IFeedbackRepository.cs",
+              "RelativeToolTip": "FeedbackService\\Repositories\\IFeedbackRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:10:00.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Program.cs",
               "RelativeDocumentMoniker": "PaymentService\\Program.cs",
@@ -222,11 +623,12 @@
               "RelativeToolTip": "PaymentService\\Program.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAuwBQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:28:48.076Z"
+              "WhenOpened": "2025-03-27T08:28:48.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 33,
               "Title": "MessageBroker.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
               "RelativeDocumentMoniker": "MessageBroker\\MessageBroker.csproj",
@@ -234,20 +636,20 @@
               "RelativeToolTip": "MessageBroker\\MessageBroker.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T10:34:06.733Z"
+              "WhenOpened": "2025-03-26T10:34:06.733Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FeedbackController.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Controllers\\FeedbackController.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Controllers\\FeedbackController.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Controllers\\FeedbackController.cs",
-              "RelativeToolTip": "FeedbackService\\Controllers\\FeedbackController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA4wCIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:12:36.427Z",
-              "EditorCaption": ""
+              "DocumentIndex": 31,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
+              "RelativeDocumentMoniker": "FeedbackService\\appsettings.json",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
+              "RelativeToolTip": "FeedbackService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-27T08:40:42.605Z"
             },
             {
               "$type": "Bookmark",
@@ -255,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 32,
               "Title": "RabbitMQConfig.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
               "RelativeDocumentMoniker": "MessageBroker\\RabbitMQConfig.cs",
@@ -267,19 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Feedback.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Models\\Feedback.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Models\\Feedback.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Models\\Feedback.cs",
-              "RelativeToolTip": "FeedbackService\\Models\\Feedback.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T07:53:22.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 34,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\appsettings.json",
               "RelativeDocumentMoniker": "PaymentService\\appsettings.json",
@@ -291,91 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PaymentContext.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Data\\PaymentContext.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Data\\PaymentContext.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Data\\PaymentContext.cs",
-              "RelativeToolTip": "PaymentService\\Data\\PaymentContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:25:48.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IPaymentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\IPaymentRepository.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Repositories\\IPaymentRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\IPaymentRepository.cs",
-              "RelativeToolTip": "PaymentService\\Repositories\\IPaymentRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:26:29.838Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Payment.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Models\\Payment.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Models\\Payment.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Models\\Payment.cs",
-              "RelativeToolTip": "PaymentService\\Models\\Payment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T07:56:57.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "FeedbackService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\FeedbackService.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Services\\FeedbackService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\FeedbackService.cs",
-              "RelativeToolTip": "FeedbackService\\Services\\FeedbackService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:12:01.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IPaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\IPaymentService.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Services\\IPaymentService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\IPaymentService.cs",
-              "RelativeToolTip": "PaymentService\\Services\\IPaymentService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:27:22.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "IFeedbackService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\IFeedbackService.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Services\\IFeedbackService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\IFeedbackService.cs",
-              "RelativeToolTip": "FeedbackService\\Services\\IFeedbackService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:11:40.283Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FeedbackContext.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Data\\FeedbackContext.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Data\\FeedbackContext.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Data\\FeedbackContext.cs",
-              "RelativeToolTip": "FeedbackService\\Data\\FeedbackContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:06:03.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 35,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "PaymentService\\Controllers\\PaymentController.cs",
@@ -387,55 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\PaymentService.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Services\\PaymentService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\PaymentService.cs",
-              "RelativeToolTip": "PaymentService\\Services\\PaymentService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwDYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:27:51.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PaymentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\PaymentRepository.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Repositories\\PaymentRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\PaymentRepository.cs",
-              "RelativeToolTip": "PaymentService\\Repositories\\PaymentRepository.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAAADAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:26:49.23Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "FeedbackRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\FeedbackRepository.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Repositories\\FeedbackRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\FeedbackRepository.cs",
-              "RelativeToolTip": "FeedbackService\\Repositories\\FeedbackRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAuwCIAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:10:29.946Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IFeedbackRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\IFeedbackRepository.cs",
-              "RelativeDocumentMoniker": "FeedbackService\\Repositories\\IFeedbackRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\IFeedbackRepository.cs",
-              "RelativeToolTip": "FeedbackService\\Repositories\\IFeedbackRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:10:00.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 36,
               "Title": "FeedbackService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\FeedbackService.csproj",
               "RelativeDocumentMoniker": "FeedbackService\\FeedbackService.csproj",
@@ -443,11 +701,12 @@
               "RelativeToolTip": "FeedbackService\\FeedbackService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-27T07:46:46.421Z"
+              "WhenOpened": "2025-03-27T07:46:46.421Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 37,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Startup.cs",
               "RelativeDocumentMoniker": "CustomerService\\Startup.cs",
@@ -459,79 +718,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Services\\CustomerService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
-              "RelativeToolTip": "CustomerService\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:01:55.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ICustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Services\\ICustomerService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
-              "RelativeToolTip": "CustomerService\\Services\\ICustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:01:42.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "CustomerService\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:01:13.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Repositories\\ICustomerRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
-              "RelativeToolTip": "CustomerService\\Repositories\\ICustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:00:56.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Models\\Customer.cs",
-              "RelativeToolTip": "CustomerService\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:00:11.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CustomerContext.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Data\\CustomerContext.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
-              "RelativeToolTip": "CustomerService\\Data\\CustomerContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T12:59:42.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 38,
               "Title": "CustomerService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\CustomerService.csproj",
               "RelativeDocumentMoniker": "CustomerService\\CustomerService.csproj",
@@ -539,23 +726,12 @@
               "RelativeToolTip": "CustomerService\\CustomerService.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T12:52:07.539Z"
+              "WhenOpened": "2025-03-26T12:52:07.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "CustomerService\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T12:51:50.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 39,
               "Title": "CustomerService.Dockerfile",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService.Dockerfile",
               "RelativeDocumentMoniker": "CustomerService.Dockerfile",
@@ -567,7 +743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 40,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml",
@@ -578,7 +754,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 41,
               "Title": "PaymentProcessedHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
               "RelativeDocumentMoniker": "MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
@@ -590,7 +766,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 42,
               "Title": "AppointmentBookedHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
               "RelativeDocumentMoniker": "MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
@@ -602,7 +778,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 44,
               "Title": "ConsulConfig.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
               "RelativeDocumentMoniker": "ServiceDiscovery\\ConsulConfig.cs",
@@ -614,7 +790,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 43,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\Startup.cs",
               "RelativeDocumentMoniker": "ServiceDiscovery\\Startup.cs",
@@ -626,7 +802,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 45,
               "Title": "APIGateway.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\APIGateway.csproj",
               "RelativeDocumentMoniker": "APIGateway\\APIGateway.csproj",
@@ -634,11 +810,12 @@
               "RelativeToolTip": "APIGateway\\APIGateway.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T10:27:46.807Z"
+              "WhenOpened": "2025-03-26T10:27:46.807Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 46,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APIGateway\\Properties\\launchSettings.json",
@@ -650,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 47,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
               "RelativeDocumentMoniker": "APIGateway\\Startup.cs",

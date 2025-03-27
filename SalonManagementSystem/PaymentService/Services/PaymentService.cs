@@ -1,5 +1,5 @@
-﻿using PaymentService.Models;
-using PaymentService.Repositories;
+﻿using PaymentService.Repositories;
+using SalonManagementSystem.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

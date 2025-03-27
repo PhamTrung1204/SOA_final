@@ -1,5 +1,5 @@
-﻿using FeedbackService.Models;
-using FeedbackService.Repositories;
+﻿using FeedbackService.Repositories;
+using SalonManagementSystem.Shared.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PaymentService.Models;
+using SalonManagementSystem.Shared.Models;
 
 namespace PaymentService.Data
 {

@@ -1020,6 +1020,16 @@
             "rid": "win"
           }
         }
+      },
+      "SalonManagementSystem.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/SalonManagementSystem.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SalonManagementSystem.Shared.dll": {}
+        }
       }
     }
   },
@@ -2801,13 +2811,19 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SalonManagementSystem.Shared/1.0.0": {
+      "type": "project",
+      "path": "../SalonManagementSystem.Shared/SalonManagementSystem.Shared.csproj",
+      "msbuildProject": "../SalonManagementSystem.Shared/SalonManagementSystem.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.EntityFrameworkCore >= 9.0.3",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3"
+      "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
+      "SalonManagementSystem.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2842,7 +2858,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj": {
+              "projectPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

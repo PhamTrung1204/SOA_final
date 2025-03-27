@@ -1630,6 +1630,16 @@
             "rid": "win"
           }
         }
+      },
+      "SalonManagementSystem.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/SalonManagementSystem.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SalonManagementSystem.Shared.dll": {}
+        }
       }
     }
   },
@@ -4764,6 +4774,11 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SalonManagementSystem.Shared/1.0.0": {
+      "type": "project",
+      "path": "../SalonManagementSystem.Shared/SalonManagementSystem.Shared.csproj",
+      "msbuildProject": "../SalonManagementSystem.Shared/SalonManagementSystem.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4771,27 +4786,28 @@
       "Microsoft.AspNetCore.OpenApi >= 9.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.3",
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.3",
-      "Microsoft.EntityFrameworkCore.Tools >= 9.0.3"
+      "Microsoft.EntityFrameworkCore.Tools >= 9.0.3",
+      "SalonManagementSystem.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\84967\\.nuget\\packages\\": {},
+    "C:\\Users\\PhamTrung\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\AppointmentService\\AppointmentService.csproj",
+      "projectUniqueName": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\AppointmentService.csproj",
       "projectName": "AppointmentService",
-      "projectPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\AppointmentService\\AppointmentService.csproj",
-      "packagesPath": "C:\\Users\\84967\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\AppointmentService\\obj\\",
+      "projectPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\AppointmentService.csproj",
+      "packagesPath": "C:\\Users\\PhamTrung\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\84967\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PhamTrung\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4800,12 +4816,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj": {
+              "projectPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

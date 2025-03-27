@@ -1,6 +1,6 @@
 ﻿using CustomerService.Data;
-using CustomerService.Models;
 using Microsoft.EntityFrameworkCore;
+using SalonManagementSystem.Shared.Models;
 
 namespace CustomerService.Repositories
 {

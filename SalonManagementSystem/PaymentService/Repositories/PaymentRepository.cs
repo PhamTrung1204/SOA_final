@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PaymentService.Data;
-using PaymentService.Models;
+using SalonManagementSystem.Shared.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

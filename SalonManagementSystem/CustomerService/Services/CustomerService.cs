@@ -1,5 +1,5 @@
-﻿using CustomerService.Models;
-using CustomerService.Repositories;
+﻿using CustomerService.Repositories;
+using SalonManagementSystem.Shared.Models;
 
 namespace CustomerService.Services
 {
