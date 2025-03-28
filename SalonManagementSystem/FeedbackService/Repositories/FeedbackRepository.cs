@@ -22,7 +22,12 @@ namespace FeedbackService.Repositories
 
         public async Task<Feedback> GetByIdAsync(int id)
         {
-            return await _context.Feedbacks.FindAsync(id);
+            var feedback = await _context.Feedbacks.FindAsync(id);
+            if (feedback == null)
+            {
+                throw new KeyNotFoundException($"Feedback with id {id} not found.");
+            }
+            return feedback;
         }
 
         public async Task AddAsync(Feedback feedback)
@@ -33,6 +38,7 @@ namespace FeedbackService.Repositories
         public async Task UpdateAsync(Feedback feedback)
         {
             _context.Feedbacks.Update(feedback);
+            await SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)

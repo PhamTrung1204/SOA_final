@@ -11,7 +11,7 @@ namespace SalonManagementSystem.Shared.Models
         public int FeedbackId { get; set; }
         public int AppointmentId { get; set; }
         public int CustomerId { get; set; }
-        public string Comment { get; set; }
+        public string Comment { get; set; } = String.Empty;
         public int Rating { get; set; } // Điểm đánh giá từ 1-5
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }

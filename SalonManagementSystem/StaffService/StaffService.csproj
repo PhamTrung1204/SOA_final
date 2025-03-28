@@ -17,4 +17,8 @@
     <ProjectReference Include="..\SalonManagementSystem.Shared\SalonManagementSystem.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
 </Project>

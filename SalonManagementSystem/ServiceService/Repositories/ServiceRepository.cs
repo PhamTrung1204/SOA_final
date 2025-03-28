@@ -14,7 +14,12 @@ namespace ServiceService.Repositories
 
         public Service GetService(int id)
         {
-            return _context.Services.Find(id);
+            var service = _context.Services.Find(id);
+            if (service == null)
+            {
+                throw new KeyNotFoundException($"Service with id {id} not found.");
+            }
+            return service;
         }
 
         public void AddService(Service service)
