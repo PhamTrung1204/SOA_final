@@ -43,4 +43,22 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Đăng ký dịch vụ với Consul cho staff-service
+var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+var serviceName = "staff-service";
+var serviceId = "staff-service-1";
+var host = "staff-service";
+var port = 80;
+
+// Sử dụng await để đăng ký bất đồng bộ
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
+
+// Hủy đăng ký dịch vụ khi ứng dụng dừng
+var lifetime = app.Lifetime;
+lifetime.ApplicationStopping.Register(() =>
+{
+    // Vì delegate không hỗ trợ await trực tiếp nên dùng GetAwaiter().GetResult()
+    consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
+});
+
 app.Run();

@@ -1,5 +1,14 @@
 version: '3.8'
 services:
+
+  # Dịch vụ Consul
+  consul:
+    image: consul:latest
+    ports:
+      - "8500:8500"
+    networks:
+      - salon-network
+
   customerservice:
     build:
       context: ../Backend/Microservices/CustomerService
@@ -8,6 +17,9 @@ services:
       - "5001:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   staffservice:
     build:
@@ -17,6 +29,9 @@ services:
       - "5002:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   serviceservice:
     build:
@@ -26,6 +41,9 @@ services:
       - "5003:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   appointmentservice:
     build:
@@ -35,6 +53,9 @@ services:
       - "5004:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   paymentservice:
     build:
@@ -44,6 +65,9 @@ services:
       - "5005:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   feedbackservice:
     build:
@@ -53,6 +77,9 @@ services:
       - "5006:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   apigateway:
     build:
@@ -62,6 +89,9 @@ services:
       - "5000:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - CONSUL_HOST=consul
+    networks:
+      - salon-network
 
   webapp:
     build:
@@ -71,3 +101,10 @@ services:
       - "5007:80"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - salon-network
+
+# Định nghĩa mạng Docker
+networks:
+  salon-network:
+    driver: bridge

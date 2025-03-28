@@ -100,4 +100,22 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
+// Đăng ký dịch vụ với Consul
+var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+var serviceName = "customer-service";
+var serviceId = "customer-service-1";
+var host = "customer-service";
+var port = 80;
+
+// Sử dụng await để đăng ký Consul
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
+
+// Hủy đăng ký khi ứng dụng tắt
+var lifetime = app.Lifetime;
+lifetime.ApplicationStopping.Register(() =>
+{
+    // Vì lambda không hỗ trợ await trực tiếp, ta gọi GetAwaiter().GetResult() để đồng bộ hóa
+    consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
+});
+
 app.Run();

@@ -40,4 +40,25 @@ if (app.Environment.IsDevelopment())
 
 app.UseAuthorization();
 app.MapControllers();
+
+// Lấy đối tượng ConsulService từ DI container
+var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+
+// Cấu hình thông tin đăng ký dịch vụ
+var serviceName = "service-service";
+var serviceId = "service-service-1";
+var host = "service-service";
+var port = 80;
+
+// Đăng ký dịch vụ với Consul một cách bất đồng bộ
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
+
+// Hủy đăng ký dịch vụ khi ứng dụng dừng
+var lifetime = app.Lifetime;
+lifetime.ApplicationStopping.Register(() =>
+{
+    // Delegate không hỗ trợ async nên sử dụng GetAwaiter().GetResult() để đồng bộ hóa
+    consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
+});
+
 app.Run();

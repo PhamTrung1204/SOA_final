@@ -15,10 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SalonManagementSystem.Shared\SalonManagementSystem.Shared.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj" />
   </ItemGroup>
 
 </Project>

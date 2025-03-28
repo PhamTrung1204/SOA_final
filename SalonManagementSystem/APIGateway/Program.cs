@@ -1,5 +1,6 @@
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.Provider.Consul;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,7 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
-builder.Services.AddOcelot(builder.Configuration); // Thêm dịch vụ Ocelot
+
+// Thêm dịch vụ Ocelot và Consul
+builder.Services.AddOcelot(builder.Configuration).AddConsul();
 
 var app = builder.Build();
 
@@ -22,7 +25,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseOcelot().Wait(); // Thêm middleware Ocelot
+await app.UseOcelot();
 
 app.MapControllers();
 

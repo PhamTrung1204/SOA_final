@@ -48,4 +48,17 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+var serviceName = "feedback-service";
+var serviceId = "feedback-service-1";
+var host = "feedback-service";
+var port = 80;
+
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
+
+app.Lifetime.ApplicationStopping.Register(() =>
+{
+    consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
+});
+
 app.Run();

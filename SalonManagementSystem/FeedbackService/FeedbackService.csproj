@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SalonManagementSystem.Shared\SalonManagementSystem.Shared.csproj" />
+    <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj" />
   </ItemGroup>
 
 </Project>
