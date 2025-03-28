@@ -3,16 +3,115 @@
   "WorkspaceRootPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\registerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\servicediscovery\\consulservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\consulservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\servicediscovery\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\messagebroker\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\servicediscovery\\servicediscovery.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\servicediscovery.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\serviceservice\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|solutionrelative:serviceservice\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\apigateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\serviceservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|solutionrelative:serviceservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\serviceservice\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|solutionrelative:serviceservice\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\serviceservice\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +126,8 @@
       "RelativeMoniker": "D:0:0:{BB699C69-EB0F-48D8-A884-24626AF479EE}|ServiceService\\ServiceService.csproj|solutionrelative:serviceservice\\serviceservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|solutionrelative:paymentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\messagebroker\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\rabbitmqconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -199,16 +286,8 @@
       "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\salonmanagementsystem.shared\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}|SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj|solutionrelative:salonmanagementsystem.shared\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\services\\iappointmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -229,30 +308,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\appointmentservice\\data\\appointmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{919A673F-F096-4D98-8C2D-0437012A418D}|AppointmentService\\AppointmentService.csproj|solutionrelative:appointmentservice\\data\\appointmentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\services\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\repositories\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{16E84912-F2E0-46EB-8842-2ABA762CD578}|CustomerService\\CustomerService.csproj|solutionrelative:customerservice\\data\\customercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B05B528-4C50-4966-B601-203EA65585CE}|PaymentService\\PaymentService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\paymentservice\\data\\paymentcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -303,14 +358,6 @@
       "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\repositories\\ifeedbackrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\messagebroker.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\feedbackservice\\feedbackservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{734DF69E-0E29-4B0B-A046-74C724F48145}|FeedbackService\\FeedbackService.csproj|solutionrelative:feedbackservice\\feedbackservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -334,24 +381,12 @@
       "RelativeMoniker": "D:0:0:{16DA05E9-2588-4D7B-888F-B3DB6032A2A6}|MessageBroker\\MessageBroker.csproj|solutionrelative:messagebroker\\eventhandlers\\appointmentbookedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\servicediscovery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\servicediscovery\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A117FA2C-B05F-480F-8406-3BE5CFD67C70}|ServiceDiscovery\\ServiceDiscovery.csproj|solutionrelative:servicediscovery\\consulconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\apigateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|c:\\users\\phamtrung\\desktop\\soa-final\\soa_final\\salonmanagementsystem\\apigateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9B0A5C8-1215-4319-84A6-F2A1FA23D8A9}|APIGateway\\APIGateway.csproj|solutionrelative:apigateway\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -361,7 +396,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -385,46 +420,345 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\appsettings.json",
-              "RelativeDocumentMoniker": "ServiceService\\appsettings.json",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\appsettings.json",
-              "RelativeToolTip": "ServiceService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\appsettings.json",
+              "RelativeDocumentMoniker": "CustomerService\\appsettings.json",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\appsettings.json",
+              "RelativeToolTip": "CustomerService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T14:30:29.558Z",
+              "WhenOpened": "2025-03-28T08:28:08.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CustomerService\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T08:09:33.071Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Program.cs",
-              "RelativeDocumentMoniker": "ServiceService\\Program.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Program.cs",
-              "RelativeToolTip": "ServiceService\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Title": "CustomerContext.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Data\\CustomerContext.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
+              "RelativeToolTip": "CustomerService\\Data\\CustomerContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:34:44.486Z",
+              "WhenOpened": "2025-03-26T12:59:42.871Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "ServiceService\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\WeatherForecast.cs",
-              "RelativeToolTip": "ServiceService\\WeatherForecast.cs",
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\CustomerService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\CustomerService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:31:16.294Z",
+              "WhenOpened": "2025-03-26T13:01:55.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Program.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Program.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Program.cs",
+              "RelativeToolTip": "CustomerService\\Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAABQAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T17:27:02.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\AuthService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\AuthService.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAgwCEAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T08:18:33.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\IAuthService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T08:17:39.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:25:57.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ConsulConfig.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
+              "RelativeDocumentMoniker": "ServiceDiscovery\\ConsulConfig.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
+              "RelativeToolTip": "ServiceDiscovery\\ConsulConfig.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:33:16.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsulService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulService.cs",
+              "RelativeDocumentMoniker": "ServiceDiscovery\\ConsulService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulService.cs",
+              "RelativeToolTip": "ServiceDiscovery\\ConsulService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:31:05.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RabbitMQConfig.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
+              "RelativeDocumentMoniker": "MessageBroker\\RabbitMQConfig.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
+              "RelativeToolTip": "MessageBroker\\RabbitMQConfig.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:31:17.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RegisterRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\RegisterRequest.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\RegisterRequest.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\RegisterRequest.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\RegisterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T08:13:41.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T08:13:20.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Controllers\\CustomerController.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "CustomerService\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T12:51:50.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Repositories\\CustomerRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
+              "RelativeToolTip": "CustomerService\\Repositories\\CustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:13.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Services\\ICustomerService.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
+              "RelativeToolTip": "CustomerService\\Services\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:01:42.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "CustomerService\\Repositories\\ICustomerRepository.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
+              "RelativeToolTip": "CustomerService\\Repositories\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T13:00:56.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "AppointmentService\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "AppointmentService\\Controllers\\AppointmentController.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAIwBYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:30:13.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ServiceDiscovery",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ServiceDiscovery.csproj",
+              "RelativeDocumentMoniker": "ServiceDiscovery\\ServiceDiscovery.csproj",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ServiceDiscovery.csproj",
+              "RelativeToolTip": "ServiceDiscovery\\ServiceDiscovery.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-28T07:21:11.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\appsettings.json",
+              "RelativeDocumentMoniker": "PaymentService\\appsettings.json",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\appsettings.json",
+              "RelativeToolTip": "PaymentService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-27T08:36:12.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
+              "RelativeDocumentMoniker": "FeedbackService\\appsettings.json",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
+              "RelativeToolTip": "FeedbackService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-27T08:40:42.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Program.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Program.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Program.cs",
+              "RelativeToolTip": "PaymentService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T08:28:48.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MessageBroker.csproj",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
+              "RelativeDocumentMoniker": "MessageBroker\\MessageBroker.csproj",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
+              "RelativeToolTip": "MessageBroker\\MessageBroker.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-26T10:34:06.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Microsoft.PackageDependencyResolution.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.201\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.PackageDependencyResolution.targets",
+              "ViewState": "AgIAAPEBAAAAAAAAAAAWwAkBAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-03-28T06:38:43.478Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
+              "RelativeDocumentMoniker": "APIGateway\\Startup.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
+              "RelativeToolTip": "APIGateway\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T10:27:09.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\appsettings.json",
+              "RelativeDocumentMoniker": "APIGateway\\appsettings.json",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\appsettings.json",
+              "RelativeToolTip": "APIGateway\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-28T04:54:49.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "ServiceController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Controllers\\ServiceController.cs",
               "RelativeDocumentMoniker": "ServiceService\\Controllers\\ServiceController.cs",
@@ -437,20 +771,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Program.cs",
-              "RelativeDocumentMoniker": "PaymentService\\Program.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Program.cs",
-              "RelativeToolTip": "PaymentService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 28,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "ServiceService\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\WeatherForecast.cs",
+              "RelativeToolTip": "ServiceService\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:28:48.076Z",
+              "WhenOpened": "2025-03-27T14:31:16.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 26,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\appsettings.json",
+              "RelativeDocumentMoniker": "ServiceService\\appsettings.json",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\appsettings.json",
+              "RelativeToolTip": "ServiceService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-27T14:30:29.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Program.cs",
+              "RelativeDocumentMoniker": "ServiceService\\Program.cs",
+              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Program.cs",
+              "RelativeToolTip": "ServiceService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBZwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T14:34:44.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "ServiceService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
               "RelativeDocumentMoniker": "ServiceService\\ServiceService.csproj",
@@ -463,33 +823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\appsettings.json",
-              "RelativeDocumentMoniker": "PaymentService\\appsettings.json",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\appsettings.json",
-              "RelativeToolTip": "PaymentService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T08:36:12.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RabbitMQConfig.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
-              "RelativeDocumentMoniker": "MessageBroker\\RabbitMQConfig.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\RabbitMQConfig.cs",
-              "RelativeToolTip": "MessageBroker\\RabbitMQConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T10:31:17.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 31,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Program.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Program.cs",
@@ -502,20 +836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Program.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Program.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Program.cs",
-              "RelativeToolTip": "CustomerService\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T17:27:02.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\appsettings.json",
               "RelativeDocumentMoniker": "AppointmentService\\appsettings.json",
@@ -528,7 +849,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Program.cs",
               "RelativeDocumentMoniker": "AppointmentService\\Program.cs",
@@ -541,8 +862,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AppointmentService",
+              "DocumentIndex": 35,
+              "Title": "AppointmentService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\AppointmentService.csproj",
               "RelativeDocumentMoniker": "AppointmentService\\AppointmentService.csproj",
               "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\AppointmentService.csproj",
@@ -554,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 39,
               "Title": "Payment.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Payment.cs",
               "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Payment.cs",
@@ -562,11 +883,12 @@
               "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Payment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:20:58.341Z"
+              "WhenOpened": "2025-03-27T13:20:58.341Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 34,
               "Title": "CustomerService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\CustomerService.csproj",
               "RelativeDocumentMoniker": "CustomerService\\CustomerService.csproj",
@@ -579,7 +901,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 40,
               "Title": "StaffHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Services\\StaffHandler.cs",
               "RelativeDocumentMoniker": "StaffService\\Services\\StaffHandler.cs",
@@ -587,15 +909,12 @@
               "RelativeToolTip": "StaffService\\Services\\StaffHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:38:41.622Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2025-03-27T14:38:41.622Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 38,
               "Title": "Schedule.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Schedule.cs",
               "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Schedule.cs",
@@ -603,11 +922,12 @@
               "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Schedule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:39:36.44Z"
+              "WhenOpened": "2025-03-27T14:39:36.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 37,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Service.cs",
               "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Service.cs",
@@ -615,11 +935,12 @@
               "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Service.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAwA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:11:33.227Z"
+              "WhenOpened": "2025-03-27T14:11:33.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 36,
               "Title": "Staff.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Staff.cs",
               "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Staff.cs",
@@ -632,31 +953,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 41,
               "Title": "PaymentController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "PaymentService\\Controllers\\PaymentController.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "PaymentService\\Controllers\\PaymentController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAACEAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAABRwCEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:28:22.181Z"
+              "WhenOpened": "2025-03-27T08:28:22.181Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 42,
               "Title": "StaffRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Repositories\\StaffRepository.cs",
               "RelativeDocumentMoniker": "StaffService\\Repositories\\StaffRepository.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Repositories\\StaffRepository.cs",
               "RelativeToolTip": "StaffService\\Repositories\\StaffRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:43:32.044Z"
+              "WhenOpened": "2025-03-27T14:43:32.044Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 43,
               "Title": "ScheduleRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Repositories\\ScheduleRepository.cs",
               "RelativeDocumentMoniker": "StaffService\\Repositories\\ScheduleRepository.cs",
@@ -664,11 +987,12 @@
               "RelativeToolTip": "StaffService\\Repositories\\ScheduleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:42:59.114Z"
+              "WhenOpened": "2025-03-27T14:42:59.114Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 44,
               "Title": "IStaffRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Repositories\\IStaffRepository.cs",
               "RelativeDocumentMoniker": "StaffService\\Repositories\\IStaffRepository.cs",
@@ -676,11 +1000,12 @@
               "RelativeToolTip": "StaffService\\Repositories\\IStaffRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:42:26.374Z"
+              "WhenOpened": "2025-03-27T14:42:26.374Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 45,
               "Title": "IScheduleRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Repositories\\IScheduleRepository.cs",
               "RelativeDocumentMoniker": "StaffService\\Repositories\\IScheduleRepository.cs",
@@ -688,11 +1013,12 @@
               "RelativeToolTip": "StaffService\\Repositories\\IScheduleRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:41:51.423Z"
+              "WhenOpened": "2025-03-27T14:41:51.423Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 46,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Data\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "StaffService\\Data\\ApplicationDbContextFactory.cs",
@@ -700,37 +1026,36 @@
               "RelativeToolTip": "StaffService\\Data\\ApplicationDbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:44:42.364Z"
+              "WhenOpened": "2025-03-27T14:44:42.364Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 47,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\ae79537c-6da4-4163-9a91-c7bbd5396229_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\ae79537c-6da4-4163-9a91-c7bbd5396229_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContextFactory.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\ae79537c-6da4-4163-9a91-c7bbd5396229_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContextFactory.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\ae79537c-6da4-4163-9a91-c7bbd5396229_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContextFactory.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:44:32.172Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 49,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\ddcaf990-7548-42dc-8552-cc7f3a32c1df_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\ddcaf990-7548-42dc-8552-cc7f3a32c1df_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\ddcaf990-7548-42dc-8552-cc7f3a32c1df_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContext.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\ddcaf990-7548-42dc-8552-cc7f3a32c1df_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Data\\ApplicationDbContext.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:44:18.274Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 48,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "StaffService\\Data\\ApplicationDbContext.cs",
@@ -738,24 +1063,24 @@
               "RelativeToolTip": "StaffService\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:44:08.37Z"
+              "WhenOpened": "2025-03-27T14:44:08.37Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 50,
               "Title": "ScheduleRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\5793e8cf-0fec-45f8-80c0-7e1752c42b86_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Repositories\\ScheduleRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\5793e8cf-0fec-45f8-80c0-7e1752c42b86_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Repositories\\ScheduleRepository.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\5793e8cf-0fec-45f8-80c0-7e1752c42b86_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Repositories\\ScheduleRepository.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\5793e8cf-0fec-45f8-80c0-7e1752c42b86_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Repositories\\ScheduleRepository.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:42:40.695Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 51,
               "Title": "StaffController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Controllers\\StaffController.cs",
               "RelativeDocumentMoniker": "StaffService\\Controllers\\StaffController.cs",
@@ -763,63 +1088,60 @@
               "RelativeToolTip": "StaffService\\Controllers\\StaffController.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAcwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:40:42.201Z"
+              "WhenOpened": "2025-03-27T14:40:42.201Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 52,
               "Title": "StaffController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\ec7f6f60-794c-4083-87bc-2db9666a4334_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Controllers\\StaffController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\ec7f6f60-794c-4083-87bc-2db9666a4334_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Controllers\\StaffController.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\ec7f6f60-794c-4083-87bc-2db9666a4334_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Controllers\\StaffController.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\ec7f6f60-794c-4083-87bc-2db9666a4334_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Controllers\\StaffController.cs [Read Only]",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAACwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:40:15.619Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 53,
               "Title": "Schedule.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\2c1d6828-0b9d-40be-8d6f-8bc309cce53e_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Schedule.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\2c1d6828-0b9d-40be-8d6f-8bc309cce53e_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Schedule.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\2c1d6828-0b9d-40be-8d6f-8bc309cce53e_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Schedule.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\2c1d6828-0b9d-40be-8d6f-8bc309cce53e_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Schedule.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:39:14.895Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 54,
               "Title": "Staff.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\cd490e11-0fa6-41cd-ac1c-6d726e7fcd74_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Staff.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\cd490e11-0fa6-41cd-ac1c-6d726e7fcd74_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Staff.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\cd490e11-0fa6-41cd-ac1c-6d726e7fcd74_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Staff.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\cd490e11-0fa6-41cd-ac1c-6d726e7fcd74_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Models\\Staff.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:39:05.027Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 55,
               "Title": "StaffHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\b6a62922-eb0d-48df-8502-9aee52f817aa_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Services\\StaffHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\b6a62922-eb0d-48df-8502-9aee52f817aa_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Services\\StaffHandler.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\b6a62922-eb0d-48df-8502-9aee52f817aa_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Services\\StaffHandler.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\b6a62922-eb0d-48df-8502-9aee52f817aa_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Services\\StaffHandler.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:38:24.093Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 56,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\appsettings.json",
               "RelativeDocumentMoniker": "StaffService\\appsettings.json",
@@ -827,24 +1149,24 @@
               "RelativeToolTip": "StaffService\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T14:38:14.006Z"
+              "WhenOpened": "2025-03-27T14:38:14.006Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 57,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\886a5301-7cb2-4f9b-9228-0507567cb6af_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\886a5301-7cb2-4f9b-9228-0507567cb6af_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Program.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\886a5301-7cb2-4f9b-9228-0507567cb6af_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Program.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\886a5301-7cb2-4f9b-9228-0507567cb6af_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Program.cs [Read Only]",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:34:39.602Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 60,
               "Title": "StaffService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\StaffService.csproj",
               "RelativeDocumentMoniker": "StaffService\\StaffService.csproj",
@@ -857,7 +1179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 58,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\StaffService\\Program.cs",
               "RelativeDocumentMoniker": "StaffService\\Program.cs",
@@ -865,24 +1187,24 @@
               "RelativeToolTip": "StaffService\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:32:45.442Z"
+              "WhenOpened": "2025-03-27T14:32:45.442Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 59,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\d7ff4687-f323-41a2-bf0d-8ae41f69fd7d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\d7ff4687-f323-41a2-bf0d-8ae41f69fd7d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Program.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\d7ff4687-f323-41a2-bf0d-8ae41f69fd7d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Program.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\d7ff4687-f323-41a2-bf0d-8ae41f69fd7d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\StaffService\\Program.cs [Read Only]",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:31:57.981Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 63,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "ServiceService\\Properties\\launchSettings.json",
@@ -890,11 +1212,12 @@
               "RelativeToolTip": "ServiceService\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T14:29:03.087Z"
+              "WhenOpened": "2025-03-27T14:29:03.087Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 62,
               "Title": "ServiceHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Services\\ServiceHandler.cs",
               "RelativeDocumentMoniker": "ServiceService\\Services\\ServiceHandler.cs",
@@ -902,11 +1225,12 @@
               "RelativeToolTip": "ServiceService\\Services\\ServiceHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:14:10.479Z"
+              "WhenOpened": "2025-03-27T14:14:10.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 61,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Repositories\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "ServiceService\\Repositories\\ServiceRepository.cs",
@@ -914,11 +1238,12 @@
               "RelativeToolTip": "ServiceService\\Repositories\\ServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:15:28.389Z"
+              "WhenOpened": "2025-03-27T14:15:28.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 64,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Data\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "ServiceService\\Data\\ApplicationDbContextFactory.cs",
@@ -926,37 +1251,36 @@
               "RelativeToolTip": "ServiceService\\Data\\ApplicationDbContextFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:24:11.385Z"
+              "WhenOpened": "2025-03-27T14:24:11.385Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 65,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\81139ed5-2ccd-4477-895a-e33681001668_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\81139ed5-2ccd-4477-895a-e33681001668_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContextFactory.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\81139ed5-2ccd-4477-895a-e33681001668_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContextFactory.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\81139ed5-2ccd-4477-895a-e33681001668_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContextFactory.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:18:58.502Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 67,
               "Title": "ServiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\64a1866f-14f2-42f8-af0e-dc636fb95e50_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\ServiceRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\64a1866f-14f2-42f8-af0e-dc636fb95e50_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\ServiceRepository.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\64a1866f-14f2-42f8-af0e-dc636fb95e50_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\ServiceRepository.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\64a1866f-14f2-42f8-af0e-dc636fb95e50_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\ServiceRepository.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:15:30.172Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 66,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "ServiceService\\Data\\ApplicationDbContext.cs",
@@ -964,11 +1288,12 @@
               "RelativeToolTip": "ServiceService\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:11:07.301Z"
+              "WhenOpened": "2025-03-27T14:11:07.301Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 68,
               "Title": "IServiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\Repositories\\IServiceRepository.cs",
               "RelativeDocumentMoniker": "ServiceService\\Repositories\\IServiceRepository.cs",
@@ -976,76 +1301,72 @@
               "RelativeToolTip": "ServiceService\\Repositories\\IServiceRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:14:58.004Z"
+              "WhenOpened": "2025-03-27T14:14:58.004Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 69,
               "Title": "IServiceRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\77a68f01-788a-41b5-866d-db2baf51326d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\IServiceRepository.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\77a68f01-788a-41b5-866d-db2baf51326d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\IServiceRepository.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\77a68f01-788a-41b5-866d-db2baf51326d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\IServiceRepository.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\77a68f01-788a-41b5-866d-db2baf51326d_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Repositories\\IServiceRepository.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:14:37.695Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 70,
               "Title": "ServiceHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\380aa60c-7413-4544-a2cb-5400679b2177_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Services\\ServiceHandler.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\380aa60c-7413-4544-a2cb-5400679b2177_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Services\\ServiceHandler.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\380aa60c-7413-4544-a2cb-5400679b2177_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Services\\ServiceHandler.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\380aa60c-7413-4544-a2cb-5400679b2177_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Services\\ServiceHandler.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:13:17.15Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 71,
               "Title": "Service.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\5dd27cf9-fa23-4a0a-b2ac-5fa7f595497b_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Models\\Service.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\5dd27cf9-fa23-4a0a-b2ac-5fa7f595497b_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Models\\Service.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\5dd27cf9-fa23-4a0a-b2ac-5fa7f595497b_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Models\\Service.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\5dd27cf9-fa23-4a0a-b2ac-5fa7f595497b_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Models\\Service.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:11:38.7Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 72,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\206a593c-f537-40f3-9dbb-e16864965fe2_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\206a593c-f537-40f3-9dbb-e16864965fe2_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContext.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\206a593c-f537-40f3-9dbb-e16864965fe2_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContext.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\206a593c-f537-40f3-9dbb-e16864965fe2_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Data\\ApplicationDbContext.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:10:16.835Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 73,
               "Title": "ServiceController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\90da5579-f126-4f5e-855f-8e3d18e642d3_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Controllers\\ServiceController.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\90da5579-f126-4f5e-855f-8e3d18e642d3_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Controllers\\ServiceController.cs",
               "ToolTip": "C:\\Users\\PhamTrung\\AppData\\Local\\Temp\\90da5579-f126-4f5e-855f-8e3d18e642d3_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Controllers\\ServiceController.cs [Read Only]",
               "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\90da5579-f126-4f5e-855f-8e3d18e642d3_\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip.\u0110\u1ED3 \u00E1n cu\u1ED1i k\u00EC.zip\\ServiceService\\Controllers\\ServiceController.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-27T14:09:04.648Z",
               "EditorCaption": " [Read Only]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 75,
               "Title": "Appointment.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Appointment.cs",
               "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Appointment.cs",
@@ -1053,23 +1374,12 @@
               "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Appointment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:04:07.639Z"
+              "WhenOpened": "2025-03-27T13:04:07.639Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Customer.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Customer.cs",
-              "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:25:57.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 74,
               "Title": "Feedback.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\Models\\Feedback.cs",
               "RelativeDocumentMoniker": "SalonManagementSystem.Shared\\Models\\Feedback.cs",
@@ -1077,23 +1387,12 @@
               "RelativeToolTip": "SalonManagementSystem.Shared\\Models\\Feedback.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:05:34.115Z"
+              "WhenOpened": "2025-03-27T13:05:34.115Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "AppointmentController.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Controllers\\AppointmentController.cs",
-              "RelativeDocumentMoniker": "AppointmentService\\Controllers\\AppointmentController.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Controllers\\AppointmentController.cs",
-              "RelativeToolTip": "AppointmentService\\Controllers\\AppointmentController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAEwBkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:30:13.764Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 76,
               "Title": "IAppointmentService.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Services\\IAppointmentService.cs",
               "RelativeDocumentMoniker": "AppointmentService\\Services\\IAppointmentService.cs",
@@ -1101,11 +1400,12 @@
               "RelativeToolTip": "AppointmentService\\Services\\IAppointmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:29:58.589Z"
+              "WhenOpened": "2025-03-27T13:29:58.589Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 77,
               "Title": "AppointmentService.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Services\\AppointmentService.cs",
               "RelativeDocumentMoniker": "AppointmentService\\Services\\AppointmentService.cs",
@@ -1113,11 +1413,12 @@
               "RelativeToolTip": "AppointmentService\\Services\\AppointmentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:29:46.302Z"
+              "WhenOpened": "2025-03-27T13:29:46.302Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 78,
               "Title": "IAppointmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Repositories\\IAppointmentRepository.cs",
               "RelativeDocumentMoniker": "AppointmentService\\Repositories\\IAppointmentRepository.cs",
@@ -1125,11 +1426,12 @@
               "RelativeToolTip": "AppointmentService\\Repositories\\IAppointmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:29:32.38Z"
+              "WhenOpened": "2025-03-27T13:29:32.38Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 79,
               "Title": "AppointmentRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Repositories\\AppointmentRepository.cs",
               "RelativeDocumentMoniker": "AppointmentService\\Repositories\\AppointmentRepository.cs",
@@ -1137,11 +1439,12 @@
               "RelativeToolTip": "AppointmentService\\Repositories\\AppointmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:29:15.212Z"
+              "WhenOpened": "2025-03-27T13:29:15.212Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 80,
               "Title": "AppointmentContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\AppointmentService\\Data\\AppointmentContext.cs",
               "RelativeDocumentMoniker": "AppointmentService\\Data\\AppointmentContext.cs",
@@ -1149,83 +1452,12 @@
               "RelativeToolTip": "AppointmentService\\Data\\AppointmentContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T13:28:43.35Z"
+              "WhenOpened": "2025-03-27T13:28:43.35Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "CustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Repositories\\CustomerRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\CustomerRepository.cs",
-              "RelativeToolTip": "CustomerService\\Repositories\\CustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:01:13.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
-              "Title": "CustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Services\\CustomerService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\CustomerService.cs",
-              "RelativeToolTip": "CustomerService\\Services\\CustomerService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:01:55.785Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "ICustomerService.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Services\\ICustomerService.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Services\\ICustomerService.cs",
-              "RelativeToolTip": "CustomerService\\Services\\ICustomerService.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:01:42.143Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Controllers\\CustomerController.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "CustomerService\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAkwCcAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T12:51:50.344Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "ICustomerRepository.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Repositories\\ICustomerRepository.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Repositories\\ICustomerRepository.cs",
-              "RelativeToolTip": "CustomerService\\Repositories\\ICustomerRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:00:56.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 66,
-              "Title": "CustomerContext.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
-              "RelativeDocumentMoniker": "CustomerService\\Data\\CustomerContext.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Data\\CustomerContext.cs",
-              "RelativeToolTip": "CustomerService\\Data\\CustomerContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T12:59:42.871Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 81,
               "Title": "PaymentContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Data\\PaymentContext.cs",
               "RelativeDocumentMoniker": "PaymentService\\Data\\PaymentContext.cs",
@@ -1233,11 +1465,12 @@
               "RelativeToolTip": "PaymentService\\Data\\PaymentContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:25:48.353Z"
+              "WhenOpened": "2025-03-27T08:25:48.353Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 82,
               "Title": "PaymentService.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\PaymentService.cs",
               "RelativeDocumentMoniker": "PaymentService\\Services\\PaymentService.cs",
@@ -1245,11 +1478,12 @@
               "RelativeToolTip": "PaymentService\\Services\\PaymentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:27:51.364Z"
+              "WhenOpened": "2025-03-27T08:27:51.364Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 83,
               "Title": "IPaymentService.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Services\\IPaymentService.cs",
               "RelativeDocumentMoniker": "PaymentService\\Services\\IPaymentService.cs",
@@ -1257,11 +1491,12 @@
               "RelativeToolTip": "PaymentService\\Services\\IPaymentService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:27:22.76Z"
+              "WhenOpened": "2025-03-27T08:27:22.76Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 84,
               "Title": "IPaymentRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\IPaymentRepository.cs",
               "RelativeDocumentMoniker": "PaymentService\\Repositories\\IPaymentRepository.cs",
@@ -1269,11 +1504,12 @@
               "RelativeToolTip": "PaymentService\\Repositories\\IPaymentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:26:29.838Z"
+              "WhenOpened": "2025-03-27T08:26:29.838Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 85,
               "Title": "PaymentRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\PaymentService\\Repositories\\PaymentRepository.cs",
               "RelativeDocumentMoniker": "PaymentService\\Repositories\\PaymentRepository.cs",
@@ -1281,11 +1517,12 @@
               "RelativeToolTip": "PaymentService\\Repositories\\PaymentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:26:49.23Z"
+              "WhenOpened": "2025-03-27T08:26:49.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 86,
               "Title": "FeedbackService.http",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\FeedbackService.http",
               "RelativeDocumentMoniker": "FeedbackService\\FeedbackService.http",
@@ -1293,11 +1530,12 @@
               "RelativeToolTip": "FeedbackService\\FeedbackService.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-03-27T12:50:42.886Z"
+              "WhenOpened": "2025-03-27T12:50:42.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 87,
               "Title": "FeedbackRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\FeedbackRepository.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Repositories\\FeedbackRepository.cs",
@@ -1305,11 +1543,12 @@
               "RelativeToolTip": "FeedbackService\\Repositories\\FeedbackRepository.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAiwCIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:10:29.946Z"
+              "WhenOpened": "2025-03-27T08:10:29.946Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 89,
               "Title": "FeedbackController.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Controllers\\FeedbackController.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Controllers\\FeedbackController.cs",
@@ -1317,11 +1556,12 @@
               "RelativeToolTip": "FeedbackService\\Controllers\\FeedbackController.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAYwAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:12:36.427Z"
+              "WhenOpened": "2025-03-27T08:12:36.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 88,
               "Title": "FeedbackContext.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Data\\FeedbackContext.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Data\\FeedbackContext.cs",
@@ -1329,11 +1569,12 @@
               "RelativeToolTip": "FeedbackService\\Data\\FeedbackContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:06:03.938Z"
+              "WhenOpened": "2025-03-27T08:06:03.938Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 90,
               "Title": "FeedbackService.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\FeedbackService.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Services\\FeedbackService.cs",
@@ -1341,11 +1582,12 @@
               "RelativeToolTip": "FeedbackService\\Services\\FeedbackService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:12:01.767Z"
+              "WhenOpened": "2025-03-27T08:12:01.767Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 91,
               "Title": "IFeedbackService.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Services\\IFeedbackService.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Services\\IFeedbackService.cs",
@@ -1353,11 +1595,12 @@
               "RelativeToolTip": "FeedbackService\\Services\\IFeedbackService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:11:40.283Z"
+              "WhenOpened": "2025-03-27T08:11:40.283Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 92,
               "Title": "IFeedbackRepository.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\Repositories\\IFeedbackRepository.cs",
               "RelativeDocumentMoniker": "FeedbackService\\Repositories\\IFeedbackRepository.cs",
@@ -1365,36 +1608,12 @@
               "RelativeToolTip": "FeedbackService\\Repositories\\IFeedbackRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T08:10:00.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 80,
-              "Title": "MessageBroker.csproj",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
-              "RelativeDocumentMoniker": "MessageBroker\\MessageBroker.csproj",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\MessageBroker.csproj",
-              "RelativeToolTip": "MessageBroker\\MessageBroker.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-26T10:34:06.733Z",
+              "WhenOpened": "2025-03-27T08:10:00.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
-              "RelativeDocumentMoniker": "FeedbackService\\appsettings.json",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\appsettings.json",
-              "RelativeToolTip": "FeedbackService\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-27T08:40:42.605Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 93,
               "Title": "FeedbackService.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\FeedbackService\\FeedbackService.csproj",
               "RelativeDocumentMoniker": "FeedbackService\\FeedbackService.csproj",
@@ -1407,7 +1626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 94,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService\\Startup.cs",
               "RelativeDocumentMoniker": "CustomerService\\Startup.cs",
@@ -1415,11 +1634,12 @@
               "RelativeToolTip": "CustomerService\\Startup.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T13:02:14.705Z"
+              "WhenOpened": "2025-03-26T13:02:14.705Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 95,
               "Title": "CustomerService.Dockerfile",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\CustomerService.Dockerfile",
               "RelativeDocumentMoniker": "CustomerService.Dockerfile",
@@ -1427,11 +1647,12 @@
               "RelativeToolTip": "CustomerService.Dockerfile",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-26T12:39:46.342Z"
+              "WhenOpened": "2025-03-26T12:39:46.342Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 96,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\Docker\\docker-compose.yml",
@@ -1442,7 +1663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 97,
               "Title": "PaymentProcessedHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
               "RelativeDocumentMoniker": "MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
@@ -1450,11 +1671,12 @@
               "RelativeToolTip": "MessageBroker\\EventHandlers\\PaymentProcessedHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T10:34:27.68Z"
+              "WhenOpened": "2025-03-26T10:34:27.68Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 98,
               "Title": "AppointmentBookedHandler.cs",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
               "RelativeDocumentMoniker": "MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
@@ -1462,35 +1684,12 @@
               "RelativeToolTip": "MessageBroker\\EventHandlers\\AppointmentBookedHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T10:34:17.689Z"
+              "WhenOpened": "2025-03-26T10:34:17.689Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
-              "Title": "ConsulConfig.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
-              "RelativeDocumentMoniker": "ServiceDiscovery\\ConsulConfig.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\ConsulConfig.cs",
-              "RelativeToolTip": "ServiceDiscovery\\ConsulConfig.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T10:33:16.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 87,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\Startup.cs",
-              "RelativeDocumentMoniker": "ServiceDiscovery\\Startup.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceDiscovery\\Startup.cs",
-              "RelativeToolTip": "ServiceDiscovery\\Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T10:31:05.301Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 99,
               "Title": "APIGateway.csproj",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\APIGateway.csproj",
               "RelativeDocumentMoniker": "APIGateway\\APIGateway.csproj",
@@ -1503,7 +1702,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 100,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "APIGateway\\Properties\\launchSettings.json",
@@ -1511,19 +1710,12 @@
               "RelativeToolTip": "APIGateway\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-26T10:27:42.861Z"
+              "WhenOpened": "2025-03-26T10:27:42.861Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 91,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
-              "RelativeDocumentMoniker": "APIGateway\\Startup.cs",
-              "ToolTip": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\APIGateway\\Startup.cs",
-              "RelativeToolTip": "APIGateway\\Startup.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-26T10:27:09.924Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         },

@@ -10,3 +10,4 @@ C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceDisc
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceDiscovery\obj\Debug\net9.0\refint\ServiceDiscovery.dll
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceDiscovery\obj\Debug\net9.0\ServiceDiscovery.pdb
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceDiscovery\obj\Debug\net9.0\ref\ServiceDiscovery.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceDiscovery\obj\Debug\net9.0\ServiceDiscovery.csproj.AssemblyReference.cache

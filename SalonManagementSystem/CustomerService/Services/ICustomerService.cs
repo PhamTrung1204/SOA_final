@@ -1,5 +1,6 @@
-﻿
-using SalonManagementSystem.Shared.Models;
+﻿using SalonManagementSystem.Shared.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CustomerService.Services
 {
@@ -10,5 +11,6 @@ namespace CustomerService.Services
         Task CreateCustomer(Customer customer);
         Task UpdateCustomer(int id, Customer customer);
         Task DeleteCustomer(int id);
+        Task<Customer> GetCustomerByEmail(string email); // Thêm để hỗ trợ đăng nhập
     }
 }

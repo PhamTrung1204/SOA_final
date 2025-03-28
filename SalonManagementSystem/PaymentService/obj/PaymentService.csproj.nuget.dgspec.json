@@ -51,9 +51,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Microsoft.Extensions.Configuration.Abstractions": {
+            "RabbitMQ.Client": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[6.8.1, )"
             }
           },
           "imports": [

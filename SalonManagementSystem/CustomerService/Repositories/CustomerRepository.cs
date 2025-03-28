@@ -1,6 +1,8 @@
 ﻿using CustomerService.Data;
 using Microsoft.EntityFrameworkCore;
 using SalonManagementSystem.Shared.Models;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CustomerService.Repositories
 {
@@ -20,12 +22,7 @@ namespace CustomerService.Repositories
 
         public async Task<Customer> GetByIdAsync(int id)
         {
-            var customer = await _context.Customers.FindAsync(id);
-            if (customer is null)
-            {
-                throw new Exception("Customer not found");
-            }
-            return customer;
+            return await _context.Customers.FindAsync(id);
         }
 
         public async Task AddAsync(Customer customer)
@@ -36,9 +33,7 @@ namespace CustomerService.Repositories
         public async Task UpdateAsync(Customer customer)
         {
             _context.Customers.Update(customer);
-            await SaveChangesAsync();
         }
-
 
         public async Task DeleteAsync(int id)
         {
@@ -49,6 +44,11 @@ namespace CustomerService.Repositories
         public async Task SaveChangesAsync()
         {
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<Customer> GetByEmailAsync(string email)
+        {
+            return await _context.Customers.FirstOrDefaultAsync(c => c.Email == email);
         }
     }
 }

@@ -332,3 +332,5 @@ C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerSer
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\Customer.09A7C259.Up2Date
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.genruntimeconfig.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\ref\CustomerService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\bin\Debug\net9.0\BCrypt.Net.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

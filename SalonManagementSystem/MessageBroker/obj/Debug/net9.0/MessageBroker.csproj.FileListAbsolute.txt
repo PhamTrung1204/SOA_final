@@ -1,11 +1,12 @@
-C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\bin\Debug\net9.0\MessageBroker.deps.json
-C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\bin\Debug\net9.0\MessageBroker.dll
-C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\bin\Debug\net9.0\MessageBroker.pdb
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.csproj.AssemblyReference.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.AssemblyInfoInputs.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.AssemblyInfo.cs
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.csproj.CoreCompileInputs.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.sourcelink.json
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\bin\Debug\net9.0\MessageBroker.deps.json
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\bin\Debug\net9.0\MessageBroker.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\bin\Debug\net9.0\MessageBroker.pdb
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.dll
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\refint\MessageBroker.dll
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net9.0\MessageBroker.pdb

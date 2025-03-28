@@ -1,6 +1,10 @@
 ﻿using AppointmentService.Services;
 using Microsoft.AspNetCore.Mvc;
 using SalonManagementSystem.Shared.Models;
+using ServiceDiscovery; // Thêm namespace cho ServiceDiscovery
+using System.Net.Http;
+using System.Threading.Tasks;
+using Newtonsoft.Json; // Để deserialize JSON từ các microservices
 
 namespace AppointmentService.Controllers
 {
@@ -9,10 +13,17 @@ namespace AppointmentService.Controllers
     public class AppointmentController : ControllerBase
     {
         private readonly IAppointmentService _appointmentService;
+        private readonly IHttpClientFactory _httpClientFactory; // Để gọi API của các microservices khác
+        private readonly ConsulService _consulService; // Để khám phá dịch vụ qua Consul
 
-        public AppointmentController(IAppointmentService appointmentService)
+        public AppointmentController(
+            IAppointmentService appointmentService,
+            IHttpClientFactory httpClientFactory,
+            ConsulService consulService)
         {
             _appointmentService = appointmentService;
+            _httpClientFactory = httpClientFactory;
+            _consulService = consulService;
         }
 
         [HttpGet]
@@ -46,6 +57,27 @@ namespace AppointmentService.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Appointment appointment)
         {
+            var client = _httpClientFactory.CreateClient();
+
+            // 1. Kiểm tra khách hàng tồn tại qua CustomerService
+            var customerServiceUri = await _consulService.DiscoverServiceAsync("CustomerService");
+            var customerResponse = await client.GetAsync($"{customerServiceUri}/api/customers/{appointment.CustomerId}");
+            if (!customerResponse.IsSuccessStatusCode)
+                return BadRequest("Customer not found");
+
+            // 2. Kiểm tra nhân viên tồn tại qua StaffService
+            var staffServiceUri = await _consulService.DiscoverServiceAsync("StaffService");
+            var staffResponse = await client.GetAsync($"{staffServiceUri}/api/staff/{appointment.StaffId}");
+            if (!staffResponse.IsSuccessStatusCode)
+                return BadRequest("Staff not found");
+
+            // 3. Kiểm tra dịch vụ tồn tại qua ServiceService
+            var serviceServiceUri = await _consulService.DiscoverServiceAsync("ServiceService");
+            var serviceResponse = await client.GetAsync($"{serviceServiceUri}/api/services/{appointment.ServiceId}");
+            if (!serviceResponse.IsSuccessStatusCode)
+                return BadRequest("Service not found");
+
+            // 4. Tạo lịch hẹn nếu tất cả hợp lệ
             await _appointmentService.CreateAppointment(appointment);
             return CreatedAtAction(nameof(GetById), new { id = appointment.AppointmentId }, appointment);
         }
@@ -53,6 +85,24 @@ namespace AppointmentService.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Appointment appointment)
         {
+            var client = _httpClientFactory.CreateClient();
+
+            // Kiểm tra tính hợp lệ tương tự như Create
+            var customerServiceUri = await _consulService.DiscoverServiceAsync("CustomerService");
+            var customerResponse = await client.GetAsync($"{customerServiceUri}/api/customers/{appointment.CustomerId}");
+            if (!customerResponse.IsSuccessStatusCode)
+                return BadRequest("Customer not found");
+
+            var staffServiceUri = await _consulService.DiscoverServiceAsync("StaffService");
+            var staffResponse = await client.GetAsync($"{staffServiceUri}/api/staff/{appointment.StaffId}");
+            if (!staffResponse.IsSuccessStatusCode)
+                return BadRequest("Staff not found");
+
+            var serviceServiceUri = await _consulService.DiscoverServiceAsync("ServiceService");
+            var serviceResponse = await client.GetAsync($"{serviceServiceUri}/api/services/{appointment.ServiceId}");
+            if (!serviceResponse.IsSuccessStatusCode)
+                return BadRequest("Service not found");
+
             await _appointmentService.UpdateAppointment(id, appointment);
             return NoContent();
         }
@@ -67,6 +117,14 @@ namespace AppointmentService.Controllers
         [HttpGet("check-availability/{staffId}")]
         public async Task<IActionResult> CheckAvailability(int staffId, [FromQuery] DateTime appointmentDate)
         {
+            var client = _httpClientFactory.CreateClient();
+
+            // Kiểm tra nhân viên tồn tại qua StaffService
+            var staffServiceUri = await _consulService.DiscoverServiceAsync("StaffService");
+            var staffResponse = await client.GetAsync($"{staffServiceUri}/api/staff/{staffId}");
+            if (!staffResponse.IsSuccessStatusCode)
+                return BadRequest("Staff not found");
+
             var isAvailable = await _appointmentService.CheckStaffAvailability(staffId, appointmentDate);
             return Ok(new { IsAvailable = isAvailable });
         }

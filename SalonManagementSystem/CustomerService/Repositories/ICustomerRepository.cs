@@ -11,5 +11,6 @@ namespace CustomerService.Repositories
         Task UpdateAsync(Customer customer);
         Task DeleteAsync(int id);
         Task SaveChangesAsync();
+        Task<Customer> GetByEmailAsync(string email);
     }
 }

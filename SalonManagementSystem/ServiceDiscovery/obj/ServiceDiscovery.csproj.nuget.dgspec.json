@@ -50,6 +50,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Ocelot.Provider.Consul": {
+              "target": "Package",
+              "version": "[23.4.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

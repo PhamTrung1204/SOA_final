@@ -1,5 +1,8 @@
 ﻿using CustomerService.Repositories;
 using SalonManagementSystem.Shared.Models;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace CustomerService.Services
 {
@@ -35,7 +38,7 @@ namespace CustomerService.Services
 
             existing.Name = customer.Name;
             existing.Email = customer.Email;
-            existing.Phone = customer.Phone;
+            existing.PasswordHash = customer.PasswordHash;
 
             await _repository.UpdateAsync(existing);
             await _repository.SaveChangesAsync();
@@ -43,11 +46,13 @@ namespace CustomerService.Services
 
         public async Task DeleteCustomer(int id)
         {
-            var customer = await _repository.GetByIdAsync(id);
-            if (customer == null) throw new Exception("Customer not found");
-
             await _repository.DeleteAsync(id);
             await _repository.SaveChangesAsync();
+        }
+
+        public async Task<Customer> GetCustomerByEmail(string email)
+        {
+            return await _repository.GetByEmailAsync(email);
         }
     }
 }

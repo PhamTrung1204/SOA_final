@@ -17,9 +17,9 @@ builder.Services.AddDbContext<PaymentContext>(options =>
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentService, PaymentService.Services.PaymentService>();
 
-// Cấu hình RabbitMQ
-builder.Services.AddSingleton<RabbitMQConfig>(sp =>
-    new RabbitMQConfig(builder.Configuration));
+//// Cấu hình RabbitMQ
+//builder.Services.AddSingleton<RabbitMqConfig>(sp =>
+//    new RabbitMqConfig(builder.Configuration));
 
 // Đăng ký Swagger
 builder.Services.AddEndpointsApiExplorer();

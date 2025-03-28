@@ -1,0 +1,6 @@
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net7.0\MessageBroker.csproj.AssemblyReference.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net7.0\MessageBroker.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net7.0\MessageBroker.AssemblyInfoInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net7.0\MessageBroker.AssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net7.0\MessageBroker.csproj.CoreCompileInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\MessageBroker\obj\Debug\net7.0\MessageBroker.sourcelink.json

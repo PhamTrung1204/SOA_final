@@ -88,3 +88,4 @@ C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentServ
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.pdb
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.genruntimeconfig.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\ref\PaymentService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\bin\Debug\net9.0\RabbitMQ.Client.dll
