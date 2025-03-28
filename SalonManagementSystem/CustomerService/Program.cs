@@ -1,26 +1,41 @@
+<<<<<<< HEAD
 using CustomerService.Data;
 using CustomerService.Repositories;
 using CustomerService.Services;
 using Microsoft.EntityFrameworkCore;
+=======
+using CustomerService.Repositories;
+using CustomerService.Services;
+>>>>>>> main
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+<<<<<<< HEAD
 
 builder.Services.AddDbContext<CustomerContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerDb")));
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<ICustomerService, CustomerService.Services.CustomerService>();
+=======
+>>>>>>> main
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
+// Add Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+// Register Customer Services
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<ICustomerService, CustomerService.Services.CustomerService>();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();

@@ -81,3 +81,8 @@ C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceServ
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\obj\Debug\net9.0\ServiceService.pdb
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\obj\Debug\net9.0\ServiceService.genruntimeconfig.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\obj\Debug\net9.0\ref\ServiceService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\bin\Debug\net9.0\SalonManagementSystem.Shared.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\ServiceService\bin\Debug\net9.0\SalonManagementSystem.Shared.pdb

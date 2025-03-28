@@ -163,3 +163,8 @@ C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\Appointment
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\obj\Debug\net9.0\AppointmentService.pdb
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\obj\Debug\net9.0\AppointmentService.genruntimeconfig.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\obj\Debug\net9.0\ref\AppointmentService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\bin\Debug\net9.0\SalonManagementSystem.Shared.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\AppointmentService\bin\Debug\net9.0\SalonManagementSystem.Shared.pdb

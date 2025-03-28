@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SalonManagementSystem.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1080542c2d4047bd2ce5ec2bc6b13746bde429e5")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fc9f0ca4d2535412e0eb097723065bcf2a1b5d3")]
+>>>>>>> main
 [assembly: System.Reflection.AssemblyProductAttribute("SalonManagementSystem.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SalonManagementSystem.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

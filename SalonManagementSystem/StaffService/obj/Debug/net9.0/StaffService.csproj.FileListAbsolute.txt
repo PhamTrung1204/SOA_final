@@ -81,3 +81,8 @@ C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffServic
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\obj\Debug\net9.0\StaffService.pdb
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\obj\Debug\net9.0\StaffService.genruntimeconfig.cache
 C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\obj\Debug\net9.0\ref\StaffService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\bin\Debug\net9.0\SalonManagementSystem.Shared.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\StaffService\bin\Debug\net9.0\SalonManagementSystem.Shared.pdb
