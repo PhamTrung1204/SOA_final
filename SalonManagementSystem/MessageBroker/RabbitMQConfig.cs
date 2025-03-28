@@ -10,9 +10,9 @@ namespace MessageBroker
 
         public RabbitMQConfig(IConfiguration configuration)
         {
-            HostName = configuration["RabbitMQ:HostName"];
-            UserName = configuration["RabbitMQ:UserName"];
-            Password = configuration["RabbitMQ:Password"];
+            HostName = configuration["RabbitMQ:HostName"] ?? string.Empty;
+            UserName = configuration["RabbitMQ:UserName"] ?? string.Empty;
+            Password = configuration["RabbitMQ:Password"] ?? string.Empty;
         }
     }
 }

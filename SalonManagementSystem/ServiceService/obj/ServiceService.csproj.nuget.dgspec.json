@@ -4,25 +4,14 @@
     "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj": {}
   },
   "projects": {
-<<<<<<< HEAD
-    "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj": {
+    "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
-        "projectName": "ServiceService",
-        "projectPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
-        "packagesPath": "C:\\Users\\84967\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\obj\\",
-=======
-    "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj",
         "projectName": "SalonManagementSystem.Shared",
-        "projectPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj",
-        "packagesPath": "C:\\Users\\PhamTrung\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\obj\\",
->>>>>>> main
+        "projectPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj",
+        "packagesPath": "C:\\Users\\84967\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -80,20 +69,20 @@
         }
       }
     },
-    "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj": {
+    "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
+        "projectUniqueName": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
         "projectName": "ServiceService",
-        "projectPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
-        "packagesPath": "C:\\Users\\PhamTrung\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\ServiceService\\obj\\",
+        "projectPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\ServiceService.csproj",
+        "packagesPath": "C:\\Users\\84967\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\ServiceService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\PhamTrung\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\84967\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -102,15 +91,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj": {
-                "projectPath": "C:\\Users\\PhamTrung\\Desktop\\SOA-final\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj"
+              "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj": {
+                "projectPath": "C:\\Users\\84967\\Downloads\\GIT CLONE HTTP\\SOA_final\\SalonManagementSystem\\SalonManagementSystem.Shared\\SalonManagementSystem.Shared.csproj"
               }
             }
           }

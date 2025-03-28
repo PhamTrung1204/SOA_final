@@ -12,7 +12,17 @@ namespace StaffService.Repositories
             _context = context;
         }
 
-        public Staff GetStaff(int id) => _context.Staffs.Find(id);
+        public Staff GetStaff(int id)
+        {
+            var staff = _context.Staffs.Find(id);
+            if (staff == null)
+            {
+                // Xử lý trường hợp không tìm thấy, ví dụ ném ngoại lệ
+                throw new KeyNotFoundException($"Staff with id {id} not found.");
+            }
+
+            return staff;
+        }
 
         public void AddStaff(Staff staff)
         {

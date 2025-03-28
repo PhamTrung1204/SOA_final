@@ -22,7 +22,12 @@ namespace PaymentService.Repositories
 
         public async Task<Payment> GetByIdAsync(int id)
         {
-            return await _context.Payments.FindAsync(id);
+            var payment = await _context.Payments.FindAsync(id);
+            if (payment == null)
+            {
+                throw new KeyNotFoundException($"Payment with id {id} not found.");
+            }
+            return payment;
         }
 
         public async Task AddAsync(Payment payment)
@@ -33,6 +38,7 @@ namespace PaymentService.Repositories
         public async Task UpdateAsync(Payment payment)
         {
             _context.Payments.Update(payment);
+            await SaveChangesAsync();
         }
 
         public async Task DeleteAsync(int id)
