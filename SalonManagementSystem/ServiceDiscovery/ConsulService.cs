@@ -13,10 +13,10 @@ namespace ServiceDiscovery
             _consulConfig = new ConsulConfig(configuration);
         }
 
-        public async Task RegisterAsync(string serviceName, string serviceId, string host, int port)
-        {
-            await _consulConfig.RegisterServiceAsync(serviceName, serviceId, host, port);
-        }
+        //public async Task RegisterAsync(string serviceName, string serviceId, string host, int port)
+        //{
+        //    await _consulConfig.RegisterServiceAsync(serviceName, serviceId, host, port);
+        //}
 
         public async Task DeregisterAsync(string serviceId)
         {

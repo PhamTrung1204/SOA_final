@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using ServiceDiscovery;
 using ServiceService.Data;
 using ServiceService.Repositories;
 using ServiceService.Services;
@@ -26,6 +27,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Dependency Injection
+builder.Services.AddTransient<ConsulService>();
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<ServiceHandler>(); // Đã đổi tên class để tránh trùng với namespace
 
@@ -51,7 +53,7 @@ var host = "service-service";
 var port = 80;
 
 // Đăng ký dịch vụ với Consul một cách bất đồng bộ
-await consulService.RegisterAsync(serviceName, serviceId, host, port);
+//await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 // Hủy đăng ký dịch vụ khi ứng dụng dừng
 var lifetime = app.Lifetime;

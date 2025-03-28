@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using ServiceDiscovery;
 using StaffService.Data;
 using StaffService.Repositories;
 using StaffService.Services;
@@ -26,6 +27,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // ✅ Dependency Injection
+builder.Services.AddTransient<ConsulService>();
+
 builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IScheduleRepository, ScheduleRepository>();
 builder.Services.AddScoped<StaffService.Services.StaffHandler>();
@@ -51,7 +54,7 @@ var host = "staff-service";
 var port = 80;
 
 // Sử dụng await để đăng ký bất đồng bộ
-await consulService.RegisterAsync(serviceName, serviceId, host, port);
+//await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 // Hủy đăng ký dịch vụ khi ứng dụng dừng
 var lifetime = app.Lifetime;

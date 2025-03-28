@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using PaymentService.Data;
 using PaymentService.Repositories;
 using PaymentService.Services;
+using ServiceDiscovery;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddDbContext<PaymentContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PaymentDb")));
 
 // Đăng ký Repository và Service với DI
+builder.Services.AddTransient<ConsulService>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentService, PaymentService.Services.PaymentService>();
 
@@ -53,7 +55,7 @@ var serviceId = "payment-service-1";
 var host = "payment-service";
 var port = 80;
 
-await consulService.RegisterAsync(serviceName, serviceId, host, port);
+//await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 app.Lifetime.ApplicationStopping.Register(() =>
 {

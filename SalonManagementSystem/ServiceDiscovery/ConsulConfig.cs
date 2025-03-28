@@ -20,26 +20,26 @@ namespace ServiceDiscovery
             });
         }
 
-        public async Task RegisterServiceAsync(string serviceName, string serviceId, string host, int port)
-        {
-            var registration = new AgentServiceRegistration
-            {
-                ID = serviceId,
-                Name = serviceName,
-                Address = host,
-                Port = port,
-                Check = new AgentServiceCheck
-                {
-                    DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1),
-                    Interval = TimeSpan.FromSeconds(10),
-                    HTTP = $"http://{host}:{port}/health",
-                    Timeout = TimeSpan.FromSeconds(5)
-                }
-            };
+        //public async Task RegisterServiceAsync(string serviceName, string serviceId, string host, int port)
+        //{
+        //    var registration = new AgentServiceRegistration
+        //    {
+        //        ID = serviceId,
+        //        Name = serviceName,
+        //        Address = host,
+        //        Port = port,
+        //        Check = new AgentServiceCheck
+        //        {
+        //            DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1),
+        //            Interval = TimeSpan.FromSeconds(10),
+        //            HTTP = $"http://{host}:{port}/health",
+        //            Timeout = TimeSpan.FromSeconds(5)
+        //        }
+        //    };
 
-            await _consulClient.Agent.ServiceRegister(registration);
-            Console.WriteLine($"Service {serviceName} registered with Consul.");
-        }
+        //    await _consulClient.Agent.ServiceRegister(registration);
+        //    Console.WriteLine($"Service {serviceName} registered with Consul.");
+        //}
 
         public async Task DeregisterServiceAsync(string serviceId)
         {

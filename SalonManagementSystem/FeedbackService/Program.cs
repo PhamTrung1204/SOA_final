@@ -2,6 +2,7 @@
 using FeedbackService.Data;
 using FeedbackService.Repositories;
 using FeedbackService.Services;
+using ServiceDiscovery;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +14,7 @@ builder.Services.AddDbContext<FeedbackContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FeedbackDb")));
 
 // Đăng ký Repository và Service với DI
+builder.Services.AddTransient<ConsulService>();
 builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService.Services.FeedbackService>();
 
@@ -54,7 +56,7 @@ var serviceId = "feedback-service-1";
 var host = "feedback-service";
 var port = 80;
 
-await consulService.RegisterAsync(serviceName, serviceId, host, port);
+//await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 app.Lifetime.ApplicationStopping.Register(() =>
 {

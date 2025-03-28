@@ -2,49 +2,73 @@ using AppointmentService.Data;
 using AppointmentService.Repositories;
 using AppointmentService.Services;
 using Microsoft.EntityFrameworkCore;
+using ServiceDiscovery;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// ----------------------------
+// Cấu hình các dịch vụ trong container
+// ----------------------------
+
+// Đăng ký DbContext cho SQL Server
 builder.Services.AddDbContext<AppointmentContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb")));
 
+// Đăng ký các dịch vụ cần thiết
+builder.Services.AddTransient<ConsulService>();
 builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService.Services.AppointmentService>();
 
 builder.Services.AddControllers();
 
-// Add Swagger
+// ----------------------------
+// Cấu hình Swagger
+// ----------------------------
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Appointment API",
+        Version = "v1",
+        Description = "API for managing appointments"
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+// ----------------------------
+// Cấu hình middleware pipeline
+// ----------------------------
+
+// Luôn bật Swagger (bỏ qua điều kiện môi trường để kiểm tra)
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Appointment API V1");
+    c.RoutePrefix = string.Empty; // Hiển thị Swagger UI tại gốc, ví dụ: http://localhost:5017/
+});
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+// ----------------------------
+// Cấu hình Consul (nếu không cần dùng thử, có thể tạm comment phần này)
+// ----------------------------
+var consulService = app.Services.GetRequiredService<ConsulService>();
 var serviceName = "appointment-service";
 var serviceId = "appointment-service-1";
 var host = "appointment-service";
 var port = 80;
 
-// Đăng ký dịch vụ với Consul một cách bất đồng bộ
-await consulService.RegisterAsync(serviceName, serviceId, host, port);
+// Nếu bạn cần đăng ký với Consul, bỏ comment dòng dưới đây
+// await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
-// Hủy đăng ký dịch vụ khi ứng dụng dừng
-var lifetime = app.Lifetime;
-lifetime.ApplicationStopping.Register(() =>
+// Hủy đăng ký khi ứng dụng dừng
+app.Lifetime.ApplicationStopping.Register(() =>
 {
-    // Delegate không hỗ trợ async nên sử dụng GetAwaiter().GetResult() để đồng bộ hóa
     consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
 });
 
