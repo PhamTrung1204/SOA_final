@@ -1,0 +1,8 @@
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.csproj.AssemblyReference.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.AssemblyInfoInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.AssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.csproj.CoreCompileInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\PaymentService\obj\Debug\net9.0\PaymentService.sourcelink.json

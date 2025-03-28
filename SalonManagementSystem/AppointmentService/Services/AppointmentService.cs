@@ -1,6 +1,6 @@
-﻿using AppointmentService.Models;
-using AppointmentService.Repositories;
+﻿using AppointmentService.Repositories;
 using Microsoft.AspNetCore.Mvc;
+using SalonManagementSystem.Shared.Models;
 
 namespace AppointmentService.Services
 {

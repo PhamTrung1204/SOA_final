@@ -1,5 +1,5 @@
-﻿using CustomerService.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using SalonManagementSystem.Shared.Models;
 using System.Collections.Generic;
 
 namespace CustomerService.Data

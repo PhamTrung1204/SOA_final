@@ -1,0 +1,8 @@
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.csproj.AssemblyReference.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.AssemblyInfoInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.AssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.csproj.CoreCompileInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\FeedbackService\obj\Debug\net9.0\FeedbackService.sourcelink.json

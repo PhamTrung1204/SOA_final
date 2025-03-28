@@ -162,3 +162,14 @@ C:\Users\84967\Downloads\GIT CLONE HTTP\SOA_final\SalonManagementSystem\Customer
 C:\Users\84967\Downloads\GIT CLONE HTTP\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.pdb
 C:\Users\84967\Downloads\GIT CLONE HTTP\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.genruntimeconfig.cache
 C:\Users\84967\Downloads\GIT CLONE HTTP\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\ref\CustomerService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.csproj.AssemblyReference.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.AssemblyInfoInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.AssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.csproj.CoreCompileInputs.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.sourcelink.json
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\refint\CustomerService.dll
+C:\Users\PhamTrung\Desktop\SOA-final\SOA_final\SalonManagementSystem\CustomerService\obj\Debug\net9.0\CustomerService.pdb

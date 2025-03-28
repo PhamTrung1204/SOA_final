@@ -1,6 +1,6 @@
-﻿using CustomerService.Models;
-using CustomerService.Services;
+﻿using CustomerService.Services;
 using Microsoft.AspNetCore.Mvc;
+using SalonManagementSystem.Shared.Models;
 
 namespace CustomerService.Controllers
 {
@@ -62,6 +62,6 @@ namespace CustomerService.Controllers
             {
                 return StatusCode(500, $"Lỗi: {ex.Message}");
             }
-        }cd
+        }
     }
 }
