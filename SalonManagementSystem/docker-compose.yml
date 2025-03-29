@@ -1,9 +1,7 @@
-version: '3.8'
 services:
 
-  # Dịch vụ Consul
   consul:
-    image: consul:latest
+    image: hashicorp/consul:latest
     ports:
       - "8500:8500"
     networks:
@@ -11,10 +9,10 @@ services:
 
   customerservice:
     build:
-      context: ../Backend/Microservices/CustomerService
-      dockerfile: ../../Docker/CustomerService/Dockerfile
+      context: .
+      dockerfile: ./CustomerService/Dockerfile
     ports:
-      - "5001:80"
+      - "5001:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
@@ -23,10 +21,10 @@ services:
 
   staffservice:
     build:
-      context: ../Backend/Microservices/StaffService
-      dockerfile: ../../Docker/StaffService/Dockerfile
+      context: .
+      dockerfile: ./StaffService/Dockerfile
     ports:
-      - "5002:80"
+      - "5002:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
@@ -35,10 +33,10 @@ services:
 
   serviceservice:
     build:
-      context: ../Backend/Microservices/ServiceService
-      dockerfile: ../../Docker/ServiceService/Dockerfile
+      context: .
+      dockerfile: ./ServiceService/Dockerfile
     ports:
-      - "5003:80"
+      - "5003:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
@@ -47,10 +45,10 @@ services:
 
   appointmentservice:
     build:
-      context: ../Backend/Microservices/AppointmentService
-      dockerfile: ../../Docker/AppointmentService/Dockerfile
+      context: .
+      dockerfile: ./AppointmentService/Dockerfile
     ports:
-      - "5004:80"
+      - "5004:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
@@ -59,10 +57,10 @@ services:
 
   paymentservice:
     build:
-      context: ../Backend/Microservices/PaymentService
-      dockerfile: ../../Docker/PaymentService/Dockerfile
+      context: .
+      dockerfile: ./PaymentService/Dockerfile
     ports:
-      - "5005:80"
+      - "5005:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
@@ -71,10 +69,10 @@ services:
 
   feedbackservice:
     build:
-      context: ../Backend/Microservices/FeedbackService
-      dockerfile: ../../Docker/FeedbackService/Dockerfile
+      context: .
+      dockerfile: ./FeedbackService/Dockerfile
     ports:
-      - "5006:80"
+      - "5006:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
@@ -83,26 +81,26 @@ services:
 
   apigateway:
     build:
-      context: ../Backend/APIGateway
-      dockerfile: ../../Docker/APIGateway/Dockerfile
+      context: .
+      dockerfile: ./APIGateway/Dockerfile
     ports:
-      - "5000:80"
+      - "5000:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
     networks:
       - salon-network
 
-  webapp:
-    build:
-      context: ../Frontend/WebApp
-      dockerfile: ../../Docker/WebApp/Dockerfile
-    ports:
-      - "5007:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-    networks:
-      - salon-network
+  # webapp:
+  #   build:
+  #     context: ../Frontend/WebApp
+  #     dockerfile: ../../Docker/WebApp/Dockerfile
+  #   ports:
+  #     - "5007:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #   networks:
+  #     - salon-network
 
 # Định nghĩa mạng Docker
 networks:

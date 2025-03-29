@@ -29,13 +29,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{2C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{823B3C3F-8589-4A53-8A29-03E45CF33F0F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{89170FA7-3392-4A6B-B298-29C6CF303BDF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonManagementSystem.Shared", "SalonManagementSystem.Shared\SalonManagementSystem.Shared.csproj", "{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
-		CustomerService.Dockerfile = CustomerService.Dockerfile
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SalonManagementSystem.Shared", "SalonManagementSystem.Shared\SalonManagementSystem.Shared.csproj", "{941EDAA7-8CE1-4504-93E8-3BB9881A30B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

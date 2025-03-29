@@ -14,32 +14,39 @@ namespace ServiceDiscovery
         public ConsulConfig(IConfiguration configuration)
         {
             _configuration = configuration;
+
+            // Lấy giá trị từ biến môi trường "CONSUL_HOST"
+            var consulHostEnv = Environment.GetEnvironmentVariable("CONSUL_HOST");
+
+            // Nếu có biến môi trường, xây dựng URL theo format "http://{consulHostEnv}:8500"
+            // Nếu không, lấy cấu hình từ _configuration["Consul:Address"] hoặc mặc định "http://localhost:8500"
+            string consulUrl = !string.IsNullOrEmpty(consulHostEnv)
+                ? $"http://{consulHostEnv}:8500"
+                : (_configuration["Consul:Address"] ?? "http://localhost:8500");
+
             _consulClient = new ConsulClient(cfg =>
             {
-                cfg.Address = new Uri(_configuration["Consul:Address"] ?? "http://localhost:8500");
+                cfg.Address = new Uri(consulUrl);
             });
         }
 
-        //public async Task RegisterServiceAsync(string serviceName, string serviceId, string host, int port)
-        //{
-        //    var registration = new AgentServiceRegistration
-        //    {
-        //        ID = serviceId,
-        //        Name = serviceName,
-        //        Address = host,
-        //        Port = port,
-        //        Check = new AgentServiceCheck
-        //        {
-        //            DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1),
-        //            Interval = TimeSpan.FromSeconds(10),
-        //            HTTP = $"http://{host}:{port}/health",
-        //            Timeout = TimeSpan.FromSeconds(5)
-        //        }
-        //    };
 
-        //    await _consulClient.Agent.ServiceRegister(registration);
-        //    Console.WriteLine($"Service {serviceName} registered with Consul.");
-        //}
+        public async Task RegisterServiceAsync(string serviceName, string serviceId, string host, int port)
+        {
+            var registration = new AgentServiceRegistration
+            {
+                ID = serviceId,
+                Name = serviceName,
+                Address = host,
+                Port = port,
+                Check = new AgentServiceCheck
+                {
+                    DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1),
+                    Interval = TimeSpan.FromSeconds(10),
+                    HTTP = $"http://{host}:{port}/health",
+                    Timeout = TimeSpan.FromSeconds(5)
+                }
+            };
 
         public async Task DeregisterServiceAsync(string serviceId)
         {

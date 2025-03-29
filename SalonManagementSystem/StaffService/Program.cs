@@ -9,6 +9,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllers();
+
+// Đăng ký IHttpClientFactory
+builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
 builder.Services.AddEndpointsApiExplorer();
 
 // ✅ Swagger cấu hình
@@ -51,7 +57,7 @@ var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulServi
 var serviceName = "staff-service";
 var serviceId = "staff-service-1";
 var host = "staff-service";
-var port = 80;
+var port = 8080;
 
 // Sử dụng await để đăng ký bất đồng bộ
 //await consulService.RegisterAsync(serviceName, serviceId, host, port);

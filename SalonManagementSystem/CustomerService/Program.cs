@@ -5,19 +5,30 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.OpenApi.Models;
-using ServiceDiscovery; // Giả sử ConsulService được định nghĩa trong namespace này
+using Swashbuckle.AspNetCore.SwaggerUI; // Thêm để cấu hình Swagger UI
+using Microsoft.OpenApi.Models; // Thêm để định nghĩa thông tin Swagger
 
 var builder = WebApplication.CreateBuilder(args);
 
-// ========================
 // Thêm dịch vụ vào container
-// ========================
-
-// Thêm Controller
 builder.Services.AddControllers();
 
-// Đăng ký DbContext với SQL Server
+// Đăng ký IHttpClientFactory
+builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
+// Cấu hình DbContext
 builder.Services.AddDbContext<CustomerContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerDb")));
 
@@ -25,9 +36,6 @@ builder.Services.AddDbContext<CustomerContext>(options =>
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<ICustomerService, CustomerService.Services.CustomerService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
-
-// Đăng ký ConsulService (Singleton, vì nó có thể dùng cho việc đăng ký service)
-builder.Services.AddSingleton<ConsulService>();
 
 // Cấu hình JWT Authentication
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -45,10 +53,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         };
     });
 
-// ========================
-// Cấu hình Swagger
-// ========================
-builder.Services.AddEndpointsApiExplorer();
+// Thêm Swagger
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo
@@ -58,75 +63,76 @@ builder.Services.AddSwaggerGen(c =>
         Description = "API for managing customers in Salon Management System"
     });
 
-    // Cấu hình hỗ trợ JWT trong Swagger
+    // Cấu hình để hỗ trợ JWT trong Swagger
     c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
     {
-        In = ParameterLocation.Header,
         Name = "Authorization",
         Type = SecuritySchemeType.ApiKey,
         Scheme = "Bearer",
         BearerFormat = "JWT",
-        Description = "Nhập token với định dạng: Bearer {your token}"
+        In = ParameterLocation.Header,
+        Description = "Enter 'Bearer' [space] and then your token in the text input below.\nExample: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...'"
     });
+
     c.AddSecurityRequirement(new OpenApiSecurityRequirement
     {
         {
-            new OpenApiSecurityScheme{
-                Reference = new OpenApiReference{
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
                     Type = ReferenceType.SecurityScheme,
                     Id = "Bearer"
                 }
             },
-            new string[] {}
+            Array.Empty<string>()
         }
     });
 });
 
 var app = builder.Build();
 
-// ========================
-// Cấu hình Middleware Pipeline
-// ========================
-
-// Kích hoạt Swagger cho mọi môi trường (nếu cần, bạn có thể chỉ bật ở Development)
-app.UseSwagger();
-app.UseSwaggerUI(c =>
-{
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CustomerService API V1");
-    c.RoutePrefix = string.Empty; // Hiển thị Swagger UI tại gốc: http://localhost:5017/
-});
-
-// Nếu đang ở môi trường Development, hiển thị Developer Exception Page
+// Cấu hình pipeline
 if (app.Environment.IsDevelopment())
 {
     app.UseDeveloperExceptionPage();
 }
 
+// Thêm Swagger middleware
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "CustomerService API V1");
+    c.RoutePrefix = string.Empty; // Đặt Swagger UI tại gốc (http://localhost:port/)
+});
+
+// Sau đó, sử dụng middleware CORS:
+app.UseCors("AllowAll");
+
 app.UseRouting();
+app.UseAuthentication(); // Thêm để bật xác thực JWT
+app.UseAuthorization();  // Thêm để bật phân quyền
 
-// Bật xác thực và phân quyền
-app.UseAuthentication();
-app.UseAuthorization();
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
 
-// Map Controllers
-app.MapControllers();
-
-// ========================
-// Đăng ký và hủy đăng ký với Consul
-// ========================
-var consulService = app.Services.GetRequiredService<ConsulService>();
+// Đăng ký dịch vụ với Consul
+var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
 var serviceName = "customer-service";
 var serviceId = "customer-service-1";
-// Lưu ý: host và port tùy thuộc vào cấu hình của bạn
-var host = "customer-service";
-var port = 80;
+var host = "customerservice";
+var port = 8080;
 
-// Nếu muốn đăng ký với Consul, bỏ comment dòng dưới đây
-// await consulService.RegisterAsync(serviceName, serviceId, host, port);
+// Sử dụng await để đăng ký Consul
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
-// Hủy đăng ký khi ứng dụng dừng lại
-app.Lifetime.ApplicationStopping.Register(() =>
+// Hủy đăng ký khi ứng dụng tắt
+var lifetime = app.Lifetime;
+lifetime.ApplicationStopping.Register(() =>
 {
+    // Vì lambda không hỗ trợ await trực tiếp, ta gọi GetAwaiter().GetResult() để đồng bộ hóa
     consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
 });
 

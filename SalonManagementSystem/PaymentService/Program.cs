@@ -10,6 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
+// Đăng ký IHttpClientFactory
+builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<PaymentContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PaymentDb")));
@@ -53,7 +58,7 @@ var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulServi
 var serviceName = "payment-service";
 var serviceId = "payment-service-1";
 var host = "payment-service";
-var port = 80;
+var port = 8080;
 
 //await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
