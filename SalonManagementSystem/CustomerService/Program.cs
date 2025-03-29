@@ -122,7 +122,7 @@ app.UseEndpoints(endpoints =>
 var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
 var serviceName = "customer-service";
 var serviceId = "customer-service-1";
-var host = "customer-service";
+var host = "customerservice";
 var port = 8080;
 
 // Sử dụng await để đăng ký Consul

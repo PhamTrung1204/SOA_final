@@ -43,7 +43,7 @@ namespace ServiceDiscovery
                 {
                     DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1),
                     Interval = TimeSpan.FromSeconds(10),
-                    HTTP = $"http://{host}:{port}/Health",
+                    HTTP = $"http://{host}:{port}/health",
                     Timeout = TimeSpan.FromSeconds(5)
                 }
             };

@@ -68,7 +68,7 @@ app.MapControllers();
 var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
 var serviceName = "appointment-service";
 var serviceId = "appointment-service-1";
-var host = "appointment-service";
+var host = "appointmentservice";
 var port = 8080;
 
 // Đăng ký dịch vụ với Consul một cách bất đồng bộ

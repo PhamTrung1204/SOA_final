@@ -4,7 +4,7 @@ namespace CustomerService.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class HealthController : Controller
+    public class HealthController : ControllerBase
     {
         [HttpGet]
         public IActionResult Get() => Ok("healthy");
