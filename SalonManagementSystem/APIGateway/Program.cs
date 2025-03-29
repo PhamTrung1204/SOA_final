@@ -1,32 +1,35 @@
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Microsoft.Extensions.Configuration;
 using Ocelot.Provider.Consul;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Thêm dịch vụ Ocelot và cấu hình Consul
+builder.Services.AddOcelot(builder.Configuration)
+                .AddConsul();  // Đăng ký Ocelot sử dụng Consul làm service discovery
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
-
-// Thêm dịch vụ Ocelot và Consul
-builder.Services.AddOcelot(builder.Configuration).AddConsul();
+// Thêm Swagger nếu bạn cần tài liệu API
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Sử dụng Swagger nếu môi trường phát triển
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Gateway V1");
+        c.RoutePrefix = string.Empty;  // Đặt Swagger UI tại gốc (http://localhost:5000/)
+    });
 }
-
-//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+// Sử dụng Ocelot để thực hiện routing
 await app.UseOcelot();
 
-app.MapControllers();
-
+// Khởi chạy ứng dụng
 app.Run();
