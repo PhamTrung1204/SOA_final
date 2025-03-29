@@ -2,15 +2,9 @@ using AppointmentService.Data;
 using AppointmentService.Repositories;
 using AppointmentService.Services;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddDbContext<AppointmentContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb")));
-
-builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
-builder.Services.AddScoped<IAppointmentService, AppointmentService.Services.AppointmentService>();
 
 builder.Services.AddControllers();
 
@@ -29,23 +23,43 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Add Swagger
-builder.Services.AddOpenApi();
+// Add services to the container.
+builder.Services.AddDbContext<AppointmentContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb")));
+
+builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+builder.Services.AddScoped<IAppointmentService, AppointmentService.Services.AppointmentService>();
+
+// Thêm Swagger
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "AppointmentService API",
+        Version = "v1",
+        Description = "API for managing appointment in Salon Management System"
+    });
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Cấu hình pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.MapOpenApi();
-    app.UseSwaggerUI(options =>
-    {
-        options.SwaggerEndpoint("/openapi/v1.json", "Appointment API");
-    });
+    app.UseDeveloperExceptionPage();
 }
+
+// Thêm Swagger middleware
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppointmentrService API V1");
+    c.RoutePrefix = string.Empty; // Đặt Swagger UI tại gốc (http://localhost:port/)
+});
 
 // Sau đó, sử dụng middleware CORS:
 app.UseCors("AllowAll");
+app.UseRouting();
 //app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
