@@ -59,7 +59,7 @@ var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulServi
 var serviceName = "feedback-service";
 var serviceId = "feedback-service-1";
 var host = "feedback-service";
-var port = 8080;
+var port = 80;
 
 //await consulService.RegisterAsync(serviceName, serviceId, host, port);
 

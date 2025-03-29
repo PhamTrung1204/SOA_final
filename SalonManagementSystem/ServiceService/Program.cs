@@ -36,10 +36,6 @@ builder.Services.AddSwaggerGen(c =>
 
 
 
-builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
-builder.Services.AddScoped<ServiceHandler>(); // Đã đổi tên class để tránh trùng với namespace
-
-
 
 var app = builder.Build();
 
