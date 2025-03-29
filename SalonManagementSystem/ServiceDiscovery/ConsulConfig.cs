@@ -47,6 +47,7 @@ namespace ServiceDiscovery
                     Timeout = TimeSpan.FromSeconds(5)
                 }
             };
+        }
 
         public async Task DeregisterServiceAsync(string serviceId)
         {
