@@ -13,6 +13,21 @@ var builder = WebApplication.CreateBuilder(args);
 // Thêm dịch vụ vào container
 builder.Services.AddControllers();
 
+// Đăng ký IHttpClientFactory
+builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
+
 // Cấu hình DbContext
 builder.Services.AddDbContext<CustomerContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerDb")));
@@ -91,6 +106,9 @@ app.UseSwaggerUI(c =>
     c.RoutePrefix = string.Empty; // Đặt Swagger UI tại gốc (http://localhost:port/)
 });
 
+// Sau đó, sử dụng middleware CORS:
+app.UseCors("AllowAll");
+
 app.UseRouting();
 app.UseAuthentication(); // Thêm để bật xác thực JWT
 app.UseAuthorization();  // Thêm để bật phân quyền
@@ -105,7 +123,7 @@ var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulServi
 var serviceName = "customer-service";
 var serviceId = "customer-service-1";
 var host = "customer-service";
-var port = 80;
+var port = 8080;
 
 // Sử dụng await để đăng ký Consul
 await consulService.RegisterAsync(serviceName, serviceId, host, port);

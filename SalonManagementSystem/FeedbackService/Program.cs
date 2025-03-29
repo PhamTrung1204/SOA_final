@@ -8,6 +8,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 
+// Đăng ký IHttpClientFactory
+builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<FeedbackContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FeedbackDb")));
@@ -52,7 +57,7 @@ var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulServi
 var serviceName = "feedback-service";
 var serviceId = "feedback-service-1";
 var host = "feedback-service";
-var port = 80;
+var port = 8080;
 
 await consulService.RegisterAsync(serviceName, serviceId, host, port);
 

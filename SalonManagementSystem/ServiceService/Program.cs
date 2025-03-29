@@ -8,6 +8,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services
 builder.Services.AddControllers();
+
+// Đăng ký IHttpClientFactory
+builder.Services.AddHttpClient();
+
+builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
 builder.Services.AddEndpointsApiExplorer();
 
 // ✅ Thêm SwaggerGen + cấu hình OpenAPI
@@ -48,7 +54,7 @@ var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulServi
 var serviceName = "service-service";
 var serviceId = "service-service-1";
 var host = "service-service";
-var port = 80;
+var port = 8080;
 
 // Đăng ký dịch vụ với Consul một cách bất đồng bộ
 await consulService.RegisterAsync(serviceName, serviceId, host, port);
