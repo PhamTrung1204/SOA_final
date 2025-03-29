@@ -59,9 +59,6 @@ builder.Services.AddSwaggerGen(c =>
         Version = "v1",
         Description = "API for managing appointments"
 
-        Title = "AppointmentService API",
-        Version = "v1",
-        Description = "API for managing appointment in Salon Management System"
 
     });
 });
