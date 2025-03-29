@@ -14,7 +14,13 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
 
-builder.Services.AddEndpointsApiExplorer();
+// Add DbContext + kết nối SQL
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// Dependency Injection
+builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
+builder.Services.AddScoped<ServiceHandler>(); // Đã đổi tên class để tránh trùng với namespace
 
 // ✅ Thêm SwaggerGen + cấu hình OpenAPI
 builder.Services.AddSwaggerGen(c =>
@@ -27,22 +33,25 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
-// Add DbContext + kết nối SQL
-builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Dependency Injection
-builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
-builder.Services.AddScoped<ServiceHandler>(); // Đã đổi tên class để tránh trùng với namespace
 
 var app = builder.Build();
 
-// Middleware
+// Cấu hình pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
 }
+
+// Thêm Swagger middleware
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SalonService API V1");
+    c.RoutePrefix = string.Empty; // Đặt Swagger UI tại gốc (http://localhost:port/)
+});
+
+app.UseRouting();
 
 app.UseAuthorization();
 app.MapControllers();
