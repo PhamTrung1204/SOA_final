@@ -1,5 +1,6 @@
 ﻿using MessageBroker.EventHandlers;
 using MessageBroker.Events;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
@@ -12,21 +13,27 @@ namespace MessageBroker.Consumers
     public class AppointmentBookedConsumer : BackgroundService
     {
         private readonly RabbitMQConfig _rabbitMQConfig;
-        private readonly AppointmentBookedHandler _handler;
+        private readonly IServiceProvider _serviceProvider;
 
-        public AppointmentBookedConsumer(RabbitMQConfig rabbitMQConfig, AppointmentBookedHandler handler)
+        public AppointmentBookedConsumer(RabbitMQConfig rabbitMQConfig, IServiceProvider serviceProvider)
         {
             _rabbitMQConfig = rabbitMQConfig;
-            _handler = handler;
+            _serviceProvider = serviceProvider;
         }
 
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _rabbitMQConfig.ConsumeMessage("appointment_booked", @event =>
             {
-                var appointmentEvent = (AppointmentBookedEvent)@event;
-                _handler.Handle(appointmentEvent);
+                // Tạo scope mới cho mỗi message
+                using (var scope = _serviceProvider.CreateScope())
+                {
+                    var handler = scope.ServiceProvider.GetRequiredService<AppointmentBookedHandler>();
+                    var appointmentEvent = (AppointmentBookedEvent)@event;
+                    handler.Handle(appointmentEvent);
+                }
             }, typeof(AppointmentBookedEvent));
+
             return Task.CompletedTask;
         }
     }
