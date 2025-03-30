@@ -1,0 +1,24 @@
+﻿@model SalonManagementSystem.Shared.Models.ViewModels.FeedbackViewModel
+
+@{
+    ViewData["Title"] = "Submit Feedback";
+}
+
+<h2>Submit Feedback</h2>
+
+<form asp-action="Submit" method="post">
+    <input type="hidden" asp-for="AppointmentId" />
+    <div class="form-group">
+        <label asp-for="Feedback.AppointmentId"></label>
+        <input asp-for="Feedback.AppointmentId" class="form-control" value="@Model.AppointmentId" readonly />
+    </div>
+    <div class="form-group">
+        <label asp-for="Feedback.Rating"></label>
+        <input asp-for="Feedback.Rating" type="number" min="1" max="5" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Feedback.Comment"></label>
+        <textarea asp-for="Feedback.Comment" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

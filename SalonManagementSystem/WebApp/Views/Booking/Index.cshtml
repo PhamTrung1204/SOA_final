@@ -1,0 +1,29 @@
+﻿@model SalonManagementSystem.Shared.Models.RegisterRequest
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+
+<form asp-action="Register" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+<p>Already have an account? <a asp-action="Login">Login</a></p>

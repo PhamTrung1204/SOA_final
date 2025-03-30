@@ -1,0 +1,32 @@
+﻿@model IEnumerable<SalonManagementSystem.Shared.Models.Feedback>
+
+@{
+    ViewData["Title"] = "Feedback";
+}
+
+<h1>Feedback</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Appointment ID</th>
+            <th>Rating</th>
+            <th>Comment</th>
+            <th>Submitted At</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AppointmentId</td>
+                <td>@item.Rating</td>
+                <td>@item.Comment</td>
+                <td>@item.CreatedAt</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.FeedbackId">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

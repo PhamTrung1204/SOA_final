@@ -1,32 +1,78 @@
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics;
-using WebApp.Models;
+using SalonManagementSystem.Shared.Models;
+using WebApp.Services;
 
 namespace WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IApiService _apiService;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IApiService apiService)
         {
-            _logger = logger;
+            _apiService = apiService;
         }
 
+        [Authorize] // Chỉ người dùng đã đăng nhập mới truy cập được
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [AllowAnonymous] // Không cần đăng nhập
+        [HttpGet]
+        public IActionResult Login()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Login(LoginRequest request)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            try
+            {
+                var token = await _apiService.LoginAsync(request);
+                HttpContext.Session.SetString("Token", token);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                ViewBag.Error = "Invalid email or password";
+                return View();
+            }
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [AllowAnonymous]
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterRequest request)
+        {
+            try
+            {
+                var token = await _apiService.RegisterAsync(request);
+                HttpContext.Session.SetString("Token", token);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                ViewBag.Error = "Registration failed";
+                return View();
+            }
+        }
+
+        [Authorize]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("Token");
+            return RedirectToAction("Login");
         }
     }
 }
