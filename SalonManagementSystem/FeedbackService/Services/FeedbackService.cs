@@ -1,4 +1,6 @@
 ﻿using FeedbackService.Repositories;
+using MessageBroker.Events;
+using MessageBroker.Publishers;
 using SalonManagementSystem.Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -8,10 +10,12 @@ namespace FeedbackService.Services
 {
     public class FeedbackService : IFeedbackService
     {
+        private readonly FeedbackEventPublisher _eventPublisher;
         private readonly IFeedbackRepository _repository;
 
-        public FeedbackService(IFeedbackRepository repository)
+        public FeedbackService(FeedbackEventPublisher eventPublisher, IFeedbackRepository repository)
         {
+            _eventPublisher = eventPublisher;
             _repository = repository;
         }
 
@@ -50,6 +54,21 @@ namespace FeedbackService.Services
 
             await _repository.DeleteAsync(id);
             await _repository.SaveChangesAsync();
+        }
+
+        public async Task SubmitFeedback(Feedback feedback)
+        {
+            await _repository.AddAsync(feedback);
+            await _repository.SaveChangesAsync();
+
+            var @event = new FeedbackSubmittedEvent
+            {
+                FeedbackId = feedback.FeedbackId,
+                AppointmentId = feedback.AppointmentId,
+                Rating = feedback.Rating,
+                Comment = feedback.Comment
+            };
+            _eventPublisher.PublishFeedbackSubmittedEvent(@event);
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using ServiceService.Data;
 using ServiceService.Repositories;
@@ -13,6 +14,10 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
+// Đăng ký MessageBroker
+builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
+
 
 // Add DbContext + kết nối SQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

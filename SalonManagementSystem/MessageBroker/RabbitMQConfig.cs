@@ -1,48 +1,45 @@
-﻿// RabbitMQ Configuration
-using RabbitMQ.Client;
+﻿using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 using System;
 using System.Text;
+using System.Text.Json;
 
-namespace MessageBroker
+public class RabbitMQConfig : IDisposable
 {
-    public class RabbitMqConfig
+    private readonly IConnection _connection;
+    private readonly IModel _channel;
+
+    public RabbitMQConfig(string hostName)
     {
-        public static IConnection GetConnection()
-        {
-            var factory = new ConnectionFactory
-            {
-                HostName = "localhost", // Địa chỉ RabbitMQ
-                UserName = "guest",     // Tài khoản mặc định
-                Password = "guest"      // Mật khẩu mặc định
-            };
-            return factory.CreateConnection(); // Phương thức CreateConnection() có sẵn trong RabbitMQ.Client phiên bản 7.x
-        }
+        var factory = new ConnectionFactory { HostName = hostName };
+        _connection = factory.CreateConnection();
+        _channel = _connection.CreateModel();
     }
 
-    public class RabbitMqPublisher
+    public void PublishMessage(string queue, object message)
     {
-        public static void PublishMessage(string queueName, string message)
+        _channel.QueueDeclare(queue: queue, durable: true, exclusive: false, autoDelete: false, arguments: null);
+        var body = Encoding.UTF8.GetBytes(JsonSerializer.Serialize(message));
+        _channel.BasicPublish(exchange: "", routingKey: queue, basicProperties: null, body: body);
+    }
+
+    public void ConsumeMessage(string queue, Action<object> handler, Type eventType)
+    {
+        _channel.QueueDeclare(queue: queue, durable: true, exclusive: false, autoDelete: false, arguments: null);
+        var consumer = new EventingBasicConsumer(_channel);
+        consumer.Received += (model, ea) =>
         {
-            using (var connection = RabbitMqConfig.GetConnection())
-            using (var channel = connection.CreateModel())
-            {
-                // Khai báo queue nếu chưa tồn tại
-                channel.QueueDeclare(queue: queueName,
-                                     durable: false,
-                                     exclusive: false,
-                                     autoDelete: false,
-                                     arguments: null);
+            var body = ea.Body.ToArray();
+            var message = Encoding.UTF8.GetString(body);
+            var @event = JsonSerializer.Deserialize(message, eventType);
+            handler(@event);
+        };
+        _channel.BasicConsume(queue: queue, autoAck: true, consumer: consumer);
+    }
 
-                var body = Encoding.UTF8.GetBytes(message);
-
-                // Gửi message đến queue
-                channel.BasicPublish(exchange: "",
-                                     routingKey: queueName,
-                                     basicProperties: null,
-                                     body: body);
-
-                Console.WriteLine($"[x] Sent: {message}");
-            }
-        }
+    public void Dispose()
+    {
+        _channel?.Close();
+        _connection?.Close();
     }
 }

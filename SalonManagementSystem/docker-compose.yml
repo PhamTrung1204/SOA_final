@@ -1,5 +1,16 @@
 services:
 
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+        - "5672:5672"
+        - "15672:15672"
+    environment:
+        - RABBITMQ_DEFAULT_USER=guest
+        - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+    - salon-network  
+
   consul:
     image: hashicorp/consul:latest
     ports:
@@ -13,8 +24,11 @@ services:
       dockerfile: ./CustomerService/Dockerfile
     ports:
       - "5001:8080"
+    depends_on:
+      - rabbitmq
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ:Host=rabbitmq
       - CONSUL_HOST=consul
     networks:
       - salon-network
@@ -49,8 +63,11 @@ services:
       dockerfile: ./AppointmentService/Dockerfile
     ports:
       - "5004:8080"
+    depends_on:
+      - rabbitmq
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ:Host=rabbitmq
       - CONSUL_HOST=consul
     networks:
       - salon-network
@@ -61,8 +78,11 @@ services:
       dockerfile: ./PaymentService/Dockerfile
     ports:
       - "5005:8080"
+    depends_on:
+      - rabbitmq
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ:Host=rabbitmq
       - CONSUL_HOST=consul
     networks:
       - salon-network
@@ -73,8 +93,11 @@ services:
       dockerfile: ./FeedbackService/Dockerfile
     ports:
       - "5006:8080"
+    depends_on:
+      - rabbitmq
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - RabbitMQ:Host=rabbitmq
       - CONSUL_HOST=consul
     networks:
       - salon-network

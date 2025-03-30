@@ -8,9 +8,9 @@ namespace StaffService.Controllers
     [Route("api/[controller]")]
     public class StaffController : ControllerBase
     {
-        private readonly StaffHandler _staffService;
+        private readonly Services.StaffService _staffService;
 
-        public StaffController(StaffHandler staffService)
+        public StaffController(Services.StaffService staffService)
         {
             _staffService = staffService;
         }

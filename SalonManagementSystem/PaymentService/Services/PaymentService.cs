@@ -1,4 +1,6 @@
-﻿using PaymentService.Repositories;
+﻿using MessageBroker.Events;
+using MessageBroker.Publishers;
+using PaymentService.Repositories;
 using SalonManagementSystem.Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -8,10 +10,12 @@ namespace PaymentService.Services
 {
     public class PaymentService : IPaymentService
     {
+        private readonly PaymentEventPublisher _eventPublisher;
         private readonly IPaymentRepository _repository;
 
-        public PaymentService(IPaymentRepository repository)
+        public PaymentService(PaymentEventPublisher eventPublisher, IPaymentRepository repository)
         {
+            _eventPublisher = eventPublisher;
             _repository = repository;
         }
 
@@ -50,6 +54,20 @@ namespace PaymentService.Services
 
             await _repository.DeleteAsync(id);
             await _repository.SaveChangesAsync();
+        }
+        public async Task ProcessPayment(Payment payment)
+        {
+            await _repository.AddAsync(payment);
+            await _repository.SaveChangesAsync();
+
+            var @event = new PaymentProcessedEvent
+            {
+                PaymentId = payment.PaymentId,
+                AppointmentId = payment.AppointmentId,
+                Amount = payment.Amount,
+                PaymentMethod = payment.Status
+            };
+            _eventPublisher.PublishPaymentProcessedEvent(@event);
         }
     }
 }

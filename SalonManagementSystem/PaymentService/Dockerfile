@@ -13,7 +13,6 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["PaymentService/PaymentService.csproj", "PaymentService/"]
-COPY ["MessageBroker/MessageBroker.csproj", "MessageBroker/"]
 COPY ["SalonManagementSystem.Shared/SalonManagementSystem.Shared.csproj", "SalonManagementSystem.Shared/"]
 COPY ["ServiceDiscovery/ServiceDiscovery.csproj", "ServiceDiscovery/"]
 RUN dotnet restore "./PaymentService/PaymentService.csproj"

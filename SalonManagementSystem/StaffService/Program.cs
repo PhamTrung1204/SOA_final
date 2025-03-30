@@ -2,6 +2,9 @@
 using Microsoft.OpenApi.Models;
 using StaffService.Data;
 using StaffService.Repositories;
+using MessageBroker.Consumers;
+using MessageBroker.EventHandlers;
+using MessageBroker.Publishers;
 using StaffService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -27,6 +30,12 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// Đăng ký MessageBroker
+builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
+builder.Services.AddTransient<StaffEventPublisher>();
+builder.Services.AddHostedService<StaffScheduleUpdatedConsumer>();
+builder.Services.AddScoped<StaffScheduleUpdatedHandler>();
+
 // ✅ Cấu hình DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -34,7 +43,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // ✅ Dependency Injection
 builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IScheduleRepository, ScheduleRepository>();
-builder.Services.AddScoped<StaffService.Services.StaffHandler>();
+builder.Services.AddScoped<StaffService.Services.StaffService>();
 
 var app = builder.Build();
 

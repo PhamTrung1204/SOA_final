@@ -8,6 +8,7 @@ namespace PaymentService.Services
     {
         Task<IEnumerable<Payment>> GetAllPayments();
         Task<Payment> GetPaymentById(int id);
+        Task ProcessPayment(Payment payment);
         Task CreatePayment(Payment payment);
         Task UpdatePayment(int id, Payment payment);
         Task DeletePayment(int id);

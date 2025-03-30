@@ -1,4 +1,6 @@
 ﻿using CustomerService.Repositories;
+using MessageBroker.Events;
+using MessageBroker.Publishers;
 using SalonManagementSystem.Shared.Models;
 using System;
 using System.Collections.Generic;
@@ -8,10 +10,12 @@ namespace CustomerService.Services
 {
     public class CustomerService : ICustomerService
     {
+        private readonly CustomerEventPublisher _eventPublisher;
         private readonly ICustomerRepository _repository;
 
-        public CustomerService(ICustomerRepository repository)
+        public CustomerService(CustomerEventPublisher eventPublisher, ICustomerRepository repository)
         {
+            _eventPublisher = eventPublisher;
             _repository = repository;
         }
 
@@ -29,6 +33,14 @@ namespace CustomerService.Services
         {
             await _repository.AddAsync(customer);
             await _repository.SaveChangesAsync();
+
+            var @event = new CustomerRegisteredEvent
+            {
+                CustomerId = customer.CustomerId,
+                Name = customer.Name,
+                Email = customer.Email
+            };
+            _eventPublisher.PublishCustomerRegisteredEvent(@event);
         }
 
         public async Task UpdateCustomer(int id, Customer customer)

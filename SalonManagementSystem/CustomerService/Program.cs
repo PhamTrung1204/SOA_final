@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using MessageBroker.Consumers;
+using MessageBroker.EventHandlers;
+using MessageBroker.Publishers;
 using Swashbuckle.AspNetCore.SwaggerUI; // Thêm để cấu hình Swagger UI
 using Microsoft.OpenApi.Models; // Thêm để định nghĩa thông tin Swagger
 
@@ -17,6 +20,12 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
+// Đăng ký MessageBroker
+builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
+builder.Services.AddTransient<CustomerEventPublisher>();
+builder.Services.AddHostedService<CustomerRegisteredConsumer>();
+builder.Services.AddScoped<CustomerRegisteredHandler>();
 
 builder.Services.AddCors(options =>
 {

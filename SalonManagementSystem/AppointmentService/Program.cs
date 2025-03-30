@@ -1,6 +1,9 @@
 using AppointmentService.Data;
 using AppointmentService.Repositories;
 using AppointmentService.Services;
+using MessageBroker.Consumers;
+using MessageBroker.EventHandlers;
+using MessageBroker.Publishers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -22,6 +25,20 @@ builder.Services.AddCors(options =>
               .AllowAnyMethod();
     });
 });
+
+//MessageBroker start
+// Thêm dịch vụ vào DI container
+builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
+
+// Đăng ký Publishers
+builder.Services.AddTransient<AppointmentEventPublisher>();
+
+// Đăng ký Consumers (dùng HostedService để chạy nền)
+builder.Services.AddHostedService<AppointmentBookedConsumer>();
+
+// Đăng ký Handlers
+builder.Services.AddScoped<AppointmentBookedHandler>();
+//MessagerBroker end
 
 // Add services to the container.
 builder.Services.AddDbContext<AppointmentContext>(options =>

@@ -11,5 +11,6 @@ namespace FeedbackService.Services
         Task CreateFeedback(Feedback feedback);
         Task UpdateFeedback(int id, Feedback feedback);
         Task DeleteFeedback(int id);
+        Task SubmitFeedback(Feedback feedback);
     }
 }

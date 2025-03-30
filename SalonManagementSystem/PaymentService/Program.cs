@@ -3,6 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using PaymentService.Data;
 using PaymentService.Repositories;
 using PaymentService.Services;
+using MessageBroker.Consumers;
+using MessageBroker.EventHandlers;
+using MessageBroker.Publishers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,12 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
+// Đăng ký MessageBroker
+builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
+builder.Services.AddTransient<PaymentEventPublisher>();
+builder.Services.AddHostedService<PaymentProcessedConsumer>();
+builder.Services.AddScoped<PaymentProcessedHandler>();
 
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<PaymentContext>(options =>

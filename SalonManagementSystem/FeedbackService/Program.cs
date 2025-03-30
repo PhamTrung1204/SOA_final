@@ -2,6 +2,9 @@
 using FeedbackService.Data;
 using FeedbackService.Repositories;
 using FeedbackService.Services;
+using MessageBroker.Consumers;
+using MessageBroker.EventHandlers;
+using MessageBroker.Publishers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +15,12 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+
+// Đăng ký MessageBroker
+builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
+builder.Services.AddTransient<FeedbackEventPublisher>();
+builder.Services.AddHostedService<FeedbackSubmittedConsumer>();
+builder.Services.AddScoped<FeedbackSubmittedHandler>();
 
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<FeedbackContext>(options =>
