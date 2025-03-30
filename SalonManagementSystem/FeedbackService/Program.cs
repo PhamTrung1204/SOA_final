@@ -12,14 +12,14 @@ builder.Services.AddControllers();
 // Đăng ký IHttpClientFactory
 builder.Services.AddHttpClient();
 
-builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+builder.Services.AddSingleton<ConsulService>();
 
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<FeedbackContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("FeedbackDb")));
 
 // Đăng ký Repository và Service với DI
-builder.Services.AddTransient<ConsulService>();
+
 builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService.Services.FeedbackService>();
 
@@ -55,13 +55,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+var consulService = app.Services.GetRequiredService<ConsulService>();
 var serviceName = "feedback-service";
 var serviceId = "feedback-service-1";
 var host = "feedback-service";
 var port = 80;
 
-//await consulService.RegisterAsync(serviceName, serviceId, host, port);
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 app.Lifetime.ApplicationStopping.Register(() =>
 {

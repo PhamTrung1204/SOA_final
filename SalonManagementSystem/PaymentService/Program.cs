@@ -13,14 +13,14 @@ builder.Services.AddControllers();
 // Đăng ký IHttpClientFactory
 builder.Services.AddHttpClient();
 
-builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
+builder.Services.AddSingleton<ConsulService>();
 
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<PaymentContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("PaymentDb")));
 
 // Đăng ký Repository và Service với DI
-builder.Services.AddTransient<ConsulService>();
+
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddScoped<IPaymentService, PaymentService.Services.PaymentService>();
 
@@ -54,13 +54,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-var consulService = app.Services.GetRequiredService<ServiceDiscovery.ConsulService>();
+var consulService = app.Services.GetRequiredService<ConsulService>();
 var serviceName = "payment-service";
 var serviceId = "payment-service-1";
 var host = "payment-service";
 var port = 8080;
 
-//await consulService.RegisterAsync(serviceName, serviceId, host, port);
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 app.Lifetime.ApplicationStopping.Register(() =>
 {

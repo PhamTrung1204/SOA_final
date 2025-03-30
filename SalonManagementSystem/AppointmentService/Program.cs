@@ -38,7 +38,7 @@ builder.Services.AddDbContext<AppointmentContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb")));
 
 // Đăng ký các dịch vụ cần thiết
-builder.Services.AddTransient<ConsulService>();
+
 builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService.Services.AppointmentService>();
 
@@ -100,7 +100,7 @@ var host = "appointmentservice";
 var port = 8080;
 
 // Nếu bạn cần đăng ký với Consul, bỏ comment dòng dưới đây
-// await consulService.RegisterAsync(serviceName, serviceId, host, port);
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 // Hủy đăng ký khi ứng dụng dừng
 app.Lifetime.ApplicationStopping.Register(() =>

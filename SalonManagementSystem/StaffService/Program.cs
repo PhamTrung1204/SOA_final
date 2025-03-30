@@ -34,7 +34,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // ✅ Dependency Injection
 builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IScheduleRepository, ScheduleRepository>();
-builder.Services.AddScoped<StaffService.Services.StaffHandler>();
+builder.Services.AddScoped<StaffHandler>();
 
 var app = builder.Build();
 
