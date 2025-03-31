@@ -91,16 +91,16 @@ services:
     networks:
       - salon-network
 
-  # webapp:
-  #   build:
-  #     context: ../Frontend/WebApp
-  #     dockerfile: ../../Docker/WebApp/Dockerfile
-  #   ports:
-  #     - "5007:80"
-  #   environment:
-  #     - ASPNETCORE_ENVIRONMENT=Development
-  #   networks:
-  #     - salon-network
+  webapp:
+    build:
+      context: .
+      dockerfile: ./WebApp/Dockerfile
+    ports:
+      - "5007:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    networks:
+      - salon-network
 
 # Định nghĩa mạng Docker
 networks:

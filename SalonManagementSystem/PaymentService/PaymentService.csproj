@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MessageBroker\MessageBroker.csproj" />
     <ProjectReference Include="..\SalonManagementSystem.Shared\SalonManagementSystem.Shared.csproj" />
     <ProjectReference Include="..\ServiceDiscovery\ServiceDiscovery.csproj" />
   </ItemGroup>

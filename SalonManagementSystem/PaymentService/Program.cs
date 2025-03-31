@@ -1,5 +1,4 @@
-﻿using MessageBroker;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using PaymentService.Data;
 using PaymentService.Repositories;
 using PaymentService.Services;

@@ -14,19 +14,6 @@ builder.Services.AddHttpClient();
 
 builder.Services.AddSingleton<ServiceDiscovery.ConsulService>();
 
-builder.Services.AddEndpointsApiExplorer();
-
-// ✅ Swagger cấu hình
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo
-    {
-        Title = "Staff Service API",
-        Version = "v1",
-        Description = "API for managing staff and schedules"
-    });
-});
-
 // ✅ Cấu hình DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -36,14 +23,39 @@ builder.Services.AddScoped<IStaffRepository, StaffRepository>();
 builder.Services.AddScoped<IScheduleRepository, ScheduleRepository>();
 builder.Services.AddScoped<StaffHandler>();
 
+// ✅ Swagger cấu hình
+builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+
+        Title = "Appointment API",
+        Version = "v1",
+        Description = "API for Staff and Schedules"
+
+
+    });
+});
+
 var app = builder.Build();
 
-// ✅ Middleware pipeline
+// Luôn bật Swagger (bỏ qua điều kiện môi trường để kiểm tra)
+app.UseSwagger();
+app.UseSwaggerUI(c =>
+{
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Appointment API V1");
+    c.RoutePrefix = string.Empty; // Hiển thị Swagger UI tại gốc, ví dụ: http://localhost:5017/
+});
+
+// Cấu hình pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
 }
+
+app.UseRouting();
 
 app.UseAuthorization();
 
