@@ -26,23 +26,64 @@ builder.Services.AddCors(options =>
     });
 });
 
-//MessageBroker start
-// Thêm dịch vụ vào DI container
-builder.Services.AddSingleton<RabbitMQConfig>(sp => new RabbitMQConfig(builder.Configuration["RabbitMQ:Host"]));
-
+// MessageBroker start
+// Thêm dịch vụ vào DI container với cơ chế retry
+builder.Services.AddSingleton<RabbitMQConfig>(sp =>
+{
+    var host = builder.Configuration["RabbitMQ:Host"];
+    var config = new RabbitMQConfig(host);
+    int retries = 5;
+    while (retries > 0)
+    {
+        try
+        {
+            return config;
+        }
+        catch (Exception ex)
+        {
+            retries--;
+            if (retries == 0) throw new Exception("Không thể kết nối RabbitMQ", ex);
+            Thread.Sleep(5000); // Đợi 5 giây trước khi thử lại
+        }
+    }
+    throw new Exception("Không thể khởi tạo RabbitMQConfig");
+});
 // Đăng ký Publishers
 builder.Services.AddTransient<AppointmentEventPublisher>();
+builder.Services.AddTransient<PaymentEventPublisher>();
+builder.Services.AddTransient<CustomerEventPublisher>();
+builder.Services.AddTransient<StaffEventPublisher>();
+builder.Services.AddTransient<FeedbackEventPublisher>();
 
 // Đăng ký Consumers (dùng HostedService để chạy nền)
 builder.Services.AddHostedService<AppointmentBookedConsumer>();
+builder.Services.AddHostedService<PaymentProcessedConsumer>();
+builder.Services.AddHostedService<CustomerRegisteredConsumer>();
+builder.Services.AddHostedService<StaffScheduleUpdatedConsumer>();
+builder.Services.AddHostedService<FeedbackSubmittedConsumer>();
 
 // Đăng ký Handlers
+builder.Services.AddScoped<CustomerRegisteredHandler>();
 builder.Services.AddScoped<AppointmentBookedHandler>();
+builder.Services.AddScoped<PaymentProcessedHandler>();
+builder.Services.AddScoped<StaffScheduleUpdatedHandler>();
+builder.Services.AddScoped<FeedbackSubmittedHandler>();
+
 //MessagerBroker end
 
 // Add services to the container.
+// Đăng ký DbContext với cơ chế retry
 builder.Services.AddDbContext<AppointmentContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb")));
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb"),
+        sqlOptions =>
+        {
+            sqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(30),
+                errorNumbersToAdd: null);
+        });
+});
 
 builder.Services.AddScoped<IAppointmentRepository, AppointmentRepository>();
 builder.Services.AddScoped<IAppointmentService, AppointmentService.Services.AppointmentService>();
@@ -70,7 +111,7 @@ if (app.Environment.IsDevelopment())
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppointmentrService API V1");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "AppointmentService API V1");
     c.RoutePrefix = string.Empty; // Đặt Swagger UI tại gốc (http://localhost:port/)
 });
 
