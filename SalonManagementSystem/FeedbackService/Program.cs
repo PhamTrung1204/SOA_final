@@ -24,9 +24,9 @@ builder.Services.AddScoped<IFeedbackRepository, FeedbackRepository>();
 builder.Services.AddScoped<IFeedbackService, FeedbackService.Services.FeedbackService>();
 
 // Đăng ký HttpClient cho AppointmentService
-builder.Services.AddHttpClient("AppointmentService", client =>
+builder.Services.AddHttpClient("FeedbackService", client =>
 {
-    client.BaseAddress = new Uri("http://appointmentservice/"); // Địa chỉ của AppointmentService
+    client.BaseAddress = new Uri("http://feedbackservice/"); // Địa chỉ của AppointmentService
 });
 
 // Đăng ký Swagger

@@ -68,7 +68,7 @@ var host = "service-service";
 var port = 8080;
 
 // Đăng ký dịch vụ với Consul một cách bất đồng bộ
-//await consulService.RegisterAsync(serviceName, serviceId, host, port);
+await consulService.RegisterAsync(serviceName, serviceId, host, port);
 
 // Hủy đăng ký dịch vụ khi ứng dụng dừng
 var lifetime = app.Lifetime;

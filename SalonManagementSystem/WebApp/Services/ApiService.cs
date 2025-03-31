@@ -52,7 +52,7 @@ namespace WebApp.Services
 
         public async Task<List<Customer>> GetCustomersAsync()
         {
-            var response = await _httpClient.GetAsync("api/customer");
+            var response = await _httpClient.GetAsync("api/customers");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<List<Customer>>(responseData);
@@ -60,7 +60,7 @@ namespace WebApp.Services
 
         public async Task<Customer> GetCustomerAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"api/customer/{id}");
+            var response = await _httpClient.GetAsync($"api/customers/{id}");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<Customer>(responseData);
@@ -69,14 +69,14 @@ namespace WebApp.Services
         public async Task CreateCustomerAsync(Customer customer)
         {
             var content = new StringContent(JsonSerializer.Serialize(customer), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync("api/customer", content);
+            var response = await _httpClient.PostAsync("api/customers", content);
             response.EnsureSuccessStatusCode();
         }
 
         public async Task UpdateCustomerAsync(int id, Customer customer)
         {
             var content = new StringContent(JsonSerializer.Serialize(customer), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PutAsync($"api/customer/{id}", content);
+            var response = await _httpClient.PutAsync($"api/customers/{id}", content);
             response.EnsureSuccessStatusCode();
         }
 
@@ -124,7 +124,7 @@ namespace WebApp.Services
 
         public async Task<List<Service>> GetServicesAsync()
         {
-            var response = await _httpClient.GetAsync("api/service");
+            var response = await _httpClient.GetAsync("api/services");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<List<Service>>(responseData);
@@ -132,7 +132,7 @@ namespace WebApp.Services
 
         public async Task<Service> GetServiceAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"api/service/{id}");
+            var response = await _httpClient.GetAsync($"api/services/{id}");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<Service>(responseData);
@@ -141,26 +141,26 @@ namespace WebApp.Services
         public async Task CreateServiceAsync(Service service)
         {
             var content = new StringContent(JsonSerializer.Serialize(service), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync("api/service", content);
+            var response = await _httpClient.PostAsync("api/services", content);
             response.EnsureSuccessStatusCode();
         }
 
         public async Task UpdateServiceAsync(int id, Service service)
         {
             var content = new StringContent(JsonSerializer.Serialize(service), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PutAsync($"api/service/{id}", content);
+            var response = await _httpClient.PutAsync($"api/services/{id}", content);
             response.EnsureSuccessStatusCode();
         }
 
         public async Task DeleteServiceAsync(int id)
         {
-            var response = await _httpClient.DeleteAsync($"api/service/{id}");
+            var response = await _httpClient.DeleteAsync($"api/services/{id}");
             response.EnsureSuccessStatusCode();
         }
 
         public async Task<List<Appointment>> GetAppointmentsAsync()
         {
-            var response = await _httpClient.GetAsync("api/appointment");
+            var response = await _httpClient.GetAsync("api/appointments");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<List<Appointment>>(responseData);
@@ -168,7 +168,7 @@ namespace WebApp.Services
 
         public async Task<Appointment> GetAppointmentAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"api/appointment/{id}");
+            var response = await _httpClient.GetAsync($"api/appointments/{id}");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<Appointment>(responseData);
@@ -190,13 +190,13 @@ namespace WebApp.Services
 
         public async Task DeleteAppointmentAsync(int id)
         {
-            var response = await _httpClient.DeleteAsync($"api/appointment/{id}");
+            var response = await _httpClient.DeleteAsync($"api/appointments/{id}");
             response.EnsureSuccessStatusCode();
         }
 
         public async Task<List<Payment>> GetPaymentsAsync()
         {
-            var response = await _httpClient.GetAsync("api/payment");
+            var response = await _httpClient.GetAsync("api/payments");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<List<Payment>>(responseData);
@@ -204,7 +204,7 @@ namespace WebApp.Services
 
         public async Task<Payment> GetPaymentAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"api/payment/{id}");
+            var response = await _httpClient.GetAsync($"api/payments/{id}");
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<Payment>(responseData);
@@ -213,7 +213,7 @@ namespace WebApp.Services
         public async Task CreatePaymentAsync(Payment payment)
         {
             var content = new StringContent(JsonSerializer.Serialize(payment), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync("api/payment", content);
+            var response = await _httpClient.PostAsync("api/payments", content);
             response.EnsureSuccessStatusCode();
         }
 
