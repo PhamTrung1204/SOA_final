@@ -8,20 +8,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Cấu hình dịch vụ
 
 // Thêm xác thực JWT
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-            ValidAudience = builder.Configuration["Jwt:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-        };
-    });
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+//    .AddJwtBearer(options =>
+//    {
+//        options.TokenValidationParameters = new TokenValidationParameters
+//        {
+//            ValidateIssuer = true,
+//            ValidateAudience = true,
+//            ValidateLifetime = true,
+//            ValidateIssuerSigningKey = true,
+//            ValidIssuer = builder.Configuration["Jwt:Issuer"],
+//            ValidAudience = builder.Configuration["Jwt:Audience"],
+//            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+//        };
+//    });
 
 // Thêm dịch vụ MVC với Newtonsoft.Json để xử lý JSON
 builder.Services.AddControllersWithViews()
@@ -31,12 +31,12 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddHttpClient();
 
 // Thêm Session để lưu token tạm thời (nếu cần)
-builder.Services.AddSession(options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30);
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-});
+//builder.Services.AddSession(options =>
+//{
+//    options.IdleTimeout = TimeSpan.FromMinutes(30);
+//    options.Cookie.HttpOnly = true;
+//    options.Cookie.IsEssential = true;
+//});
 
 // Thêm HttpContextAccessor để truy cập HttpContext trong ApiService
 builder.Services.AddHttpContextAccessor();
@@ -58,16 +58,16 @@ else
     app.UseHsts();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
 // Thêm middleware xác thực và phân quyền
-app.UseAuthentication();
+//app.UseAuthentication();
 app.UseAuthorization();
 
 // Thêm middleware Session
-app.UseSession();
+//app.UseSession();
 
 // Định tuyến MVC
 app.MapControllerRoute(
