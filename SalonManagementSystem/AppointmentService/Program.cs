@@ -87,8 +87,8 @@ if (app.Environment.IsDevelopment())
 // Sau đó, sử dụng middleware CORS:
 app.UseCors("AllowAll");
 app.UseRouting();
-//app.UseHttpsRedirection();
-app.UseAuthorization();
+app.UseHttpsRedirection();
+//app.UseAuthorization();
 app.MapControllers();
 
 var consulService = app.Services.GetRequiredService<ConsulService>();
