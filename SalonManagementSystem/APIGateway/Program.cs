@@ -5,6 +5,12 @@ using Ocelot.Provider.Consul;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Cấu hình Kestrel lắng nghe cổng 8080 (khớp với Dockerfile và docker-compose)
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080); // Cổng dùng trong container
+});
+
 // Thêm dịch vụ Ocelot và cấu hình Consul
 builder.Services.AddOcelot(builder.Configuration)
                 .AddConsul();  // Đăng ký Ocelot sử dụng Consul làm service discovery
