@@ -55,7 +55,7 @@ app.UseSwaggerUI(c =>
 
 app.UseRouting();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 app.MapControllers();
 
 // Lấy đối tượng ConsulService từ DI container

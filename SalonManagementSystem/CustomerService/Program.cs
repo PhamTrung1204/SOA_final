@@ -111,7 +111,7 @@ app.UseCors("AllowAll");
 
 app.UseRouting();
 //app.UseAuthentication(); // Thêm để bật xác thực JWT
-app.UseAuthorization();  // Thêm để bật phân quyền
+//app.UseAuthorization();  // Thêm để bật phân quyền
 
 app.UseEndpoints(endpoints =>
 {

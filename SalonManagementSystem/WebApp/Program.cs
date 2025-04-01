@@ -64,7 +64,7 @@ app.UseRouting();
 
 // Thêm middleware xác thực và phân quyền
 //app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthorization();
 
 // Thêm middleware Session
 //app.UseSession();
