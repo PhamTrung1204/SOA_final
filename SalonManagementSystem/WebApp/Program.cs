@@ -31,12 +31,12 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddHttpClient();
 
 // Thêm Session để lưu token tạm thời (nếu cần)
-//builder.Services.AddSession(options =>
-//{
-//    options.IdleTimeout = TimeSpan.FromMinutes(30);
-//    options.Cookie.HttpOnly = true;
-//    options.Cookie.IsEssential = true;
-//});
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 // Thêm HttpContextAccessor để truy cập HttpContext trong ApiService
 builder.Services.AddHttpContextAccessor();
@@ -67,7 +67,7 @@ app.UseRouting();
 //app.UseAuthorization();
 
 // Thêm middleware Session
-//app.UseSession();
+app.UseSession();
 
 // Định tuyến MVC
 app.MapControllerRoute(

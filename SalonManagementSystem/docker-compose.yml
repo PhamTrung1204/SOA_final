@@ -88,6 +88,10 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - appointmentservice
+      - customerservice
+      - staffservice    
+      - feedbackservice
     networks:
       - salon-network
 

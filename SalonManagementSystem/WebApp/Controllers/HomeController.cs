@@ -14,7 +14,7 @@ namespace WebApp.Controllers
             _apiService = apiService;
         }
 
-        [Authorize] // Chỉ người dùng đã đăng nhập mới truy cập được
+        //[Authorize] // Chỉ người dùng đã đăng nhập mới truy cập được
         public IActionResult Index()
         {
             return View();
@@ -68,7 +68,7 @@ namespace WebApp.Controllers
             }
         }
 
-        [Authorize]
+        //[Authorize]
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("Token");
