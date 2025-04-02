@@ -30,24 +30,22 @@ namespace WebApp.Services
             }
         }
 
-        public async Task<string> LoginAsync(LoginRequest request)
+        public async Task<AuthResponse> LoginAsync(LoginRequest request)
         {
             var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync("api/auth/login", content);
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<Dictionary<string, string>>(responseData);
-            return result["token"];
+            return JsonSerializer.Deserialize<AuthResponse>(responseData);
         }
 
-        public async Task<string> RegisterAsync(RegisterRequest request)
+        public async Task<AuthResponse> RegisterAsync(RegisterRequest request)
         {
             var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync("api/auth/register", content);
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
-            var result = JsonSerializer.Deserialize<Dictionary<string, string>>(responseData);
-            return result["token"];
+            return JsonSerializer.Deserialize<AuthResponse>(responseData);
         }
 
         public async Task<List<Customer>> GetCustomersAsync()

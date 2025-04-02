@@ -39,7 +39,7 @@ builder.Services.AddSession(options =>
 });
 
 // Thêm HttpContextAccessor để truy cập HttpContext trong ApiService
-builder.Services.AddHttpContextAccessor();
+builder.Services.AddHttpClient<IApiService, ApiService>();
 
 // Thêm ApiService với DI
 builder.Services.AddScoped<IApiService, ApiService>();
