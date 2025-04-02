@@ -15,7 +15,7 @@ namespace Frontend.WebApp.Controllers
             _apiService = apiService ?? throw new ArgumentNullException(nameof(apiService));
         }
 
-        [Authorize] // Chỉ người dùng đã đăng nhập mới truy cập được
+        [AllowAnonymous] // Chỉ người dùng đã đăng nhập mới truy cập được
         public async Task<IActionResult> Index()
         {
             var services = await _apiService.GetServicesAsync();

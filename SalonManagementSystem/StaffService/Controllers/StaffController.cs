@@ -5,7 +5,7 @@ using StaffService.Services;
 namespace StaffService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/staff")]
     public class StaffController : ControllerBase
     {
         private readonly StaffHandler _staffService;

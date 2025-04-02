@@ -9,7 +9,7 @@ using Newtonsoft.Json; // Để deserialize JSON từ các microservices
 namespace AppointmentService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/appointment")]
     public class AppointmentController : ControllerBase
     {
         private readonly IAppointmentService _appointmentService;

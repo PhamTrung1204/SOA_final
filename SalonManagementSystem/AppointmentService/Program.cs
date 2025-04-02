@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using ServiceDiscovery;
 
 using Microsoft.OpenApi.Models;
+using Consul;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -63,6 +64,9 @@ builder.Services.AddSwaggerGen(c =>
     });
 });
 
+// Add service for health checks
+builder.Services.AddHealthChecks();
+
 var app = builder.Build();
 
 // ----------------------------
@@ -90,22 +94,49 @@ app.UseRouting();
 app.UseHttpsRedirection();
 //app.UseAuthorization();
 app.MapControllers();
+app.MapHealthChecks("/api/health");
 
-var consulService = app.Services.GetRequiredService<ConsulService>();
-
-
-var serviceName = "appointment-service";
-var serviceId = "appointment-service-1";
-var host = "appointmentservice";
-var port = 8080;
-
-// Nếu bạn cần đăng ký với Consul, bỏ comment dòng dưới đây
-await consulService.RegisterAsync(serviceName, serviceId, host, port);
-
-// Hủy đăng ký khi ứng dụng dừng
-app.Lifetime.ApplicationStopping.Register(() =>
-{
-    consulService.DeregisterAsync(serviceId).GetAwaiter().GetResult();
-});
+// Register with Consul
+RegisterWithConsul(app);
 
 app.Run();
+
+void RegisterWithConsul(WebApplication app)
+{
+    var consulHost = Environment.GetEnvironmentVariable("CONSUL_HOST") ?? "localhost";
+    var consulPort = 8500; // Default Consul port
+
+    // Get service info from environment variables
+    var serviceHost = Environment.GetEnvironmentVariable("SERVICE_HOST") ?? "localhost";
+    var servicePort = int.Parse(Environment.GetEnvironmentVariable("SERVICE_PORT") ?? "8080");
+
+    var serviceId = $"appointment-{Guid.NewGuid()}";
+    var serviceName = "appointmentservice";
+
+    var consulClient = new ConsulClient(c => {
+        c.Address = new Uri($"http://{consulHost}:{consulPort}");
+    });
+
+    var registration = new AgentServiceRegistration()
+    {
+        ID = serviceId,
+        Name = serviceName,
+        Address = serviceHost,
+        Port = servicePort,
+        Check = new AgentServiceCheck()
+        {
+            HTTP = $"http://{serviceHost}:{servicePort}/api/health",
+            Interval = TimeSpan.FromSeconds(10),
+            Timeout = TimeSpan.FromSeconds(5),
+            DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1)
+        }
+    };
+
+    // Register service with Consul
+    consulClient.Agent.ServiceRegister(registration).Wait();
+
+    // Deregister when the application stops
+    app.Lifetime.ApplicationStopping.Register(() => {
+        consulClient.Agent.ServiceDeregister(serviceId).Wait();
+    });
+}

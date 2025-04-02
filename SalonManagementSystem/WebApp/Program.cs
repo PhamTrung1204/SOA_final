@@ -5,23 +5,33 @@ using WebApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Đăng ký IHttpContextAccessor
+builder.Services.AddHttpContextAccessor();
+builder.Configuration.AddEnvironmentVariables();
+builder.Configuration["ApiGateway"] = builder.Configuration["GATEWAY_URL"];
+
 // Cấu hình dịch vụ
 
 // Thêm xác thực JWT
-//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-//    .AddJwtBearer(options =>
-//    {
-//        options.TokenValidationParameters = new TokenValidationParameters
-//        {
-//            ValidateIssuer = true,
-//            ValidateAudience = true,
-//            ValidateLifetime = true,
-//            ValidateIssuerSigningKey = true,
-//            ValidIssuer = builder.Configuration["Jwt:Issuer"],
-//            ValidAudience = builder.Configuration["Jwt:Audience"],
-//            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-//        };
-//    });
+// Thêm cấu hình Authentication với default scheme
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    };
+});
 
 // Thêm dịch vụ MVC với Newtonsoft.Json để xử lý JSON
 builder.Services.AddControllersWithViews()
@@ -39,9 +49,7 @@ builder.Services.AddSession(options =>
 });
 
 // Thêm HttpContextAccessor để truy cập HttpContext trong ApiService
-builder.Services.AddHttpClient<IApiService, ApiService>();
-
-// Thêm ApiService với DI
+builder.Services.AddHttpClient<ApiService>(); // Chỉ cần đăng ký HttpClient một lần
 builder.Services.AddScoped<IApiService, ApiService>();
 
 // Xây dựng ứng dụng
@@ -63,8 +71,8 @@ app.UseStaticFiles();
 app.UseRouting();
 
 // Thêm middleware xác thực và phân quyền
-//app.UseAuthentication();
-//app.UseAuthorization();
+app.UseAuthentication();
+app.UseAuthorization();
 
 // Thêm middleware Session
 app.UseSession();

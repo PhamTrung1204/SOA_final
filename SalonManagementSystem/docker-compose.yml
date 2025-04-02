@@ -1,11 +1,11 @@
 services:
-
   consul:
     image: hashicorp/consul:latest
     ports:
       - "8500:8500"
     networks:
       - salon-network
+    command: "agent -dev -client=0.0.0.0"
 
   customerservice:
     build:
@@ -16,8 +16,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - SERVICE_HOST=customerservice
+      - SERVICE_PORT=8080
     networks:
       - salon-network
+    depends_on:
+      - consul
 
   staffservice:
     build:
@@ -28,8 +32,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - SERVICE_HOST=staffservice
+      - SERVICE_PORT=8080
     networks:
       - salon-network
+    depends_on:
+      - consul
 
   serviceservice:
     build:
@@ -40,8 +48,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - SERVICE_HOST=serviceservice
+      - SERVICE_PORT=8080
     networks:
       - salon-network
+    depends_on:
+      - consul
 
   appointmentservice:
     build:
@@ -52,8 +64,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - SERVICE_HOST=appointmentservice
+      - SERVICE_PORT=8080
     networks:
       - salon-network
+    depends_on:
+      - consul
 
   paymentservice:
     build:
@@ -64,8 +80,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - SERVICE_HOST=paymentservice
+      - SERVICE_PORT=8080
     networks:
       - salon-network
+    depends_on:
+      - consul
 
   feedbackservice:
     build:
@@ -76,8 +96,12 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
+      - SERVICE_HOST=feedbackservice
+      - SERVICE_PORT=8080
     networks:
       - salon-network
+    depends_on:
+      - consul
 
   apigateway:
     build:
@@ -88,12 +112,16 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - CONSUL_HOST=consul
-      - appointmentservice
-      - customerservice
-      - staffservice    
-      - feedbackservice
     networks:
       - salon-network
+    depends_on:
+      - consul
+      - customerservice
+      - staffservice
+      - serviceservice
+      - appointmentservice
+      - paymentservice
+      - feedbackservice
 
   webapp:
     build:
@@ -103,10 +131,12 @@ services:
       - "5007:8080"
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
+      - GATEWAY_URL=http://apigateway:8080
     networks:
       - salon-network
+    depends_on:
+      - apigateway
 
-# Định nghĩa mạng Docker
 networks:
   salon-network:
     driver: bridge

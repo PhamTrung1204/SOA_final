@@ -50,10 +50,12 @@
     }
   ],
   "GlobalConfiguration": {
+    "BaseUrl": "http://apigateway:8080",
     "ServiceDiscoveryProvider": {
       "Host": "consul",
       "Port": 8500,
-      "Type": "Consul"
+      "Type": "Consul",
+      "PollingInterval": 1000
     }
   }
 }

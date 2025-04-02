@@ -5,7 +5,7 @@ using SalonManagementSystem.Shared.Models;
 namespace CustomerService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/customer")]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _customerService;

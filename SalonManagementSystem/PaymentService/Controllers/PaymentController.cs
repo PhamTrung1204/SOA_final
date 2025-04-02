@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace PaymentService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/payment")]
     public class PaymentController : ControllerBase
     {
         private readonly IPaymentService _paymentService;

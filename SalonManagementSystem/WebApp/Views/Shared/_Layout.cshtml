@@ -7,10 +7,100 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <style>
+        :root {
+            --primary-color: #6a11cb;
+            --secondary-color: #2575fc;
+            --light-color: #f8f9fa;
+            --dark-color: #212529;
+        }
+
+        .navbar {
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color)) !important;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0.8rem 1rem;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: white !important;
+            transition: transform 0.3s ease;
+        }
+
+            .navbar-brand:hover {
+                transform: scale(1.05);
+            }
+
+        .nav-link {
+            font-weight: 500;
+            padding: 0.5rem 1rem !important;
+            margin: 0 0.2rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            color: rgba(255,255,255,0.9) !important;
+        }
+
+            .nav-link:hover {
+                background-color: rgba(255,255,255,0.15);
+                color: white !important;
+                transform: translateY(-2px);
+            }
+
+            .nav-link.active {
+                background-color: rgba(255,255,255,0.2);
+                color: white !important;
+            }
+
+        .btn-login {
+            color: white !important;
+            background-color: rgba(255,255,255,0.15);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+            .btn-login:hover {
+                background-color: rgba(255,255,255,0.25);
+                transform: translateY(-2px);
+            }
+
+        .btn-register {
+            color: var(--primary-color) !important;
+            background-color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+            .btn-register:hover {
+                background-color: rgba(255,255,255,0.9);
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+        .navbar-toggler {
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .main-content {
+            min-height: calc(100vh - 160px);
+            padding: 2rem 0;
+        }
+
+        footer {
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            padding: 1.5rem 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="/">
                     <i class="fas fa-cut me-2"></i> Salon Elegance
@@ -21,27 +111,45 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home me-1"></i> Home
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="Services">Services</a>
+                            <a class="nav-link" asp-controller="Service" asp-action="Index">
+                                <i class="fas fa-spa me-1"></i> Services
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Home" asp-action="BookAppointment">Book Appointment</a>
+                            <a class="nav-link" asp-controller="Booking" asp-action="Index">
+                                <i class="far fa-calendar-alt me-1"></i> Book Appointment
+                            </a>
                         </li>
                         @if (User.Identity.IsAuthenticated)
                         {
-                            <li class="nav-item">
-                                <a class="nav-link" asp-controller="Auth" asp-action="Logout">Logout</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-user-circle me-1"></i> My Account
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" asp-controller="Account" asp-action="Profile"><i class="fas fa-id-card me-2"></i>Profile</a></li>
+                                    <li><a class="dropdown-item" asp-controller="Booking" asp-action="MyAppointments"><i class="fas fa-calendar-check me-2"></i>My Appointments</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item text-danger" asp-controller="Auth" asp-action="Logout"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+                                </ul>
                             </li>
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Auth" asp-action="Login">Login</a>
+                                <a class="nav-link btn-login" asp-controller="Home" asp-action="Login">
+                                    <i class="fas fa-sign-in-alt me-1"></i> Login
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link btn btn-outline-light ms-2" asp-controller="Auth" asp-action="Register">Register</a>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link btn-register" asp-controller="Home" asp-action="Register">
+                                    <i class="fas fa-user-plus me-1"></i> Register
+                                </a>
                             </li>
                         }
                     </ul>
@@ -50,41 +158,41 @@
         </nav>
     </header>
 
-    <main role="main">
-        @RenderBody()
+    <main class="main-content">
+        <div class="container">
+            @RenderBody()
+        </div>
     </main>
 
-    <footer class="bg-dark text-white py-4">
-        <div class="container">
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-md-4">
-                    <h5>About Us</h5>
-                    <p>Salon Elegance offers premium hair and beauty services with a touch of luxury. Book your appointment today!</p>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Salon Elegance</h5>
+                    <p class="text-white-50">Giúp bạn trông đẹp và cảm thấy tự tin từ năm 2020.</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-white mb-3">Liên Hệ Với Chúng Tôi</h5>
+                    <p class="text-white"><i class="fas fa-map-marker-alt me-2"></i> 123 Đường Sắc Đẹp, Thành Phố Salon</p>
+                    <p class="text-white"><i class="fas fa-phone me-2"></i> (123) 456-7890</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="/Services" class="text-white">Services</a></li>
-                        <li><a href="/BookAppointment" class="text-white">Book Appointment</a></li>
-                        <li><a href="/Contact" class="text-white">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Contact</h5>
-                    <p><i class="fas fa-phone me-2"></i> +1 234 567 890</p>
-                    <p><i class="fas fa-envelope me-2"></i> info@salonelegance.com</p>
-                    <p><i class="fas fa-map-marker-alt me-2"></i> 123 Beauty St, Glam City</p>
+                    <h5 class="text-white mb-3">Theo Dõi Chúng Tôi</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="text-center mt-3">
-                <p>© 2025 Salon Elegance. All rights reserved.</p>
+            <div class="border-top border-secondary pt-3 mt-3">
+                <span class="text-white">&copy; 2025 - Salon Elegance - </span><a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Chính sách bảo mật</a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", false)
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
