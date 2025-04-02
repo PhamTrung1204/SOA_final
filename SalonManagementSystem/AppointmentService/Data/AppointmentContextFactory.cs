@@ -26,7 +26,7 @@ namespace AppointmentService.Data
 
             // Cấu hình DbContext
             var optionsBuilder = new DbContextOptionsBuilder<AppointmentContext>();
-            optionsBuilder.UseSqlServer(connectionString); // Sử dụng SQL Server với chuỗi kết nối
+            optionsBuilder.UseNpgsql(connectionString); // Sử dụng SQL Server với chuỗi kết nối
 
             return new AppointmentContext(optionsBuilder.Options);
         }

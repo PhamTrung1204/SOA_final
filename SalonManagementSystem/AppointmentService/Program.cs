@@ -35,7 +35,7 @@ builder.Services.AddCors(options =>
 
 
 builder.Services.AddDbContext<AppointmentContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AppointmentDb")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("AppointmentDb")));
 
 // Đăng ký các dịch vụ cần thiết
 

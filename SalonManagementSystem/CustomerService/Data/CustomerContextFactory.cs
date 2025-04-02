@@ -15,7 +15,7 @@ namespace CustomerService.Data
                 .Build();
 
             var optionsBuilder = new DbContextOptionsBuilder<CustomerContext>();
-            optionsBuilder.UseSqlServer(config.GetConnectionString("CustomerDb"));
+            optionsBuilder.UseNpgsql(config.GetConnectionString("CustomerDb"));
 
             return new CustomerContext(optionsBuilder.Options);
         }

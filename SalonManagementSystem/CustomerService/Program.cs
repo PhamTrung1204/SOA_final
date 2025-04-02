@@ -30,7 +30,7 @@ builder.Services.AddCors(options =>
 
 // Cấu hình DbContext
 builder.Services.AddDbContext<CustomerContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerDb")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("CustomerDb")));
 
 // Đăng ký Repository và Service
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();

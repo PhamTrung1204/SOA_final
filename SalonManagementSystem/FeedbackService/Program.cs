@@ -16,7 +16,7 @@ builder.Services.AddSingleton<ConsulService>();
 
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<FeedbackContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("FeedbackDb")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("FeedbackDb")));
 
 // Đăng ký Repository và Service với DI
 

@@ -16,7 +16,7 @@ builder.Services.AddSingleton<ConsulService>();
 
 // Đăng ký DbContext với SQL Server
 builder.Services.AddDbContext<PaymentContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("PaymentDb")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("PaymentDb")));
 
 // Đăng ký Repository và Service với DI
 
