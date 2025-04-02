@@ -1,23 +1,44 @@
 ﻿@model SalonManagementSystem.Shared.Models.Service
-
 @{
-    ViewData["Title"] = "Create Service";
+    ViewData["Title"] = "Thêm Dịch vụ";
 }
 
-<h2>Create Service</h2>
+<div class="container py-4">
+    <h2 class="fw-bold text-success mb-4">➕ Thêm Dịch vụ mới</h2>
+    <form asp-action="Create" method="post" class="card p-4 shadow-sm bg-light rounded-4">
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label class="form-label fw-semibold">Tên dịch vụ</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-scissors"></i></span>
+                    <input asp-for="Name" class="form-control" placeholder="VD: Cắt tóc nam..." />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label class="form-label fw-semibold">Giá (VNĐ)</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-cash"></i></span>
+                    <input asp-for="Price" type="number" class="form-control" placeholder="VD: 100000" />
+                </div>
+            </div>
+        </div>
 
-<form asp-action="Create" method="post">
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Price"></label>
-        <input asp-for="Price" class="form-control" />
-    </div>
-    <div class="form-group">
-        <label asp-for="Duration"></label>
-        <input asp-for="Duration" class="form-control" />
-    </div>
-    <button type="submit" class="btn btn-primary">Create</button>
-</form>
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Mô tả</label>
+            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Mô tả chi tiết..."></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Thời gian thực hiện (phút)</label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-clock"></i></span>
+                <input asp-for="Duration" type="number" class="form-control" placeholder="VD: 30" />
+            </div>
+        </div>
+
+        <div class="text-end">
+            <a href="/Service" class="btn btn-secondary me-2">Quay lại</a>
+            <button type="submit" class="btn btn-success">Lưu dịch vụ</button>
+        </div>
+    </form>
+</div>

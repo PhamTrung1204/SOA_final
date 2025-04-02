@@ -1,73 +1,58 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
 using SalonManagementSystem.Shared.Models;
-using WebApp.Services;
+using System.Collections.Generic;
 
 namespace WebApp.Controllers
 {
     public class ServiceController : Controller
     {
-        private readonly IApiService _apiService;
+        private readonly HttpClient _httpClient;
+        private readonly string baseUrl = "http://apigateway:8080/api/service";
 
-        public ServiceController(IApiService apiService)
+        public ServiceController(IHttpClientFactory factory)
         {
-            _apiService = apiService;
+            _httpClient = factory.CreateClient();
         }
 
         public async Task<IActionResult> Index()
         {
-            var services = await _apiService.GetServicesAsync();
+            var response = await _httpClient.GetAsync(baseUrl);
+            if (!response.IsSuccessStatusCode) return View(new List<Service>());
+            var data = await response.Content.ReadAsStringAsync();
+            var services = JsonConvert.DeserializeObject<List<Service>>(data);
             return View(services);
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
+        public IActionResult Create() => View();
 
         [HttpPost]
         public async Task<IActionResult> Create(Service service)
         {
-            if (ModelState.IsValid)
-            {
-                await _apiService.CreateServiceAsync(service);
-                return RedirectToAction("Index");
-            }
-            return View(service);
+            var content = new StringContent(JsonConvert.SerializeObject(service), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync(baseUrl, content);
+            if (!response.IsSuccessStatusCode) return View(service);
+            return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> Edit(int id)
         {
-            var service = await _apiService.GetServiceAsync(id);
+            var response = await _httpClient.GetAsync($"{baseUrl}/{id}");
+            if (!response.IsSuccessStatusCode) return NotFound();
+            var data = await response.Content.ReadAsStringAsync();
+            var service = JsonConvert.DeserializeObject<Service>(data);
             return View(service);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, Service service)
+        public async Task<IActionResult> Edit(Service service)
         {
-            if (ModelState.IsValid)
-            {
-                await _apiService.UpdateServiceAsync(id, service);
-                return RedirectToAction("Index");
-            }
-            return View(service);
-        }
-
-        public async Task<IActionResult> Details(int id)
-        {
-            var service = await _apiService.GetServiceAsync(id);
-            return View(service);
-        }
-
-        public async Task<IActionResult> Delete(int id)
-        {
-            var service = await _apiService.GetServiceAsync(id);
-            return View(service);
-        }
-
-        [HttpPost, ActionName("Delete")]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            await _apiService.DeleteServiceAsync(id);
+            var content = new StringContent(JsonConvert.SerializeObject(service), Encoding.UTF8, "application/json");
+            var response = await _httpClient.PutAsync($"{baseUrl}/{service.ServiceId}", content);
+            if (!response.IsSuccessStatusCode) return View(service);
             return RedirectToAction("Index");
         }
     }

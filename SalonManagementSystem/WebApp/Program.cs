@@ -5,6 +5,8 @@ using WebApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+
+
 // Cấu hình dịch vụ
 
 // Thêm xác thực JWT
@@ -37,6 +39,9 @@ builder.Services.AddSession(options =>
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
 });
+
+builder.Services.AddControllersWithViews(); // phải có cái này
+builder.Services.AddHttpClient(); // đã dùng HttpClient
 
 // Thêm HttpContextAccessor để truy cập HttpContext trong ApiService
 builder.Services.AddHttpContextAccessor();
