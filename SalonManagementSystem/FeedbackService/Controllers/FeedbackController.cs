@@ -11,7 +11,7 @@ using Feedback = SalonManagementSystem.Shared.Models.Feedback;
 namespace FeedbackService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/feedback")]
     public class FeedbackController : ControllerBase
     {
         private readonly IFeedbackService _feedbackService;

@@ -5,7 +5,7 @@ using ServiceService.Services;
 namespace ServiceService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/services")]
     public class ServiceController : ControllerBase
     {
         private readonly ServiceHandler _service;

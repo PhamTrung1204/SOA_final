@@ -1,29 +1,85 @@
-﻿@model SalonManagementSystem.Shared.Models.RegisterRequest
-
+﻿@model List<SalonManagementSystem.Shared.Models.Appointment>
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Danh Sách Lịch Hẹn";
 }
 
-<h2>Register</h2>
+<div class="container">
+    <div class="row mb-4">
+        <div class="col-md-8">
+            <h2><i class="far fa-calendar-alt me-2"></i>Danh Sách Lịch Hẹn</h2>
+        </div>
+        <div class="col-md-4 text-end">
+            <a asp-action="Create" class="btn btn-primary">
+                <i class="fas fa-plus me-2"></i>Tạo Lịch Hẹn Mới
+            </a>
+        </div>
+    </div>
 
-@if (ViewBag.Error != null)
-{
-    <div class="alert alert-danger">@ViewBag.Error</div>
-}
-
-<form asp-action="Register" method="post">
-    <div class="form-group">
-        <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label asp-for="Email"></label>
-        <input asp-for="Email" class="form-control" required />
-    </div>
-    <div class="form-group">
-        <label asp-for="Password"></label>
-        <input asp-for="Password" type="password" class="form-control" required />
-    </div>
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
-<p>Already have an account? <a asp-action="Login">Login</a></p>
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i>Hiện tại không có lịch hẹn nào.
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead class="table-light">
+                    <tr>
+                        <th>Mã</th>
+                        <th>Khách Hàng</th>
+                        <th>Nhân Viên</th>
+                        <th>Dịch Vụ</th>
+                        <th>Ngày Giờ</th>
+                        <th>Trạng Thái</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.AppointmentId</td>
+                            <td>@item.CustomerId</td>
+                            <td>@item.StaffId</td>
+                            <td>@item.ServiceId</td>
+                            <td>@item.AppointmentDate.ToString("dd/MM/yyyy HH:mm")</td>
+                            <td>
+                                @if (item.Status == "Scheduled")
+                                {
+                                    <span class="badge bg-primary">Đã lên lịch</span>
+                                }
+                                else if (item.Status == "Completed")
+                                {
+                                    <span class="badge bg-success">Hoàn thành</span>
+                                }
+                                else if (item.Status == "Cancelled")
+                                {
+                                    <span class="badge bg-danger">Đã hủy</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-secondary">@item.Status</span>
+                                }
+                            </td>
+                            <td>
+                                <div class="btn-group">
+                                    <a asp-action="Details" asp-route-id="@item.AppointmentId" class="btn btn-sm btn-info">
+                                        <i class="fas fa-eye"></i>
+                                    </a>
+                                    <a asp-action="Edit" asp-route-id="@item.AppointmentId" class="btn btn-sm btn-warning">
+                                        <i class="fas fa-edit"></i>
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@item.AppointmentId" class="btn btn-sm btn-danger">
+                                        <i class="fas fa-trash"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

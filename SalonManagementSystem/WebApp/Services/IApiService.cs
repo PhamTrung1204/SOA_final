@@ -4,8 +4,8 @@ namespace WebApp.Services
 {
     public interface IApiService
     {
-        Task<string> LoginAsync(LoginRequest request);
-        Task<string> RegisterAsync(RegisterRequest request);
+        Task<AuthResponse> LoginAsync(LoginRequest request);
+        Task<AuthResponse> RegisterAsync(RegisterRequest request);
         Task<List<Customer>> GetCustomersAsync();
         Task<Customer> GetCustomerAsync(int id);
         Task CreateCustomerAsync(Customer customer);
