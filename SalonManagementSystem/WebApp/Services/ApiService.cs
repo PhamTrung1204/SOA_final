@@ -45,10 +45,15 @@ namespace WebApp.Services
             return JsonSerializer.Deserialize<AuthResponse>(responseData);
         }
 
+        // For authentication
         public async Task<AuthResponse> RegisterAsync(RegisterRequest request)
         {
-            var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
+            var content = new StringContent(JsonSerializer.Serialize(request),
+            Encoding.UTF8, "application/json");
+
+            // Change from "api/auth/register" to "api/customers/auth/register"
             var response = await _httpClient.PostAsync("api/auth/register", content);
+
             response.EnsureSuccessStatusCode();
             var responseData = await response.Content.ReadAsStringAsync();
             return JsonSerializer.Deserialize<AuthResponse>(responseData);

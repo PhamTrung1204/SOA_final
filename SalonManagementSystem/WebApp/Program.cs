@@ -1,9 +1,16 @@
 ﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using WebApp.Services;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// In Program.cs
+var keysDirectory = builder.Configuration["DataProtection:KeysDirectory"] ?? "/app/keys";
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo(keysDirectory))
+    .SetApplicationName("SalonManagementSystem");
 
 // Đăng ký IHttpContextAccessor
 builder.Services.AddHttpContextAccessor();

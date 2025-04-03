@@ -47,6 +47,8 @@ namespace ServiceDiscovery
                     Timeout = TimeSpan.FromSeconds(5)
                 }
             };
+            await _consulClient.Agent.ServiceRegister(registration);
+            Console.WriteLine($"Service {serviceId} registered with Consul at {host}:{port}");
         }
 
         public async Task DeregisterServiceAsync(string serviceId)

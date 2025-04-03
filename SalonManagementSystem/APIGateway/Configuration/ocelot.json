@@ -1,17 +1,17 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/customers/{everything}",
+      "DownstreamPathTemplate": "/api/customer/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "customer-service",
+      "ServiceName": "customerservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/customers/{everything}",
+      "UpstreamPathTemplate": "/api/customer/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     },
     {
       "DownstreamPathTemplate": "/api/staff/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "staff-service",
+      "ServiceName": "staffservice",
       "UseServiceDiscovery": true,
       "UpstreamPathTemplate": "/api/staff/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
@@ -19,33 +19,41 @@
     {
       "DownstreamPathTemplate": "/api/services/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "service-service",
+      "ServiceName": "serviceservice",
       "UseServiceDiscovery": true,
       "UpstreamPathTemplate": "/api/services/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/api/appointments/{everything}",
+      "DownstreamPathTemplate": "/api/appointment/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "appointment-service",
+      "ServiceName": "appointmentservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/appointments/{everything}",
+      "UpstreamPathTemplate": "/api/appointment/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     },
     {
-      "DownstreamPathTemplate": "/api/payments/{everything}",
+      "DownstreamPathTemplate": "/api/payment/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "payment-service",
+      "ServiceName": "paymentservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/payments/{everything}",
+      "UpstreamPathTemplate": "/api/payment/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     },
     {
       "DownstreamPathTemplate": "/api/feedback/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "feedback-service",
+      "ServiceName": "feedbackservice",
       "UseServiceDiscovery": true,
       "UpstreamPathTemplate": "/api/feedback/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth/{everything}",
+      "DownstreamScheme": "http",
+      "ServiceName": "customerservice",
+      "UseServiceDiscovery": true,
+      "UpstreamPathTemplate": "/api/auth/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
     }
   ],

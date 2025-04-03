@@ -28,4 +28,6 @@ RUN dotnet publish "./WebApp.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+# In WebApp's Dockerfile
+RUN mkdir -p /app/keys && chmod 777 /app/keys
 ENTRYPOINT ["dotnet", "WebApp.dll"]

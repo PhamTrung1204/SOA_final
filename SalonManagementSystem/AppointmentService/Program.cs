@@ -2,9 +2,7 @@ using AppointmentService.Data;
 using AppointmentService.Repositories;
 using AppointmentService.Services;
 using Microsoft.EntityFrameworkCore;
-
 using ServiceDiscovery;
-
 using Microsoft.OpenApi.Models;
 using Consul;
 
@@ -98,45 +96,24 @@ app.MapHealthChecks("/api/health");
 
 // Register with Consul
 RegisterWithConsul(app);
-
 app.Run();
 
-void RegisterWithConsul(WebApplication app)
+async void RegisterWithConsul(WebApplication app)
 {
-    var consulHost = Environment.GetEnvironmentVariable("CONSUL_HOST") ?? "localhost";
-    var consulPort = 8500; // Default Consul port
-
     // Get service info from environment variables
     var serviceHost = Environment.GetEnvironmentVariable("SERVICE_HOST") ?? "localhost";
     var servicePort = int.Parse(Environment.GetEnvironmentVariable("SERVICE_PORT") ?? "8080");
-
     var serviceId = $"appointment-{Guid.NewGuid()}";
     var serviceName = "appointmentservice";
 
-    var consulClient = new ConsulClient(c => {
-        c.Address = new Uri($"http://{consulHost}:{consulPort}");
-    });
-
-    var registration = new AgentServiceRegistration()
-    {
-        ID = serviceId,
-        Name = serviceName,
-        Address = serviceHost,
-        Port = servicePort,
-        Check = new AgentServiceCheck()
-        {
-            HTTP = $"http://{serviceHost}:{servicePort}/api/health",
-            Interval = TimeSpan.FromSeconds(10),
-            Timeout = TimeSpan.FromSeconds(5),
-            DeregisterCriticalServiceAfter = TimeSpan.FromMinutes(1)
-        }
-    };
+    // Sử dụng ConsulService từ namespace ServiceDiscovery
+    var consulService = app.Services.GetRequiredService<ConsulService>();
 
     // Register service with Consul
-    consulClient.Agent.ServiceRegister(registration).Wait();
+    await consulService.RegisterAsync(serviceName, serviceId, serviceHost, servicePort);
 
     // Deregister when the application stops
-    app.Lifetime.ApplicationStopping.Register(() => {
-        consulClient.Agent.ServiceDeregister(serviceId).Wait();
+    app.Lifetime.ApplicationStopping.Register(async () => {
+        await consulService.DeregisterAsync(serviceId);
     });
 }

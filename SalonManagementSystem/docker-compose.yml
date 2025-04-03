@@ -18,6 +18,9 @@ services:
       - CONSUL_HOST=consul
       - SERVICE_HOST=customerservice
       - SERVICE_PORT=8080
+      - Jwt__Key=3coderlochuanbibaocaodoankientrucphanmemhuongdichvu@#$@$#
+      - Jwt__Issuer=SalonManagementSystem
+      - Jwt__Audience=SalonManagementSystem
     networks:
       - salon-network
     depends_on:
@@ -132,6 +135,8 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - GATEWAY_URL=http://apigateway:8080
+    volumes:
+      - webapp-keys:/app/keys
     networks:
       - salon-network
     depends_on:
@@ -140,3 +145,6 @@ services:
 networks:
   salon-network:
     driver: bridge
+
+volumes:
+  webapp-keys:
