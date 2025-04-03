@@ -8,6 +8,12 @@ using ServiceService.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Cấu hình Kestrel lắng nghe cổng 8080 và 8081 (HTTPS)
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(8080); // ✅ Lắng nghe đúng cổng Docker expose
+});
+
 // Add services
 builder.Services.AddControllers();
 
@@ -33,6 +39,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Dependency Injection
 builder.Services.AddScoped<IServiceRepository, ServiceRepository>();
 builder.Services.AddScoped<ServiceHandler>(); // Đã đổi tên class để tránh trùng với namespace
+
+
 
 // ✅ Thêm SwaggerGen + cấu hình OpenAPI
 builder.Services.AddSwaggerGen(c =>

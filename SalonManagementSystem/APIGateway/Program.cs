@@ -9,11 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Load cấu hình Ocelot
 builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
 
-// Cấu hình Kestrel lắng nghe cổng 8080 và 8081 (HTTPS)
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenAnyIP(8080); // ✅ Không cần HTTPS cho dev trong Docker
-});
+
 
 // Đăng ký Ocelot + Consul
 builder.Services.AddOcelot(builder.Configuration)

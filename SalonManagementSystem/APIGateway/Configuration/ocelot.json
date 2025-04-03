@@ -3,63 +3,78 @@
     {
       "DownstreamPathTemplate": "/api/customers",
       "DownstreamScheme": "http",
-      "ServiceName": "customerservice",
-      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customerservice",
+          "Port": 8080
+        }
+      ],
       "UpstreamPathTemplate": "/api/customers",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/api/staff",
       "DownstreamScheme": "http",
-      "ServiceName": "staffservice",
-      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "staffservice",
+          "Port": 8080
+        }
+      ],
       "UpstreamPathTemplate": "/api/staff",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/api/services",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "serviceservice",
+          "Port": 8080
+        }
+      ],
       "UpstreamPathTemplate": "/api/services",
-      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "ServiceName": "serviceservice",
-      "LoadBalancerOptions": {
-        "Type": "RoundRobin"
-      },
-      "UseServiceDiscovery": true,
-      "DownstreamScheme": "http"
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/api/appointments",
       "DownstreamScheme": "http",
-      "ServiceName": "appointmentservice",
-      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "appointmentservice",
+          "Port": 8080
+        }
+      ],
       "UpstreamPathTemplate": "/api/appointments",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/api/payments",
       "DownstreamScheme": "http",
-      "ServiceName": "paymentservice",
-      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "paymentservice",
+          "Port": 8080
+        }
+      ],
       "UpstreamPathTemplate": "/api/payments",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
       "DownstreamPathTemplate": "/api/feedback",
       "DownstreamScheme": "http",
-      "ServiceName": "feedbackservice",
-      "UseServiceDiscovery": true,
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "feedbackservice",
+          "Port": 8080
+        }
+      ],
       "UpstreamPathTemplate": "/api/feedback",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "http://localhost:5000",
-    "ServiceDiscoveryProvider": {
-      "Host": "consul",
-      "Port": 8500,
-      "Type": "Consul",
-      "PollingInterval": 1000
-    },
     "Cors": {
       "Origins": [ "http://localhost:5007" ],
       "Methods": [ "GET", "POST", "PUT", "DELETE" ],
