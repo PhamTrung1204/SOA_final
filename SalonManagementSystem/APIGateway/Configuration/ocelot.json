@@ -1,56 +1,59 @@
 ﻿{
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/customers/{everything}",
+      "DownstreamPathTemplate": "/api/customers",
       "DownstreamScheme": "http",
-      "ServiceName": "customer-service",
+      "ServiceName": "customerservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/customers/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/customers",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
-      "DownstreamPathTemplate": "/api/staff/{everything}",
+      "DownstreamPathTemplate": "/api/staff",
       "DownstreamScheme": "http",
-      "ServiceName": "staff-service",
+      "ServiceName": "staffservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/staff/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/staff",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
-      "DownstreamPathTemplate": "/api/services/{everything}",
-      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/services",
+      "UpstreamPathTemplate": "/api/services",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "ServiceName": "serviceservice",
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/services/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "DownstreamScheme": "http"
     },
     {
-      "DownstreamPathTemplate": "/api/appointments/{everything}",
+      "DownstreamPathTemplate": "/api/appointments",
       "DownstreamScheme": "http",
-      "ServiceName": "appointment-service",
+      "ServiceName": "appointmentservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/appointments/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/appointments",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
-      "DownstreamPathTemplate": "/api/payments/{everything}",
+      "DownstreamPathTemplate": "/api/payments",
       "DownstreamScheme": "http",
-      "ServiceName": "payment-service",
+      "ServiceName": "paymentservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/payments/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/payments",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     },
     {
-      "DownstreamPathTemplate": "/api/feedback/{everything}",
+      "DownstreamPathTemplate": "/api/feedback",
       "DownstreamScheme": "http",
-      "ServiceName": "feedback-service",
+      "ServiceName": "feedbackservice",
       "UseServiceDiscovery": true,
-      "UpstreamPathTemplate": "/api/feedback/{everything}",
-      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
+      "UpstreamPathTemplate": "/api/feedback",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
     }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": "http://apigateway:8080",
+    "BaseUrl": "http://localhost:5000",
     "ServiceDiscoveryProvider": {
       "Host": "consul",
       "Port": 8500,
@@ -60,8 +63,7 @@
     "Cors": {
       "Origins": [ "http://localhost:5007" ],
       "Methods": [ "GET", "POST", "PUT", "DELETE" ],
-      "Headers": [ "*" ],
-      "AllowCredentials": false
+      "Headers": [ "*" ]
     }
   }
 }

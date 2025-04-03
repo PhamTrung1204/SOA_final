@@ -2,40 +2,73 @@ using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 using Microsoft.Extensions.Configuration;
 using Ocelot.Provider.Consul;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Cấu hình Kestrel lắng nghe cổng 8080 (khớp với Dockerfile và docker-compose)
+// Load cấu hình Ocelot
+builder.Configuration.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
+
+// Cấu hình Kestrel lắng nghe cổng 8080 và 8081 (HTTPS)
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(8080); // Cổng dùng trong container
+    options.ListenAnyIP(8080); // ✅ Không cần HTTPS cho dev trong Docker
 });
 
-// Thêm dịch vụ Ocelot và cấu hình Consul
+// Đăng ký Ocelot + Consul
 builder.Services.AddOcelot(builder.Configuration)
-                .AddConsul();  // Đăng ký Ocelot sử dụng Consul làm service discovery
+                .AddConsul();
 
-// Thêm Swagger nếu bạn cần tài liệu API
+// Thêm CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowWebApp", policy =>
+    {
+        policy.WithOrigins("http://localhost:5007")
+              .WithMethods("GET", "POST", "PUT", "DELETE")
+              .AllowAnyHeader();
+    });
+});
+
+// Swagger (nếu bạn dùng)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Sử dụng Swagger nếu môi trường phát triển
+// Xử lý lỗi
+app.UseExceptionHandler(errorApp =>
+{
+    errorApp.Run(async context =>
+    {
+        context.Response.StatusCode = 500;
+        context.Response.ContentType = "application/json";
+        await context.Response.WriteAsync("{\"error\": \"An unexpected error occurred.\"}");
+    });
+});
+
+// Thêm CORS
+app.UseCors("AllowWebApp");
+
+// Middleware
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGet("/", () => "API Gateway is running...");
+});
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Gateway V1");
-        c.RoutePrefix = string.Empty;  // Đặt Swagger UI tại gốc (http://localhost:5000/)
+        c.RoutePrefix = string.Empty;
     });
 }
 
-app.UseAuthorization();
-
-// Sử dụng Ocelot để thực hiện routing
+// ❗ Bắt buộc phải là cuối cùng
 await app.UseOcelot();
 
-// Khởi chạy ứng dụng
 app.Run();

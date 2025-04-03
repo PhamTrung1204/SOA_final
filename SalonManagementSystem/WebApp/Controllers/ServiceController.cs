@@ -11,7 +11,7 @@ namespace WebApp.Controllers
     public class ServiceController : Controller
     {
         private readonly HttpClient _httpClient;
-        private readonly string baseUrl = "http://apigateway:8080/api/service";
+        private readonly string baseUrl = "http://apigateway:8080/api/services";
 
         public ServiceController(IHttpClientFactory factory)
         {
