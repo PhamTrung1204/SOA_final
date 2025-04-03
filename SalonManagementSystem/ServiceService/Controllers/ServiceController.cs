@@ -15,6 +15,14 @@ namespace ServiceService.Controllers
             _service = service;
         }
 
+        // GET: api/services
+        [HttpGet]
+        public ActionResult<IEnumerable<Service>> GetServices()
+        {
+            var services = _service.GetServices(); // Cần thêm phương thức GetServices trong ServiceHandler
+            return Ok(services);
+        }
+
         // GET: api/Service/5
         [HttpGet("{id}")]
         public ActionResult<Service> GetService(int id)

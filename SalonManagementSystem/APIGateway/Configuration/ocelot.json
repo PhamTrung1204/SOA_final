@@ -19,7 +19,7 @@
     {
       "DownstreamPathTemplate": "/api/services/{everything}",
       "DownstreamScheme": "http",
-      "ServiceName": "service-service",
+      "ServiceName": "serviceservice",
       "UseServiceDiscovery": true,
       "UpstreamPathTemplate": "/api/services/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ]
@@ -56,6 +56,12 @@
       "Port": 8500,
       "Type": "Consul",
       "PollingInterval": 1000
+    },
+    "Cors": {
+      "Origins": [ "http://localhost:5007" ],
+      "Methods": [ "GET", "POST", "PUT", "DELETE" ],
+      "Headers": [ "*" ],
+      "AllowCredentials": false
     }
   }
 }

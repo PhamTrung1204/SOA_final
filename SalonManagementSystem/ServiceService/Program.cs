@@ -11,6 +11,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services
 builder.Services.AddControllers();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
 // Đăng ký IHttpClientFactory
 builder.Services.AddHttpClient();
 
@@ -60,9 +70,11 @@ app.UseRouting();
 //app.UseAuthorization();
 app.MapControllers();
 app.MapHealthChecks("/api/health");
+app.UseCors("AllowAll");
 
 // Register with Consul
 RegisterWithConsul(app);
+
 
 app.Run();
 

@@ -38,7 +38,7 @@ builder.Services.AddControllersWithViews()
     .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 // Thêm HttpClient để gọi API
-builder.Services.AddHttpClient();
+builder.Services.AddRazorPages();
 
 // Thêm Session để lưu token tạm thời (nếu cần)
 builder.Services.AddSession(options =>
@@ -69,7 +69,7 @@ else
     app.UseHsts();
 }
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
@@ -84,5 +84,8 @@ app.UseSession();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Thêm định tuyến cho Razor Pages
+app.MapRazorPages();
 
 app.Run();

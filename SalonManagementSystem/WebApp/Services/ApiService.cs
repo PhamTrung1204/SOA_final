@@ -31,6 +31,13 @@ namespace WebApp.Services
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
                 _isAuthenticated = true;
             }
+
+            var apiGatewayUrl = _configuration["ApiGateway"];
+            if (string.IsNullOrEmpty(apiGatewayUrl))
+            {
+                throw new Exception("API Gateway URL is not configured in appsettings.json");
+            }
+            _httpClient.BaseAddress = new Uri(apiGatewayUrl);
         }
 
         public bool IsAuthenticated => _isAuthenticated;

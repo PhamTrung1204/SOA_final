@@ -12,6 +12,11 @@ namespace ServiceService.Repositories
             _context = context;
         }
 
+        public IEnumerable<Service> GetServices()
+        {
+            return _context.Services.ToList();
+        }
+
         public Service GetService(int id)
         {
             var service = _context.Services.Find(id);
