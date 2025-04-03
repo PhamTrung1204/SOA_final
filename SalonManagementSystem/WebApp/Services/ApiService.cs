@@ -25,7 +25,7 @@ namespace WebApp.Services
 
             _httpClient.BaseAddress = new Uri(configuration["ApiGateway"]);
 
-            var token = _httpContextAccessor.HttpContext?.Session.GetString("Token");
+            var token = _httpContextAccessor.HttpContext?.Session.GetString("JwtToken");
             if (!string.IsNullOrEmpty(token))
             {
                 _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
@@ -47,9 +47,19 @@ namespace WebApp.Services
             var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
             var response = await _httpClient.PostAsync("api/auth/login", content);
             response.EnsureSuccessStatusCode();
+
             var responseData = await response.Content.ReadAsStringAsync();
+
+            // Tự trích xuất giá trị token từ JSON
+            var json = JsonDocument.Parse(responseData);
+            var token = json.RootElement.GetProperty("token").GetString();
+
             _isAuthenticated = true;
-            return JsonSerializer.Deserialize<AuthResponse>(responseData);
+            return new AuthResponse
+            {
+                AccessToken = token,
+                RefreshToken = "" // Nếu chưa dùng
+            };
         }
 
         public async Task<AuthResponse> RegisterAsync(RegisterRequest request)
@@ -61,9 +71,22 @@ namespace WebApp.Services
             return JsonSerializer.Deserialize<AuthResponse>(responseData);
         }
 
+        private void AttachJwtToken()
+        {
+            var token = _httpContextAccessor.HttpContext?.Session.GetString("JwtToken");
+            if (!string.IsNullOrEmpty(token))
+            {
+                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+                _isAuthenticated = true;
+            }
+        }
+
         // Customer Service - số ít
         public async Task<List<Customer>> GetCustomersAsync()
         {
+
+            AttachJwtToken();
+
             if (!_isAuthenticated)
                 return new List<Customer>();
 
@@ -75,6 +98,7 @@ namespace WebApp.Services
 
         public async Task<Customer> GetCustomerAsync(int id)
         {
+            AttachJwtToken();
             if (!_isAuthenticated)
                 return null;
 
@@ -86,6 +110,7 @@ namespace WebApp.Services
 
         public async Task CreateCustomerAsync(Customer customer)
         {
+            AttachJwtToken();
             if (!_isAuthenticated)
                 throw new UnauthorizedAccessException("User must be authenticated to create a customer");
 
@@ -96,6 +121,7 @@ namespace WebApp.Services
 
         public async Task UpdateCustomerAsync(int id, Customer customer)
         {
+            AttachJwtToken();
             if (!_isAuthenticated)
                 throw new UnauthorizedAccessException("User must be authenticated to update a customer");
 
@@ -106,6 +132,7 @@ namespace WebApp.Services
 
         public async Task DeleteCustomerAsync(int id)
         {
+            AttachJwtToken();
             if (!_isAuthenticated)
                 throw new UnauthorizedAccessException("User must be authenticated to delete a customer");
 
