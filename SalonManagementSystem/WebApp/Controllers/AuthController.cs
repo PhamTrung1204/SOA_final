@@ -28,18 +28,17 @@ namespace WebApp.Controllers
             try
             {
                 var response = await _apiService.LoginAsync(request);
-
                 if (response.Success)
                 {
                     // Lưu thông tin người dùng vào session
                     if (response.Customer != null)
                     {
-                        // Có thể lưu ID của customer hoặc thông tin khác nếu cần
                         HttpContext.Session.SetInt32("CustomerId", response.Customer.CustomerId);
                         HttpContext.Session.SetString("CustomerName", response.Customer.Name);
                         HttpContext.Session.SetString("CustomerEmail", response.Customer.Email);
-                    }
 
+                      
+                    }
                     return RedirectToAction("Index", "Home");
                 }
                 else
