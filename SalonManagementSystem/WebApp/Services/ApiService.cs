@@ -44,48 +44,121 @@ namespace WebApp.Services
 
         public async Task<AuthResponse> LoginAsync(LoginRequest request)
         {
-            var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync("api/auth/login", content);
-            response.EnsureSuccessStatusCode();
-
-            var responseData = await response.Content.ReadAsStringAsync();
-
-            // Tự trích xuất giá trị token từ JSON
-            var json = JsonDocument.Parse(responseData);
-            var token = json.RootElement.GetProperty("token").GetString();
-
-            _isAuthenticated = true;
-            return new AuthResponse
+            try
             {
-                AccessToken = token,
-                RefreshToken = "" // Nếu chưa dùng
-            };
+                Console.WriteLine($"Gửi yêu cầu đăng nhập cho email: {request.Email}");
+
+                var jsonOptions = new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true
+                };
+
+                var jsonRequest = JsonSerializer.Serialize(request, jsonOptions);
+                Console.WriteLine($"Request JSON: {jsonRequest}");
+
+                var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+                var response = await _httpClient.PostAsync("api/auth/login", content);
+
+                var responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Response Status: {response.StatusCode}");
+                Console.WriteLine($"Response Content: {responseContent}");
+
+                // Luôn deserialize response, bất kể status code
+                var authResponse = JsonSerializer.Deserialize<AuthResponse>(responseContent, jsonOptions);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine($"Response success: {authResponse.Success}, Customer null?: {authResponse.Customer == null}");
+
+                    if (authResponse.Success && authResponse.Customer != null)
+                    {
+                        Console.WriteLine($"Authentication successful, Customer ID: {authResponse.Customer.CustomerId}");
+                        _isAuthenticated = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Đăng nhập thất bại mặc dù status code OK. Message: {authResponse.Message}");
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"Đăng nhập thất bại với status code: {response.StatusCode}");
+                }
+
+                // Trả về authResponse bất kể thành công hay thất bại
+                return authResponse;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception in LoginAsync: {ex.Message}");
+                Console.WriteLine($"Stack trace: {ex.StackTrace}");
+                return new AuthResponse
+                {
+                    Success = false,
+                    Message = $"Lỗi kết nối: {ex.Message}"
+                };
+            }
         }
 
         public async Task<AuthResponse> RegisterAsync(RegisterRequest request)
         {
-            var content = new StringContent(JsonSerializer.Serialize(request), Encoding.UTF8, "application/json");
-            var response = await _httpClient.PostAsync("api/auth/register", content);
-            response.EnsureSuccessStatusCode();
-            var responseData = await response.Content.ReadAsStringAsync();
-            return JsonSerializer.Deserialize<AuthResponse>(responseData);
+            try
+            {
+                var jsonOptions = new JsonSerializerOptions
+                {
+                    PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+                    WriteIndented = true
+                };
+
+                var jsonRequest = JsonSerializer.Serialize(request, jsonOptions);
+                Console.WriteLine($"Request JSON: {jsonRequest}");
+
+                var content = new StringContent(jsonRequest, Encoding.UTF8, "application/json");
+
+                var response = await _httpClient.PostAsync("api/auth/register", content);
+
+                var responseContent = await response.Content.ReadAsStringAsync();
+                Console.WriteLine($"Response Status: {response.StatusCode}");
+                Console.WriteLine($"Response Content: {responseContent}");
+
+                // Luôn deserialize response, bất kể status code
+                var authResponse = JsonSerializer.Deserialize<AuthResponse>(responseContent, jsonOptions);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    if (authResponse.Success && authResponse.Customer != null)
+                    {
+                        _isAuthenticated = true;
+                    }
+                }
+
+                // Trả về authResponse bất kể thành công hay thất bại
+                return authResponse;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Exception in RegisterAsync: {ex.Message}");
+                return new AuthResponse
+                {
+                    Success = false,
+                    Message = $"Lỗi kết nối: {ex.Message}"
+                };
+            }
         }
 
-        private void AttachJwtToken()
+        private void CheckAuthentication()
         {
-            var token = _httpContextAccessor.HttpContext?.Session.GetString("JwtToken");
-            if (!string.IsNullOrEmpty(token))
-            {
-                _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
-                _isAuthenticated = true;
-            }
+            // Kiểm tra nếu đã đăng nhập (có thể kiểm tra qua session)
+            var customerId = _httpContextAccessor.HttpContext?.Session.GetInt32("CustomerId");
+            _isAuthenticated = customerId.HasValue && customerId.Value > 0;
         }
 
         // Customer Service - số ít
         public async Task<List<Customer>> GetCustomersAsync()
         {
 
-            AttachJwtToken();
+            CheckAuthentication();
 
             if (!_isAuthenticated)
                 return new List<Customer>();
@@ -98,7 +171,7 @@ namespace WebApp.Services
 
         public async Task<Customer> GetCustomerAsync(int id)
         {
-            AttachJwtToken();
+            CheckAuthentication();
             if (!_isAuthenticated)
                 return null;
 
@@ -110,7 +183,7 @@ namespace WebApp.Services
 
         public async Task CreateCustomerAsync(Customer customer)
         {
-            AttachJwtToken();
+            CheckAuthentication();
             if (!_isAuthenticated)
                 throw new UnauthorizedAccessException("User must be authenticated to create a customer");
 
@@ -121,7 +194,7 @@ namespace WebApp.Services
 
         public async Task UpdateCustomerAsync(int id, Customer customer)
         {
-            AttachJwtToken();
+            CheckAuthentication();
             if (!_isAuthenticated)
                 throw new UnauthorizedAccessException("User must be authenticated to update a customer");
 
@@ -132,7 +205,7 @@ namespace WebApp.Services
 
         public async Task DeleteCustomerAsync(int id)
         {
-            AttachJwtToken();
+            CheckAuthentication();
             if (!_isAuthenticated)
                 throw new UnauthorizedAccessException("User must be authenticated to delete a customer");
 

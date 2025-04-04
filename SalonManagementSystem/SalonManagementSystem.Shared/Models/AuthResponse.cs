@@ -8,7 +8,8 @@ namespace SalonManagementSystem.Shared.Models
 {
     public class AuthResponse
     {
-        public string AccessToken { get; set; }
-        public string RefreshToken { get; set; }
+        public Customer Customer { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; }
     }
 }

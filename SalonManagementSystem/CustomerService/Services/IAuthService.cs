@@ -5,7 +5,7 @@ namespace CustomerService.Services
 {
     public interface IAuthService
     {
-        Task<string> RegisterAsync(RegisterRequest request);
-        Task<string> LoginAsync(LoginRequest request);
+        Task<Customer> AuthenticateAsync(string email, string password);
+        Task<Customer> RegisterAsync(RegisterRequest request);
     }
 }

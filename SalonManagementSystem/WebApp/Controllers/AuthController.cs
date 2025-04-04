@@ -29,16 +29,28 @@ namespace WebApp.Controllers
             {
                 var response = await _apiService.LoginAsync(request);
 
-                Console.WriteLine("🟢 TOKEN: " + response.AccessToken); // 👈 Thêm log này
+                if (response.Success)
+                {
+                    // Lưu thông tin người dùng vào session
+                    if (response.Customer != null)
+                    {
+                        // Có thể lưu ID của customer hoặc thông tin khác nếu cần
+                        HttpContext.Session.SetInt32("CustomerId", response.Customer.CustomerId);
+                        HttpContext.Session.SetString("CustomerName", response.Customer.Name);
+                        HttpContext.Session.SetString("CustomerEmail", response.Customer.Email);
+                    }
 
-                HttpContext.Session.SetString("JwtToken", response.AccessToken);
-                HttpContext.Session.SetString("RefreshToken", response.RefreshToken ?? "");
-
-                return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ModelState.AddModelError("", response.Message ?? "Sai tài khoản hoặc mật khẩu.");
+                    return View(request);
+                }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("❌ Login FAILED: " + ex.Message); // 👈 Log lỗi rõ
+                Console.WriteLine("❌ Login FAILED: " + ex.Message);
                 ModelState.AddModelError("", "Sai tài khoản hoặc mật khẩu.");
                 return View(request);
             }
@@ -59,15 +71,37 @@ namespace WebApp.Controllers
             try
             {
                 var response = await _apiService.RegisterAsync(request);
-                HttpContext.Session.SetString("JwtToken", response.AccessToken);
-                HttpContext.Session.SetString("RefreshToken", response.RefreshToken);
-                return RedirectToAction("Index", "Home"); // Đăng ký xong tự login luôn
+
+                if (response.Success)
+                {
+                    // Lưu thông tin người dùng vào session
+                    if (response.Customer != null)
+                    {
+                        HttpContext.Session.SetInt32("CustomerId", response.Customer.CustomerId);
+                        HttpContext.Session.SetString("CustomerName", response.Customer.Name);
+                        HttpContext.Session.SetString("CustomerEmail", response.Customer.Email);
+                    }
+
+                    return RedirectToAction("Index", "Home"); // Đăng ký xong tự login luôn
+                }
+                else
+                {
+                    ModelState.AddModelError("", response.Message ?? "Registration failed.");
+                    return View(request);
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                ModelState.AddModelError("", "Registration failed.");
+                ModelState.AddModelError("", "Registration failed: " + ex.Message);
                 return View(request);
             }
+        }
+
+        public IActionResult Logout()
+        {
+            // Xóa thông tin session
+            HttpContext.Session.Clear();
+            return RedirectToAction("Login");
         }
     }
 }
