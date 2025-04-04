@@ -37,5 +37,7 @@ namespace WebApp.Services
         Task<List<Feedback>> GetFeedbacksAsync();
         Task<Feedback> GetFeedbackAsync(int id);
         Task CreateFeedbackAsync(Feedback feedback);
+        // Thêm phương thức mới cho việc đổi mật khẩu
+        Task<bool> ChangePasswordAsync(int customerId, string currentPassword, string newPassword);
     }
 }

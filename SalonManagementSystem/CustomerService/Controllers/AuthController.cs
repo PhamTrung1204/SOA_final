@@ -102,5 +102,27 @@ namespace CustomerService.Controllers
                 });
             }
         }
+
+        [HttpPost("{id}/change-password")]
+        public async Task<IActionResult> ChangePassword(int id, [FromBody] ChangePasswordModel model)
+        {
+            try
+            {
+                bool result = await _authService.ChangePasswordAsync(id, model.CurrentPassword, model.NewPassword);
+
+                if (result)
+                {
+                    return Ok(new { success = true, message = "Mật khẩu đã được thay đổi thành công" });
+                }
+                else
+                {
+                    return BadRequest(new { success = false, message = "Mật khẩu hiện tại không chính xác" });
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { success = false, message = $"Lỗi server: {ex.Message}" });
+            }
+        }
     }
 }

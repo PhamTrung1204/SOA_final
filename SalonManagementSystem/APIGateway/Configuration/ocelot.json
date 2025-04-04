@@ -14,6 +14,18 @@
       "SwaggerKey": "customerservice"
     },
     {
+      "DownstreamPathTemplate": "/api/customer/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "customerservice",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/api/customer/{everything}",
+      "UpstreamHttpMethod": [ "POST", "GET", "PUT", "DELETE" ]
+    },
+    {
       "DownstreamPathTemplate": "/api/staff",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [

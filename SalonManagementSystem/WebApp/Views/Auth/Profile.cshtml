@@ -1,0 +1,362 @@
+﻿@model SalonManagementSystem.Shared.Models.Customer
+
+@{
+    ViewData["Title"] = "Hồ sơ cá nhân";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="container py-5">
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle me-2"></i> @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <i class="fas fa-exclamation-circle me-2"></i> @TempData["ErrorMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-lg-4 mb-4">
+            <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+                <div class="card-header bg-primary text-white p-4">
+                    <div class="text-center">
+                        <div class="avatar-placeholder rounded-circle bg-light text-primary mx-auto mb-3" style="width: 100px; height: 100px; font-size: 40px; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="mb-1">@Model.Name</h4>
+                        <p class="mb-0 text-white-50">
+                            <i class="fas fa-envelope me-1"></i> @Model.Email
+                        </p>
+                    </div>
+                </div>
+                <div class="card-body p-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-light rounded-circle p-2 me-3">
+                            <i class="fas fa-id-card text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">ID Khách hàng</h6>
+                            <p class="text-muted mb-0">@Model.CustomerId</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="icon-box bg-light rounded-circle p-2 me-3">
+                            <i class="fas fa-phone text-primary"></i>
+                        </div>
+                        <div>
+                            <h6 class="mb-0">Số điện thoại</h6>
+                            <p class="text-muted mb-0">@Model.Phone</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-8">
+            <div class="card border-0 shadow-sm rounded-3 mb-4">
+                <div class="card-header bg-white p-4 border-0">
+                    <h5 class="mb-0">
+                        <i class="fas fa-user-edit me-2 text-primary"></i>
+                        Cập nhật thông tin cá nhân
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="UpdateProfile" method="post" id="profileForm">
+                        <input type="hidden" asp-for="CustomerId" />
+                        <input type="hidden" asp-for="PasswordHash" />
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Name" class="form-label">
+                                    <i class="fas fa-user text-primary me-2"></i>Họ và tên
+                                </label>
+                                <input asp-for="Name" class="form-control form-control-lg rounded-pill" placeholder="Nhập họ và tên" />
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Email" class="form-label">
+                                    <i class="fas fa-envelope text-primary me-2"></i>Email
+                                </label>
+                                <input asp-for="Email" class="form-control form-control-lg rounded-pill" placeholder="Nhập email" />
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label asp-for="Phone" class="form-label">
+                                <i class="fas fa-phone text-primary me-2"></i>Số điện thoại
+                            </label>
+                            <input asp-for="Phone" class="form-control form-control-lg rounded-pill" placeholder="Nhập số điện thoại" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">
+                                <i class="fas fa-save me-2"></i>Lưu thay đổi
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm rounded-3">
+                <div class="card-header bg-white p-4 border-0">
+                    <h5 class="mb-0">
+                        <i class="fas fa-lock me-2 text-primary"></i>
+                        Đổi mật khẩu
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    <form asp-action="ChangePassword" method="post" id="passwordForm">
+                        <input type="hidden" name="customerId" value="@Model.CustomerId" />
+                        <div class="mb-3">
+                            <label for="CurrentPassword" class="form-label">
+                                <i class="fas fa-key text-primary me-2"></i>Mật khẩu hiện tại
+                            </label>
+                            <div class="input-group">
+                                <input type="password" id="CurrentPassword" name="CurrentPassword" class="form-control form-control-lg rounded-pill" placeholder="Nhập mật khẩu hiện tại" required />
+                                <button class="btn btn-outline-secondary rounded-pill toggle-password" type="button" data-target="CurrentPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="NewPassword" class="form-label">
+                                <i class="fas fa-lock text-primary me-2"></i>Mật khẩu mới
+                            </label>
+                            <div class="input-group">
+                                <input type="password" id="NewPassword" name="NewPassword" class="form-control form-control-lg rounded-pill" placeholder="Nhập mật khẩu mới" required />
+                                <button class="btn btn-outline-secondary rounded-pill toggle-password" type="button" data-target="NewPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div class="password-strength mt-2"></div>
+                            <div class="password-requirements mt-2 text-muted">
+                                <small>
+                                    <ul>
+                                        <li>Ít nhất 8 ký tự</li>
+                                        <li>Ít nhất một ký tự hoa và thường</li>
+                                        <li>Ít nhất một số</li>
+                                        <li>Ít nhất một ký tự đặc biệt</li>
+                                    </ul>
+                                </small>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="ConfirmPassword" class="form-label">
+                                <i class="fas fa-check-circle text-primary me-2"></i>Xác nhận mật khẩu mới
+                            </label>
+                            <div class="input-group">
+                                <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control form-control-lg rounded-pill" placeholder="Xác nhận mật khẩu mới" required />
+                                <button class="btn btn-outline-secondary rounded-pill toggle-password" type="button" data-target="ConfirmPassword">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                            </div>
+                            <div id="password-match-feedback" class="text-danger mt-2 d-none">
+                                <small>Mật khẩu không khớp</small>
+                            </div>
+                        </div>
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill px-4">
+                                <i class="fas fa-lock me-2"></i>Đổi mật khẩu
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+       @{
+            string css = @"
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-10px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            ";
+        }
+        @Html.Raw(css)
+
+        .icon-box {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .toggle-password {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            z-index: 10;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+            border-color: #86b7fe;
+        }
+
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card {
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .alert {
+            animation: fadeIn 0.5s;
+        }
+    </style>
+}
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+
+    <script>
+        // Toggle password visibility
+        document.querySelectorAll('.toggle-password').forEach(button => {
+            button.addEventListener('click', function() {
+                const targetId = this.getAttribute('data-target');
+                const input = document.getElementById(targetId);
+                const icon = this.querySelector('i');
+        
+                if (input.type === 'password') {
+                    input.type = 'text';
+                    icon.classList.remove('fa-eye');
+                    icon.classList.add('fa-eye-slash');
+                } else {
+                    input.type = 'password';
+                    icon.classList.remove('fa-eye-slash');
+                    icon.classList.add('fa-eye');
+                }
+            });
+        });
+
+        // Password strength meter
+        document.getElementById('NewPassword').addEventListener('input', function() {
+            const password = this.value;
+            const strengthMeter = document.querySelector('.password-strength');
+    
+            let strength = 0;
+            let html = '';
+    
+            // Check length
+            if (password.length >= 8) strength += 1;
+    
+            // Check for lowercase and uppercase
+            if (password.match(/[a-z]/) && password.match(/[A-Z]/)) strength += 1;
+    
+            // Check for numbers
+            if (password.match(/\d/)) strength += 1;
+    
+            // Check for special characters
+            if (password.match(/[^a-zA-Z\d]/)) strength += 1;
+    
+            switch (strength) {
+                case 0:
+                    html = '<div class="progress" style="height: 5px;"><div class="progress-bar bg-danger" style="width: 25%"></div></div><small class="text-danger">Mật khẩu yếu</small>';
+                    break;
+                case 1:
+                    html = '<div class="progress" style="height: 5px;"><div class="progress-bar bg-warning" style="width: 50%"></div></div><small class="text-warning">Mật khẩu trung bình</small>';
+                    break;
+                case 2:
+                    html = '<div class="progress" style="height: 5px;"><div class="progress-bar bg-info" style="width: 75%"></div></div><small class="text-info">Mật khẩu khá</small>';
+                    break;
+                case 3:
+                    html = '<div class="progress" style="height: 5px;"><div class="progress-bar bg-success" style="width: 90%"></div></div><small class="text-success">Mật khẩu mạnh</small>';
+                    break;
+                case 4:
+                    html = '<div class="progress" style="height: 5px;"><div class="progress-bar bg-success" style="width: 100%"></div></div><small class="text-success">Mật khẩu rất mạnh</small>';
+                    break;
+            }
+    
+            strengthMeter.innerHTML = html;
+        });
+
+        // Real-time password match validation
+        function checkPasswordMatch() {
+            const newPassword = document.getElementById('NewPassword').value;
+            const confirmPassword = document.getElementById('ConfirmPassword').value;
+            const feedbackElement = document.getElementById('password-match-feedback');
+    
+            if (confirmPassword && newPassword !== confirmPassword) {
+                feedbackElement.classList.remove('d-none');
+            } else {
+                feedbackElement.classList.add('d-none');
+            }
+        }
+
+        document.getElementById('NewPassword').addEventListener('input', checkPasswordMatch);
+        document.getElementById('ConfirmPassword').addEventListener('input', checkPasswordMatch);
+
+        // Form submission validation
+        document.getElementById('passwordForm').addEventListener('submit', function(e) {
+            const newPassword = document.getElementById('NewPassword').value;
+            const confirmPassword = document.getElementById('ConfirmPassword').value;
+    
+            // Check if passwords match
+            if (newPassword !== confirmPassword) {
+                e.preventDefault();
+                document.getElementById('password-match-feedback').classList.remove('d-none');
+                return;
+            }
+    
+            // Check password strength
+            let strength = 0;
+            if (newPassword.length >= 8) strength += 1;
+            if (newPassword.match(/[a-z]/) && newPassword.match(/[A-Z]/)) strength += 1;
+            if (newPassword.match(/\d/)) strength += 1;
+            if (newPassword.match(/[^a-zA-Z\d]/)) strength += 1;
+    
+            if (strength < 3) {
+                e.preventDefault();
+                alert('Mật khẩu không đủ mạnh. Vui lòng chọn mật khẩu mạnh hơn.');
+                return;
+            }
+        });
+
+        // Animation for form inputs
+        document.querySelectorAll('input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.style.transition = 'all 0.3s ease';
+                this.parentElement.style.transform = 'translateY(-5px)';
+            });
+    
+            input.addEventListener('blur', function() {
+                this.parentElement.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+}

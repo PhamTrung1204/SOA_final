@@ -42,6 +42,39 @@ namespace WebApp.Services
 
         public bool IsAuthenticated => _isAuthenticated;
 
+        public async Task<bool> ChangePasswordAsync(int customerId, string currentPassword, string newPassword)
+        {
+            try
+            {
+                // Gọi đến API endpoint để thay đổi mật khẩu
+                var content = new StringContent(
+                    JsonSerializer.Serialize(new { CurrentPassword = currentPassword, NewPassword = newPassword }),
+                    Encoding.UTF8,
+                    "application/json");
+
+                var response = await _httpClient.PostAsync($"api/auth/{customerId}/change-password", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+
+                // Nếu API trả về BadRequest, đọc lỗi từ response
+                if (response.StatusCode == System.Net.HttpStatusCode.BadRequest)
+                {
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"Lỗi từ API: {errorContent}");
+                }
+
+                return false;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi gọi API đổi mật khẩu: {ex.Message}");
+                return false;
+            }
+        }
+
         public async Task<AuthResponse> LoginAsync(LoginRequest request)
         {
             try
@@ -172,8 +205,7 @@ namespace WebApp.Services
         public async Task<Customer> GetCustomerAsync(int id)
         {
             CheckAuthentication();
-            if (!_isAuthenticated)
-                return null;
+            if (!_isAuthenticated) return null;
 
             var response = await _httpClient.GetAsync($"api/customer/{id}");
             response.EnsureSuccessStatusCode();

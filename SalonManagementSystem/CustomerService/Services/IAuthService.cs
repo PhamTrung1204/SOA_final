@@ -7,5 +7,6 @@ namespace CustomerService.Services
     {
         Task<Customer> AuthenticateAsync(string email, string password);
         Task<Customer> RegisterAsync(RegisterRequest request);
+        Task<bool> ChangePasswordAsync(int customerId, string currentPassword, string newPassword);
     }
 }

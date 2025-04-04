@@ -129,5 +129,44 @@ namespace CustomerService.Services
                 return false;
             }
         }
+
+        public async Task<bool> ChangePasswordAsync(int customerId, string currentPassword, string newPassword)
+        {
+            // Lấy danh sách khách hàng
+            var customers = await _customerService.GetAllCustomers();
+
+            // Tìm khách hàng theo customerId
+            Console.WriteLine($"Đang tìm kiếm customer với ID: {customerId}");
+            var customer = customers.FirstOrDefault(c => c.CustomerId == customerId);
+
+            if (customer == null)
+            {
+                Console.WriteLine($"❌ Không tìm thấy customer với ID: {customerId}");
+                return false;
+            }
+
+            Console.WriteLine($"✅ Đã tìm thấy customer: {customer.Name}");
+
+            // Xác thực mật khẩu hiện tại
+            bool isCurrentPasswordValid = VerifyPasswordHash(currentPassword, customer.PasswordHash);
+            Console.WriteLine($"Kết quả xác thực mật khẩu hiện tại: {isCurrentPasswordValid}");
+
+            if (!isCurrentPasswordValid)
+            {
+                return false;
+            }
+
+            // Hash mật khẩu mới
+            string newHashedPassword = HashPassword(newPassword);
+            Console.WriteLine($"Mật khẩu mới đã được hash: {newHashedPassword.Substring(0, Math.Min(20, newHashedPassword.Length))}...");
+
+            // Cập nhật mật khẩu
+            customer.PasswordHash = newHashedPassword;
+            await _customerService.UpdateCustomer(customer.CustomerId, customer); // Đã sửa ở đây
+
+            Console.WriteLine($"✅ Đã cập nhật mật khẩu thành công cho customer: {customer.Name}");
+
+            return true;
+        }
     }
 }
