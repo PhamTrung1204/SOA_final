@@ -33,19 +33,71 @@ namespace WebApp.Controllers
             return View(model);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Create(BookingViewModel model)
+        public async Task<IActionResult> BookAppointment(int serviceId)
         {
-            if (ModelState.IsValid)
+            // Check if user is authenticated by checking session
+            var customerId = HttpContext.Session.GetInt32("CustomerId");
+            if (!customerId.HasValue)
             {
-                await _apiService.CreateAppointmentAsync(model.Appointment);
-                return RedirectToAction("Index");
+                // Store the return URL in TempData to redirect back after login
+                TempData["ReturnUrl"] = $"/BookAppointment?serviceId={serviceId}";
+                return RedirectToAction("Login", "Auth");
             }
-            model.StaffList = await _apiService.GetStaffAsync();
-            model.ServiceList = await _apiService.GetServicesAsync();
-            return View(model);
-        }
 
+            
+            var staffList = await _apiService.GetStaffAsync();
+            var serviceList = await _apiService.GetServicesAsync();
+            var viewModel = new BookingViewModel
+            {
+                ServiceId = serviceId,
+                ServiceList = serviceList,
+                StaffList = staffList,
+                AppointmentDate = DateTime.Now.AddDays(1),
+                CustomerId = customerId.Value
+            };
+
+            return View(viewModel);
+        }
+        [HttpPost]
+        public async Task<IActionResult> BookAppointment(BookingViewModel model)
+        {
+            // Verify user is still authenticated
+            var customerId = HttpContext.Session.GetInt32("CustomerId");
+            if (!customerId.HasValue)
+            {
+                return RedirectToAction("Login", "Auth");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                model.Service = await _apiService.GetServiceAsync(model.ServiceId);
+                model.StaffList = await _apiService.GetStaffAsync();
+                return View(model);
+            }
+
+            try
+            {
+                var appointment = new Appointment
+                {
+                    CustomerId = customerId.Value, // Use the session value
+                    StaffId = model.StaffId,
+                    ServiceId = model.ServiceId,
+                    AppointmentDate = model.AppointmentDate,
+                    Status = "Scheduled"
+                };
+
+                await _apiService.CreateAppointmentAsync(appointment);
+                TempData["SuccessMessage"] = "Appointment booked successfully!";
+                return RedirectToAction("Index", "Home");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Error booking appointment: {ex.Message}");
+                model.Service = await _apiService.GetServiceAsync(model.ServiceId);
+                model.StaffList = await _apiService.GetStaffAsync();
+                return View(model);
+            }
+        }
         public async Task<IActionResult> Details(int id)
         {
             var appointment = await _apiService.GetAppointmentAsync(id);

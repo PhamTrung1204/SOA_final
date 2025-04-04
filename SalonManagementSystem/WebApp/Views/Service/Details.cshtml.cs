@@ -20,7 +20,7 @@ namespace WebApp.Pages.Service
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"http://localhost:5000/api/services/{id}");
+            var response = await _httpClient.GetAsync($"http://apigateway:8080/api/services/{id}");
             if (!response.IsSuccessStatusCode) return NotFound();
 
             Service = await response.Content.ReadFromJsonAsync<SalonManagementSystem.Shared.Models.Service>();

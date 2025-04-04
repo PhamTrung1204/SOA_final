@@ -50,9 +50,12 @@
                                     <a href="/Service/Edit/@s.ServiceId" class="btn btn-outline-primary btn-sm me-2">
                                         <i class="bi bi-pencil-fill"></i>
                                     </a>
-                                    <a href="/Service/Delete/@s.ServiceId" class="btn btn-outline-danger btn-sm">
-                                        <i class="bi bi-trash-fill"></i>
-                                    </a>
+                                    <form asp-action="Delete" method="post" style="display:inline-block;">
+                                        <input type="hidden" name="id" value="@s.ServiceId" />
+                                        <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa dịch vụ này?');">
+                                            Delete
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         }

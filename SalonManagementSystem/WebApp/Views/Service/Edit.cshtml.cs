@@ -21,7 +21,7 @@ namespace WebApp.Pages.Service
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"http://localhost:5000/api/services/{id}");
+            var response = await _httpClient.GetAsync($"http://apigateway:8080/api/services/{id}");
             if (!response.IsSuccessStatusCode) return NotFound();
 
             Service = await response.Content.ReadFromJsonAsync<SalonManagementSystem.Shared.Models.Service>();
@@ -30,7 +30,7 @@ namespace WebApp.Pages.Service
 
         public async Task<IActionResult> OnPostAsync()
         {
-            var response = await _httpClient.PutAsJsonAsync($"http://localhost:5000/api/services/{Service.ServiceId}", Service);
+            var response = await _httpClient.PutAsJsonAsync($"http://apigateway:8080/api/services/{Service.ServiceId}", Service);
             if (!response.IsSuccessStatusCode) return BadRequest();
 
             return RedirectToPage("/Service/Index"); // hoặc bất kỳ trang nào bạn muốn quay lại
